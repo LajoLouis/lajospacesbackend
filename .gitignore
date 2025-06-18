@@ -12,6 +12,27 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 .env.*.local
+config.json
+secrets.json
+credentials.json
+
+# 🔒 SECURITY - API Keys and Tokens
+*.key
+*.pem
+*.p12
+*.pfx
+jwt-secret.txt
+api-keys.txt
+
+# 🔒 SECURITY - Database Credentials
+database.json
+db-config.json
+
+# 🔒 SECURITY - Test Files with Sensitive Data
+test-*.js
+*-test.js
+test-*-comprehensive.js
+test-*-final.js
 
 # Build outputs
 dist/
