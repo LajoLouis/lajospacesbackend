@@ -1,0 +1,73 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🚀 Running pre-push checks..."
+
+# Get the current branch name
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+echo "📍 Current branch: $current_branch"
+
+# Check if pushing to protected branches
+if [ "$current_branch" = "main" ] || [ "$current_branch" = "master" ]; then
+  echo "⚠️  Warning: Pushing directly to main/master branch"
+  echo "Consider using pull requests for better code review"
+fi
+
+# Run full test suite
+echo "🧪 Running full test suite..."
+npm run test:ci
+
+# Run security audit
+echo "🔒 Running security audit..."
+npm audit --audit-level=high
+
+# Check for secrets in code (basic check)
+echo "🔍 Checking for potential secrets..."
+if git diff --cached --name-only | xargs grep -l -E "(password|secret|key|token|api_key)" | grep -v test | grep -v ".env.example"; then
+  echo "⚠️  Warning: Potential secrets found in code. Please review carefully."
+fi
+
+# Check build
+echo "🏗️  Running build check..."
+npm run build
+
+# Check for uncommitted changes
+if ! git diff-index --quiet HEAD --; then
+  echo "❌ Error: You have uncommitted changes. Please commit or stash them before pushing."
+  exit 1
+fi
+
+# Performance check for critical branches
+if [ "$current_branch" = "main" ] || [ "$current_branch" = "development" ]; then
+  echo "⚡ Running performance benchmarks..."
+  npm run test:performance || echo "⚠️  Warning: Performance tests failed or not available"
+fi
+
+# Check for merge conflicts markers
+echo "🔍 Checking for merge conflict markers..."
+if git diff --cached --name-only | xargs grep -l "<<<<<<< HEAD\|>>>>>>> \|=======" 2>/dev/null; then
+  echo "❌ Error: Merge conflict markers found in staged files"
+  exit 1
+fi
+
+# Check for debug statements
+echo "🐛 Checking for debug statements..."
+if git diff --cached --name-only | grep -E '\.(ts|js)$' | grep -v test | xargs grep -l "debugger\|console\.debug" 2>/dev/null; then
+  echo "⚠️  Warning: Debug statements found in staged files"
+fi
+
+# Validate package.json if it was modified
+if git diff --cached --name-only | grep -q "package.json"; then
+  echo "📦 Validating package.json..."
+  npm run lint package.json || echo "⚠️  Warning: package.json validation failed"
+fi
+
+# Check for proper documentation updates
+if git diff --cached --name-only | grep -E '\.(ts|js)$' | grep -v test | xargs grep -l "export.*function\|export.*class" 2>/dev/null; then
+  if ! git diff --cached --name-only | grep -q "README.md\|docs/"; then
+    echo "⚠️  Warning: New exports detected but no documentation updates found"
+  fi
+fi
+
+echo "✅ Pre-push checks completed successfully!"
+echo "🚀 Ready to push to $current_branch"

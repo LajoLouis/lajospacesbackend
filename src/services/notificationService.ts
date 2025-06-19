@@ -1,6 +1,13 @@
 import { User } from '../models/User.model';
 import { PresenceService } from './presenceService';
 import { logger } from '../utils/logger';
+import {
+  Notification,
+  NotificationType,
+  NotificationPriority,
+  NotificationChannel
+} from '../models/notification.model';
+import { emailService } from './emailService';
 
 export interface NotificationPayload {
   id: string;
@@ -311,13 +318,38 @@ export class NotificationService {
         }
       };
 
-      // TODO: Integrate with email service (Zoho, SendGrid, etc.)
-      logger.info(`Email notification would be sent to ${user.email}:`, {
+      // Send email using the email service
+      const result = await emailService.sendEmail({
+        to: user.email,
         subject: emailData.subject,
-        template: emailData.template
+        html: `
+          <h2>${emailData.data.notificationTitle}</h2>
+          <p>Hello ${emailData.data.userName}!</p>
+          <p>${emailData.data.notificationBody}</p>
+          ${emailData.data.actionUrl ? `<p><a href="${emailData.data.actionUrl}">View Details</a></p>` : ''}
+          <p><a href="${emailData.data.unsubscribeUrl}">Unsubscribe</a></p>
+        `,
+        text: `
+          ${emailData.data.notificationTitle}
+
+          Hello ${emailData.data.userName}!
+
+          ${emailData.data.notificationBody}
+
+          ${emailData.data.actionUrl ? `View details: ${emailData.data.actionUrl}` : ''}
+
+          Unsubscribe: ${emailData.data.unsubscribeUrl}
+        `
       });
 
-      // await this.emailService.sendEmail(emailData);
+      if (result.success) {
+        logger.info(`Email notification sent to ${user.email}:`, {
+          subject: emailData.subject,
+          messageId: result.messageId
+        });
+      } else {
+        logger.error(`Failed to send email notification to ${user.email}:`, result.error);
+      }
 
     } catch (error) {
       logger.error('Error sending email notification:', error);
@@ -453,8 +485,9 @@ export class NotificationService {
       // For now, we'll just log
       logger.info('Cleaning up expired notifications');
       
-      // TODO: Implement notification storage and cleanup
-      // await Notification.deleteMany({ expiresAt: { $lt: new Date() } });
+      // Clean up expired notifications using the new model
+      const result = await Notification.deleteMany({ expiresAt: { $lt: new Date() } });
+      logger.info(`Cleaned up ${result.deletedCount} expired notifications`);
       
     } catch (error) {
       logger.error('Error cleaning up notifications:', error);
@@ -471,12 +504,27 @@ export class NotificationService {
     byType: { [key: string]: number };
   }> {
     try {
-      // TODO: Implement notification statistics from database
+      // Get notification statistics from the new model
+      const [totalSent, totalRead, totalUnread, byType] = await Promise.all([
+        Notification.countDocuments({ userId }),
+        Notification.countDocuments({ userId, read: true }),
+        Notification.countDocuments({ userId, read: false, dismissed: false }),
+        Notification.aggregate([
+          { $match: { userId } },
+          { $group: { _id: '$type', count: { $sum: 1 } } }
+        ])
+      ]);
+
+      const typeStats = byType.reduce((acc: any, item: any) => {
+        acc[item._id] = item.count;
+        return acc;
+      }, {});
+
       return {
-        totalSent: 0,
-        totalRead: 0,
-        totalUnread: 0,
-        byType: {}
+        totalSent,
+        totalRead,
+        totalUnread,
+        byType: typeStats
       };
     } catch (error) {
       logger.error('Error getting notification stats:', error);

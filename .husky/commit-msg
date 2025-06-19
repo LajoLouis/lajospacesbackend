@@ -1,0 +1,51 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "📝 Validating commit message..."
+
+# Run commitlint to validate commit message format
+npx --no-install commitlint --edit "$1"
+
+# Additional custom validations
+commit_message=$(cat "$1")
+
+# Check if commit message is not empty
+if [ -z "$commit_message" ]; then
+  echo "❌ Error: Commit message cannot be empty"
+  exit 1
+fi
+
+# Check minimum length
+if [ ${#commit_message} -lt 15 ]; then
+  echo "❌ Error: Commit message too short (minimum 15 characters)"
+  exit 1
+fi
+
+# Check maximum length for first line
+first_line=$(echo "$commit_message" | head -n1)
+if [ ${#first_line} -gt 100 ]; then
+  echo "❌ Error: First line of commit message too long (maximum 100 characters)"
+  exit 1
+fi
+
+# Check for proper conventional commit format
+if ! echo "$first_line" | grep -qE '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert|security|deps|config|release)(\(.+\))?: .+'; then
+  echo "❌ Error: Commit message must follow conventional commit format"
+  echo "Format: type(scope): description"
+  echo "Example: feat(auth): add user login functionality"
+  exit 1
+fi
+
+# Check for imperative mood (basic check)
+if echo "$first_line" | grep -qE '\b(added|fixed|changed|updated|removed|deleted)\b'; then
+  echo "⚠️  Warning: Use imperative mood in commit messages (add, fix, change, update, remove, delete)"
+fi
+
+# Check for issue references in certain commit types
+if echo "$first_line" | grep -qE '^(fix|security)'; then
+  if ! echo "$commit_message" | grep -qE '(close|closes|closed|fix|fixes|fixed|resolve|resolves|resolved) #[0-9]+'; then
+    echo "⚠️  Warning: Consider adding issue reference for bug fixes and security commits"
+  fi
+fi
+
+echo "✅ Commit message validation passed!"

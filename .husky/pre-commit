@@ -1,0 +1,38 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit checks..."
+
+# Run lint-staged for code formatting and linting
+echo "📝 Checking code formatting and linting..."
+npx lint-staged
+
+# Run type checking
+echo "🔍 Running TypeScript type checking..."
+npm run build
+
+# Run unit tests for changed files
+echo "🧪 Running unit tests..."
+npm run test:unit -- --passWithNoTests --findRelatedTests --bail
+
+# Check for security vulnerabilities
+echo "🔒 Checking for security vulnerabilities..."
+npm audit --audit-level=moderate
+
+# Check for TODO/FIXME comments in staged files
+echo "📋 Checking for TODO/FIXME comments..."
+git diff --cached --name-only | xargs grep -l "TODO\|FIXME" && echo "⚠️  Warning: TODO/FIXME comments found in staged files" || echo "✅ No TODO/FIXME comments found"
+
+# Check for console.log statements in staged files (excluding test files)
+echo "🚫 Checking for console.log statements..."
+git diff --cached --name-only | grep -E '\.(ts|js)$' | grep -v test | xargs grep -l "console\.log" && echo "❌ Error: console.log statements found in staged files" && exit 1 || echo "✅ No console.log statements found"
+
+# Check for large files
+echo "📏 Checking for large files..."
+git diff --cached --name-only | xargs ls -la | awk '$5 > 1048576 { print $9 ": " $5 " bytes" }' | while read line; do
+  if [ -n "$line" ]; then
+    echo "⚠️  Warning: Large file detected: $line"
+  fi
+done
+
+echo "✅ Pre-commit checks completed successfully!"
