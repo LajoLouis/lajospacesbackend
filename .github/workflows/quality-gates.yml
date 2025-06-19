@@ -1,0 +1,270 @@
+name: Quality Gates
+
+on:
+  pull_request:
+    branches: [ main, development ]
+  push:
+    branches: [ main, development ]
+
+env:
+  NODE_VERSION: '18.x'
+
+jobs:
+  # Quality Gate 1: Code Standards
+  code-standards:
+    name: Code Standards Gate
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: ESLint check
+      run: npm run lint
+
+    - name: Prettier check
+      run: npm run format:check
+
+    - name: TypeScript compilation
+      run: npm run build
+
+    - name: Check for TODO/FIXME comments
+      run: |
+        if grep -r "TODO\|FIXME" src/ --exclude-dir=node_modules; then
+          echo "❌ TODO/FIXME comments found. Please resolve before merging."
+          exit 1
+        else
+          echo "✅ No TODO/FIXME comments found."
+        fi
+
+    - name: Check for console.log statements
+      run: |
+        if grep -r "console\.log" src/ --include="*.ts" --exclude-dir=node_modules; then
+          echo "❌ console.log statements found. Please remove before merging."
+          exit 1
+        else
+          echo "✅ No console.log statements found."
+        fi
+
+  # Quality Gate 2: Test Coverage
+  test-coverage-gate:
+    name: Test Coverage Gate
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests with coverage
+      run: npm run test:coverage
+      env:
+        NODE_ENV: test
+
+    - name: Check coverage requirements
+      run: node scripts/coverage-check.js
+
+    - name: Coverage threshold check
+      run: |
+        # Extract coverage percentages
+        LINES=$(grep -o '"lines":{"total":[0-9]*,"covered":[0-9]*,"skipped":[0-9]*,"pct":[0-9.]*' coverage/coverage-summary.json | grep -o '"pct":[0-9.]*' | cut -d':' -f2)
+        FUNCTIONS=$(grep -o '"functions":{"total":[0-9]*,"covered":[0-9]*,"skipped":[0-9]*,"pct":[0-9.]*' coverage/coverage-summary.json | grep -o '"pct":[0-9.]*' | cut -d':' -f2)
+        BRANCHES=$(grep -o '"branches":{"total":[0-9]*,"covered":[0-9]*,"skipped":[0-9]*,"pct":[0-9.]*' coverage/coverage-summary.json | grep -o '"pct":[0-9.]*' | cut -d':' -f2)
+        STATEMENTS=$(grep -o '"statements":{"total":[0-9]*,"covered":[0-9]*,"skipped":[0-9]*,"pct":[0-9.]*' coverage/coverage-summary.json | grep -o '"pct":[0-9.]*' | cut -d':' -f2)
+        
+        echo "Coverage Report:"
+        echo "Lines: $LINES%"
+        echo "Functions: $FUNCTIONS%"
+        echo "Branches: $BRANCHES%"
+        echo "Statements: $STATEMENTS%"
+
+  # Quality Gate 3: Security
+  security-gate:
+    name: Security Gate
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Security audit
+      run: npm audit --audit-level=high
+
+    - name: Check for hardcoded secrets
+      run: |
+        if grep -r -E "(password|secret|key|token|api_key)\s*=\s*['\"][^'\"]*['\"]" src/ --include="*.ts" --exclude-dir=node_modules; then
+          echo "❌ Potential hardcoded secrets found. Please review."
+          exit 1
+        else
+          echo "✅ No hardcoded secrets detected."
+        fi
+
+    - name: Check for sensitive file patterns
+      run: |
+        if find . -name "*.env" -not -path "./node_modules/*" -not -name "*.env.example" | grep -q .; then
+          echo "❌ Environment files found in repository. Please remove."
+          exit 1
+        else
+          echo "✅ No sensitive environment files found."
+        fi
+
+  # Quality Gate 4: Performance
+  performance-gate:
+    name: Performance Gate
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run performance benchmarks
+      run: npm run test:performance
+      env:
+        NODE_ENV: test
+
+    - name: Check performance thresholds
+      run: |
+        if [ -f "performance-results.json" ]; then
+          # Check if performance tests passed
+          SUCCESS_RATE=$(node -p "JSON.parse(require('fs').readFileSync('performance-results.json', 'utf8')).summary.successRate")
+          if (( $(echo "$SUCCESS_RATE < 90" | bc -l) )); then
+            echo "❌ Performance tests below 90% success rate: $SUCCESS_RATE%"
+            exit 1
+          else
+            echo "✅ Performance tests passed: $SUCCESS_RATE% success rate"
+          fi
+        else
+          echo "⚠️ Performance results not found"
+        fi
+
+  # Quality Gate 5: Documentation
+  documentation-gate:
+    name: Documentation Gate
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Check for README updates
+      run: |
+        # Check if code changes require README updates
+        if git diff --name-only origin/main...HEAD | grep -E '\.(ts|js)$' | grep -v test; then
+          if ! git diff --name-only origin/main...HEAD | grep -q "README.md"; then
+            echo "⚠️ Code changes detected but no README updates. Consider updating documentation."
+          else
+            echo "✅ README updated with code changes."
+          fi
+        fi
+
+    - name: Check for API documentation
+      run: |
+        # Check if new routes have documentation
+        if git diff --name-only origin/main...HEAD | grep "routes/"; then
+          echo "ℹ️ Route changes detected. Ensure API documentation is updated."
+        fi
+
+    - name: Validate JSDoc comments
+      run: |
+        # Check for JSDoc comments on exported functions
+        if grep -r "export.*function" src/ --include="*.ts" | grep -v test; then
+          echo "ℹ️ Exported functions found. Ensure they have JSDoc comments."
+        fi
+
+  # Quality Gate 6: Dependencies
+  dependency-gate:
+    name: Dependency Gate
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Check for outdated dependencies
+      run: |
+        npm outdated || echo "Some dependencies are outdated. Consider updating."
+
+    - name: Check for unused dependencies
+      run: |
+        npx depcheck || echo "Potential unused dependencies found. Please review."
+
+    - name: License compliance check
+      run: |
+        npx license-checker --summary || echo "License check completed."
+
+  # Final Quality Gate Summary
+  quality-gate-summary:
+    name: Quality Gate Summary
+    runs-on: ubuntu-latest
+    needs: [code-standards, test-coverage-gate, security-gate, performance-gate, documentation-gate, dependency-gate]
+    if: always()
+    
+    steps:
+    - name: Generate quality gate summary
+      run: |
+        echo "## Quality Gate Results" >> $GITHUB_STEP_SUMMARY
+        echo "| Gate | Status |" >> $GITHUB_STEP_SUMMARY
+        echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Code Standards | ${{ needs.code-standards.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Test Coverage | ${{ needs.test-coverage-gate.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Security | ${{ needs.security-gate.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Performance | ${{ needs.performance-gate.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Documentation | ${{ needs.documentation-gate.result }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Dependencies | ${{ needs.dependency-gate.result }} |" >> $GITHUB_STEP_SUMMARY
+
+    - name: Check overall quality gate status
+      run: |
+        if [[ "${{ needs.code-standards.result }}" == "success" && 
+              "${{ needs.test-coverage-gate.result }}" == "success" && 
+              "${{ needs.security-gate.result }}" == "success" ]]; then
+          echo "✅ All critical quality gates passed!"
+          exit 0
+        else
+          echo "❌ One or more critical quality gates failed!"
+          exit 1
+        fi

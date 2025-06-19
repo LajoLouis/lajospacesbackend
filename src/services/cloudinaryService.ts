@@ -260,6 +260,171 @@ export async function searchImagesByTags(tags: string[], maxResults: number = 50
   }
 }
 
+/**
+ * Upload multiple images in bulk
+ */
+export async function bulkUploadImages(
+  images: { buffer: Buffer; options?: UploadOptions }[],
+  baseFolder: string = 'lajospaces/bulk'
+): Promise<UploadResult[]> {
+  try {
+    const uploadPromises = images.map(({ buffer, options = {} }, index) => {
+      const uploadOptions: UploadOptions = {
+        folder: baseFolder,
+        public_id: `bulk_${Date.now()}_${index}`,
+        ...options
+      };
+      return uploadImage(buffer, uploadOptions);
+    });
+
+    const results = await Promise.allSettled(uploadPromises);
+
+    const successful: UploadResult[] = [];
+    const failed: any[] = [];
+
+    results.forEach((result, index) => {
+      if (result.status === 'fulfilled') {
+        successful.push(result.value);
+      } else {
+        failed.push({ index, error: result.reason });
+      }
+    });
+
+    if (failed.length > 0) {
+      logger.warn('Some bulk uploads failed:', { failed: failed.length, successful: successful.length });
+    }
+
+    logger.info('Bulk upload completed:', {
+      total: images.length,
+      successful: successful.length,
+      failed: failed.length
+    });
+
+    return successful;
+  } catch (error) {
+    logger.error('Bulk upload error:', error);
+    throw new Error('Failed to bulk upload images');
+  }
+}
+
+/**
+ * Upload message attachment (image, video, or document)
+ */
+export async function uploadMessageAttachment(
+  fileBuffer: Buffer,
+  fileType: string,
+  userId: string,
+  conversationId: string
+): Promise<UploadResult> {
+  try {
+    const resourceType = fileType.startsWith('image/') ? 'image' :
+                        fileType.startsWith('video/') ? 'video' : 'raw';
+
+    const options = {
+      folder: `lajospaces/messages/${conversationId}`,
+      public_id: `msg_${userId}_${Date.now()}`,
+      resource_type: resourceType as 'image' | 'video' | 'raw',
+      tags: ['message', 'attachment', userId, conversationId]
+    };
+
+    if (resourceType === 'image') {
+      options.transformation = [
+        { width: 800, height: 600, crop: 'limit' },
+        { quality: 'auto:good' },
+        { format: 'auto' }
+      ];
+    }
+
+    const result = await cloudinary.uploader.upload(
+      `data:${fileType};base64,${fileBuffer.toString('base64')}`,
+      options
+    );
+
+    return {
+      public_id: result.public_id,
+      secure_url: result.secure_url,
+      width: result.width || 0,
+      height: result.height || 0,
+      format: result.format,
+      bytes: result.bytes,
+      created_at: result.created_at
+    };
+  } catch (error) {
+    logger.error('Message attachment upload error:', error);
+    throw new Error('Failed to upload message attachment');
+  }
+}
+
+/**
+ * Generate signed upload URL for direct client uploads
+ */
+export function generateSignedUploadUrl(
+  folder: string,
+  tags: string[] = [],
+  transformation?: any[]
+): { url: string; signature: string; timestamp: number } {
+  try {
+    const timestamp = Math.round(new Date().getTime() / 1000);
+    const params = {
+      timestamp,
+      folder,
+      tags: tags.join(','),
+      transformation: transformation ? JSON.stringify(transformation) : undefined
+    };
+
+    const signature = cloudinary.utils.api_sign_request(params, config.CLOUDINARY_API_SECRET!);
+
+    return {
+      url: `https://api.cloudinary.com/v1_1/${config.CLOUDINARY_CLOUD_NAME}/image/upload`,
+      signature,
+      timestamp
+    };
+  } catch (error) {
+    logger.error('Error generating signed upload URL:', error);
+    throw new Error('Failed to generate signed upload URL');
+  }
+}
+
+/**
+ * Clean up old images by folder and age
+ */
+export async function cleanupOldImages(
+  folder: string,
+  olderThanDays: number = 30
+): Promise<{ deleted: number; errors: number }> {
+  try {
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - olderThanDays);
+
+    const searchResult = await cloudinary.search
+      .expression(`folder:${folder} AND created_at<${cutoffDate.toISOString()}`)
+      .max_results(500)
+      .execute();
+
+    if (searchResult.resources.length === 0) {
+      return { deleted: 0, errors: 0 };
+    }
+
+    const publicIds = searchResult.resources.map((resource: any) => resource.public_id);
+    const deleteResult = await cloudinary.api.delete_resources(publicIds);
+
+    const deleted = Object.keys(deleteResult.deleted).length;
+    const errors = Object.keys(deleteResult.not_found || {}).length;
+
+    logger.info('Cleanup completed:', {
+      folder,
+      olderThanDays,
+      deleted,
+      errors
+    });
+
+    return { deleted, errors };
+  } catch (error) {
+    logger.error('Cleanup error:', error);
+    throw new Error('Failed to cleanup old images');
+  }
+}
+
 export default {
   uploadImage,
   uploadProfilePhoto,
@@ -270,5 +435,9 @@ export default {
   validateImageFile,
   getImageMetadata,
   bulkDeleteImages,
-  searchImagesByTags
+  searchImagesByTags,
+  bulkUploadImages,
+  uploadMessageAttachment,
+  generateSignedUploadUrl,
+  cleanupOldImages
 };

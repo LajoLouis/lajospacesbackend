@@ -240,12 +240,37 @@ export function requireOwnership(resourceUserIdField: string = 'userId'): (req: 
 }
 
 /**
+ * Role-based authorization middleware
+ */
+export function requireRole(...roles: string[]): (req: Request, _res: Response, next: NextFunction) => void {
+  return (req: Request, _res: Response, next: NextFunction): void => {
+    try {
+      if (!req.user) {
+        throw new AppError('Authentication required', 401, true, 'AUTH_REQUIRED');
+      }
+
+      // Check if user has required role
+      const userRole = req.user.role || 'user'; // Default to 'user' if no role specified
+
+      if (!roles.includes(userRole)) {
+        throw new AppError('Insufficient permissions', 403, true, 'INSUFFICIENT_PERMISSIONS');
+      }
+
+      next();
+
+    } catch (error) {
+      next(error);
+    }
+  };
+}
+
+/**
  * Middleware to validate API key (for external integrations)
  */
 export function validateApiKey(req: Request, _res: Response, next: NextFunction): void {
   try {
     const apiKey = req.headers['x-api-key'] as string;
-    
+
     if (!apiKey) {
       throw new AppError('API key required', 401, true, 'API_KEY_REQUIRED');
     }
@@ -253,7 +278,7 @@ export function validateApiKey(req: Request, _res: Response, next: NextFunction)
     // In a real application, you would validate against a database
     // For now, we'll use a simple check
     const validApiKeys = process.env.VALID_API_KEYS?.split(',') || [];
-    
+
     if (!validApiKeys.includes(apiKey)) {
       throw new AppError('Invalid API key', 401, true, 'INVALID_API_KEY');
     }
@@ -273,5 +298,6 @@ export default {
   authRateLimit,
   clearAuthRateLimit,
   requireOwnership,
+  requireRole,
   validateApiKey
 };

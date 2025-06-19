@@ -5,7 +5,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
-import rateLimit from 'express-rate-limit';
+import mongoose from 'mongoose';
 import 'express-async-errors';
 
 import { config } from './config/environment';
@@ -28,6 +28,20 @@ import propertySearchRoutes from './routes/propertySearch.routes';
 import matchRoutes from './routes/match.routes';
 import messageRoutes from './routes/message.routes';
 import conversationRoutes from './routes/conversation.routes';
+import uploadRoutes from './routes/upload.routes';
+import emailRoutes from './routes/email.routes';
+import notificationRoutes from './routes/notification.routes';
+import adminRoutes from './routes/admin.routes';
+import sessionRoutes from './routes/session.routes';
+
+// Security & Performance imports
+import { generalRateLimit, authRateLimit } from './middleware/rateLimiting';
+import { sanitizeRequest } from './middleware/sanitization';
+import { setupSwagger } from './config/swagger';
+import { cacheService } from './services/cacheService';
+import { sessionService } from './services/sessionService';
+import { tokenService } from './services/tokenService';
+import { auditService, AuditEventType } from './services/auditService';
 
 const app = express();
 const httpServer = createServer(app);
@@ -48,23 +62,28 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: config.RATE_LIMIT_WINDOW_MS,
-  max: config.RATE_LIMIT_MAX_REQUESTS,
-  message: {
-    error: 'Too many requests from this IP, please try again later.',
-    retryAfter: Math.ceil(config.RATE_LIMIT_WINDOW_MS / 1000)
-  },
-  standardHeaders: true,
-  legacyHeaders: false,
-});
-app.use('/api', limiter);
+// Initialize services function (will be called during server startup)
+async function initializeServices() {
+  try {
+    await cacheService.connect();
+    await sessionService.connect();
+    await tokenService.connect();
+    logger.info('All services initialized successfully');
+  } catch (error) {
+    logger.error('Failed to initialize services:', error);
+  }
+}
+
+// Security & Performance Middleware (applied after services are initialized)
+app.use(sanitizeRequest()); // Apply input sanitization first
 
 // Body parsing middleware
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
+
+// Session middleware
+app.use(sessionService.createSessionMiddleware());
 
 // Compression middleware
 app.use(compression());
@@ -76,18 +95,54 @@ if (config.NODE_ENV !== 'test') {
   }));
 }
 
+// Audit middleware for all requests
+app.use((req, res, next) => {
+  const startTime = Date.now();
+
+  res.on('finish', () => {
+    const duration = Date.now() - startTime;
+
+    // Log audit event for all requests (only for API endpoints)
+    if (req.path.startsWith('/api/')) {
+      auditService.logEvent(
+        AuditEventType.DATA_VIEWED,
+        req,
+        {
+          success: res.statusCode < 400,
+          duration,
+          metadata: {
+            statusCode: res.statusCode,
+            responseTime: duration
+          }
+        }
+      ).catch(error => {
+        logger.error('Failed to log audit event:', error);
+      });
+    }
+  });
+
+  next();
+});
+
 // Health check endpoint
 app.get('/health', (_req, res) => {
   res.status(200).json({
     status: 'OK',
     timestamp: new Date().toISOString(),
     environment: config.NODE_ENV,
-    version: process.env.npm_package_version || '1.0.0'
+    version: process.env.npm_package_version || '1.0.0',
+    services: {
+      database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
+      redis: cacheService.isConnected() ? 'connected' : 'disconnected',
+      sessions: sessionService.isConnected() ? 'connected' : 'disconnected',
+      tokens: tokenService.isConnected() ? 'connected' : 'disconnected',
+      email: 'configured'
+    }
   });
 });
 
-// API routes
-app.use('/api/auth', authRoutes);
+// API routes with specific rate limiting
+app.use('/api/auth', authRateLimit, authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/profiles', profileRoutes);
 app.use('/api/photos', photoRoutes);
@@ -99,6 +154,14 @@ app.use('/api/favorites', propertyFavoriteRoutes); // Property favorites routes
 app.use('/api/matches', matchRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/conversations', conversationRoutes);
+app.use('/api/uploads', uploadRoutes);
+app.use('/api/emails', emailRoutes);
+app.use('/api/notifications', notificationRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/sessions', sessionRoutes);
+
+// Setup Swagger documentation
+setupSwagger(app);
 
 // API documentation endpoint
 app.get('/api', (_req, res) => {
@@ -116,7 +179,13 @@ app.get('/api', (_req, res) => {
       favorites: '/api/favorites',
       matches: '/api/matches',
       messages: '/api/messages',
-      conversations: '/api/conversations'
+      conversations: '/api/conversations',
+      uploads: '/api/uploads',
+      emails: '/api/emails',
+      notifications: '/api/notifications',
+      admin: '/api/admin',
+      sessions: '/api/sessions',
+      docs: '/api/docs'
     }
   });
 });
@@ -131,6 +200,12 @@ async function startServer() {
     // Connect to databases
     await connectDatabase();
     await connectRedis();
+
+    // Initialize security and performance services
+    await initializeServices();
+
+    // Apply rate limiting after services are initialized
+    app.use(generalRateLimit);
 
     // Initialize Socket.IO service
     const { SocketService } = await import('./services/socketService');
