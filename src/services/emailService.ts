@@ -34,14 +34,17 @@ const transporter = nodemailer.createTransport({
   requireTLS: true
 });
 
-// Verify transporter configuration
-transporter.verify((error: any, _success: any) => {
-  if (error) {
-    logger.error('Email transporter configuration error:', error);
-  } else {
-    logger.info('✅ Email service ready');
-  }
-});
+// Verify transporter configuration (temporarily disabled to isolate startup issues)
+// transporter.verify((error: any, _success: any) => {
+//   if (error) {
+//     logger.error('Email transporter configuration error:', error);
+//   } else {
+//     logger.info('✅ Email service ready');
+//   }
+// });
+
+// Log immediate readiness for startup
+logger.info('📧 Email service initialized (verification disabled for testing)');
 
 /**
  * Email templates

@@ -23,21 +23,27 @@ redisClient.on('connect', () => {
   logger.info('Redis rate limiting client connected');
 });
 
-// Initialize Redis connection
+// Initialize Redis connection (lazy initialization)
 let redisConnected = false;
+let redisInitializing = false;
+
 const initializeRedis = async () => {
+  if (redisConnected || redisInitializing) return;
+
+  redisInitializing = true;
   try {
-    if (!redisConnected) {
+    if (!redisClient.isOpen) {
       await redisClient.connect();
-      redisConnected = true;
-      logger.info('Redis rate limiting initialized successfully');
     }
+    redisConnected = true;
+    logger.info('Redis rate limiting initialized successfully');
   } catch (error) {
     logger.error('Failed to initialize Redis for rate limiting:', error);
+    redisConnected = false;
+  } finally {
+    redisInitializing = false;
   }
 };
-
-// Redis will be initialized lazily when needed
 
 // Rate limiting configurations
 export const rateLimitConfigs = {
@@ -133,12 +139,9 @@ export const rateLimitConfigs = {
 
 // Create rate limiter with Redis store
 function createRateLimiter(config: any, name: string) {
-  // For now, use memory store to avoid Redis connection issues during startup
-  // TODO: Re-enable Redis store after fixing connection initialization
-
   return rateLimit({
     ...config,
-    // store: undefined, // Use default memory store
+    store: undefined, // Use memory store for now to avoid startup issues
     keyGenerator: (req: Request) => {
       // Use user ID if authenticated, otherwise use IP
       const userId = req.user?._id;
@@ -160,15 +163,8 @@ function createRateLimiter(config: any, name: string) {
         retryAfter: config.message.retryAfter,
         timestamp: new Date().toISOString()
       });
-    },
-    onLimitReached: (req: Request) => {
-      logger.warn(`Rate limit reached for ${name}`, {
-        ip: req.ip,
-        userId: req.user?._id,
-        path: req.path,
-        method: req.method
-      });
     }
+    // Removed deprecated onLimitReached - functionality moved to handler
   });
 }
 

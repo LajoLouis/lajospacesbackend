@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { authMiddleware } from '../middleware/authMiddleware';
+import { authenticate as authMiddleware } from '../middleware/auth';
 import { sessionService } from '../services/sessionService';
 import { auditService, AuditEventType } from '../services/auditService';
 import { generalRateLimit } from '../middleware/rateLimiting';

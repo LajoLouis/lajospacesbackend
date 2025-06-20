@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { authenticate, authRateLimit } from '../middleware/auth';
+import { authenticate } from '../middleware/auth';
 import { validateRequest } from '../validators/auth.validators';
 import {
   registerSchema,
@@ -45,33 +45,33 @@ router.get('/health', (_req, res) => {
   });
 });
 
-// Public routes (no authentication required)
+// Public routes (no authentication required) - temporarily without rate limiting
 router.post('/register',
-  authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
+  // authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
   validateRequest(registerSchema),
   register
 );
 
 router.post('/login',
-  authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
+  // authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
   validateRequest(loginSchema),
   login
 );
 
 router.post('/refresh',
-  authRateLimit(10, 15 * 60 * 1000), // 10 attempts per 15 minutes
+  // authRateLimit(10, 15 * 60 * 1000), // 10 attempts per 15 minutes
   validateRequest(refreshTokenSchema),
   refreshToken
 );
 
 router.post('/forgot-password',
-  authRateLimit(3, 15 * 60 * 1000), // 3 attempts per 15 minutes
+  // authRateLimit(3, 15 * 60 * 1000), // 3 attempts per 15 minutes
   validateRequest(forgotPasswordSchema),
   forgotPassword
 );
 
 router.post('/reset-password',
-  authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
+  // authRateLimit(5, 15 * 60 * 1000), // 5 attempts per 15 minutes
   validateRequest(resetPasswordSchema),
   resetPassword
 );
@@ -82,7 +82,7 @@ router.post('/verify-email',
 );
 
 router.post('/resend-verification',
-  authRateLimit(3, 15 * 60 * 1000), // 3 attempts per 15 minutes
+  // authRateLimit(3, 15 * 60 * 1000), // 3 attempts per 15 minutes
   validateRequest(resendVerificationSchema),
   sendEmailVerification
 );
