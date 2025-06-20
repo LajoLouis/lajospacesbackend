@@ -82,7 +82,7 @@ export const config: Config = {
 
   // Database
   MONGODB_URI: process.env.MONGODB_URI!,
-  MONGODB_TEST_URI: process.env.MONGODB_TEST_URI || process.env.MONGODB_URI!.replace('/lajospaces', '/lajospaces_test'),
+  MONGODB_TEST_URI: process.env.MONGODB_TEST_URI || (process.env.MONGODB_URI ? process.env.MONGODB_URI.replace('/lajospaces', '/lajospaces_test') : ''),
   REDIS_URL: process.env.REDIS_URL!,
 
   // Authentication

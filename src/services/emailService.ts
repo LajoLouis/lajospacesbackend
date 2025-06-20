@@ -23,14 +23,13 @@ interface EmailOptions {
 const transporter = nodemailer.createTransport({
   host: config.SMTP_HOST,
   port: config.SMTP_PORT,
-  secure: config.SMTP_SECURE, // false for 587, true for 465
+  secure: false, // false for 587 (STARTTLS), true for 465 (SSL)
   auth: {
     user: config.SMTP_USER,
     pass: config.SMTP_PASS
   },
   tls: {
-    rejectUnauthorized: false,
-    ciphers: 'SSLv3'
+    rejectUnauthorized: false
   },
   requireTLS: true
 });

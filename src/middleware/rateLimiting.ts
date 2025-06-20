@@ -37,8 +37,7 @@ const initializeRedis = async () => {
   }
 };
 
-// Initialize Redis connection
-initializeRedis();
+// Redis will be initialized lazily when needed
 
 // Rate limiting configurations
 export const rateLimitConfigs = {
@@ -134,25 +133,12 @@ export const rateLimitConfigs = {
 
 // Create rate limiter with Redis store
 function createRateLimiter(config: any, name: string) {
-  // Create store factory that checks connection at runtime
-  const getStore = () => {
-    if (redisConnected) {
-      try {
-        return new RedisStore({
-          sendCommand: (...args: string[]) => redisClient.sendCommand(args),
-          prefix: `rl:${name}:`,
-        });
-      } catch (error) {
-        logger.warn(`Failed to create Redis store for ${name}, falling back to memory store:`, error);
-        return undefined;
-      }
-    }
-    return undefined;
-  };
+  // For now, use memory store to avoid Redis connection issues during startup
+  // TODO: Re-enable Redis store after fixing connection initialization
 
   return rateLimit({
     ...config,
-    store: getStore(),
+    // store: undefined, // Use default memory store
     keyGenerator: (req: Request) => {
       // Use user ID if authenticated, otherwise use IP
       const userId = req.user?._id;

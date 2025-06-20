@@ -15,33 +15,34 @@ import { logger } from './utils/logger';
 import { errorHandler } from './middleware/errorHandler';
 import { notFoundHandler } from './middleware/notFoundHandler';
 
-// Import routes
+// Import routes (temporarily reduced to isolate issue)
 import authRoutes from './routes/auth.routes';
 import userRoutes from './routes/user.routes';
-import profileRoutes from './routes/profile.routes';
-import photoRoutes from './routes/photo.routes';
-import searchRoutes from './routes/search.routes';
-import propertyRoutes from './routes/property.routes';
-import propertyPhotoRoutes from './routes/propertyPhoto.routes';
-import propertyFavoriteRoutes from './routes/propertyFavorite.routes';
-import propertySearchRoutes from './routes/propertySearch.routes';
-import matchRoutes from './routes/match.routes';
-import messageRoutes from './routes/message.routes';
-import conversationRoutes from './routes/conversation.routes';
-import uploadRoutes from './routes/upload.routes';
-import emailRoutes from './routes/email.routes';
-import notificationRoutes from './routes/notification.routes';
-import adminRoutes from './routes/admin.routes';
-import sessionRoutes from './routes/session.routes';
+// import profileRoutes from './routes/profile.routes';
+// import photoRoutes from './routes/photo.routes';
+// import searchRoutes from './routes/search.routes';
+// import propertyRoutes from './routes/property.routes';
+// import propertyPhotoRoutes from './routes/propertyPhoto.routes';
+// import propertyFavoriteRoutes from './routes/propertyFavorite.routes';
+// import propertySearchRoutes from './routes/propertySearch.routes';
+// import matchRoutes from './routes/match.routes';
+// import messageRoutes from './routes/message.routes';
+// import conversationRoutes from './routes/conversation.routes';
+// import uploadRoutes from './routes/upload.routes';
+// import emailRoutes from './routes/email.routes';
+// import notificationRoutes from './routes/notification.routes';
+// import adminRoutes from './routes/admin.routes';
+// import sessionRoutes from './routes/session.routes';
 
 // Security & Performance imports
 import { generalRateLimit, authRateLimit } from './middleware/rateLimiting';
 import { sanitizeRequest } from './middleware/sanitization';
 import { setupSwagger } from './config/swagger';
-import { cacheService } from './services/cacheService';
-import { sessionService } from './services/sessionService';
-import { tokenService } from './services/tokenService';
-import { auditService, AuditEventType } from './services/auditService';
+// Temporarily comment out services to isolate the issue
+// import { cacheService } from './services/cacheService';
+// import { sessionService } from './services/sessionService';
+// import { tokenService } from './services/tokenService';
+// import { auditService, AuditEventType } from './services/auditService';
 
 const app = express();
 const httpServer = createServer(app);
@@ -65,10 +66,11 @@ app.use(cors({
 // Initialize services function (will be called during server startup)
 async function initializeServices() {
   try {
-    await cacheService.connect();
-    await sessionService.connect();
-    await tokenService.connect();
-    logger.info('All services initialized successfully');
+    // Temporarily disabled to isolate startup issue
+    // await cacheService.connect();
+    // await sessionService.connect();
+    // await tokenService.connect();
+    logger.info('All services initialized successfully (services temporarily disabled)');
   } catch (error) {
     logger.error('Failed to initialize services:', error);
   }
@@ -82,8 +84,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
 
-// Session middleware
-app.use(sessionService.createSessionMiddleware());
+// Session middleware will be added after services are initialized
 
 // Compression middleware
 app.use(compression());
@@ -95,34 +96,34 @@ if (config.NODE_ENV !== 'test') {
   }));
 }
 
-// Audit middleware for all requests
-app.use((req, res, next) => {
-  const startTime = Date.now();
+// Audit middleware for all requests (temporarily disabled)
+// app.use((req, res, next) => {
+//   const startTime = Date.now();
 
-  res.on('finish', () => {
-    const duration = Date.now() - startTime;
+//   res.on('finish', () => {
+//     const duration = Date.now() - startTime;
 
-    // Log audit event for all requests (only for API endpoints)
-    if (req.path.startsWith('/api/')) {
-      auditService.logEvent(
-        AuditEventType.DATA_VIEWED,
-        req,
-        {
-          success: res.statusCode < 400,
-          duration,
-          metadata: {
-            statusCode: res.statusCode,
-            responseTime: duration
-          }
-        }
-      ).catch(error => {
-        logger.error('Failed to log audit event:', error);
-      });
-    }
-  });
+//     // Log audit event for all requests (only for API endpoints)
+//     if (req.path.startsWith('/api/')) {
+//       auditService.logEvent(
+//         AuditEventType.DATA_VIEWED,
+//         req,
+//         {
+//           success: res.statusCode < 400,
+//           duration,
+//           metadata: {
+//             statusCode: res.statusCode,
+//             responseTime: duration
+//           }
+//         }
+//       ).catch(error => {
+//         logger.error('Failed to log audit event:', error);
+//       });
+//     }
+//   });
 
-  next();
-});
+//   next();
+// });
 
 // Health check endpoint
 app.get('/health', (_req, res) => {
@@ -133,32 +134,32 @@ app.get('/health', (_req, res) => {
     version: process.env.npm_package_version || '1.0.0',
     services: {
       database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
-      redis: cacheService.isConnected() ? 'connected' : 'disconnected',
-      sessions: sessionService.isConnected() ? 'connected' : 'disconnected',
-      tokens: tokenService.isConnected() ? 'connected' : 'disconnected',
+      redis: 'temporarily disabled',
+      sessions: 'temporarily disabled',
+      tokens: 'temporarily disabled',
       email: 'configured'
     }
   });
 });
 
-// API routes with specific rate limiting
+// API routes with specific rate limiting (temporarily reduced)
 app.use('/api/auth', authRateLimit, authRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/profiles', profileRoutes);
-app.use('/api/photos', photoRoutes);
-app.use('/api/search', searchRoutes);
-app.use('/api/properties', propertyRoutes);
-app.use('/api/properties', propertyPhotoRoutes); // Property photo routes
-app.use('/api/properties', propertySearchRoutes); // Property search routes
-app.use('/api/favorites', propertyFavoriteRoutes); // Property favorites routes
-app.use('/api/matches', matchRoutes);
-app.use('/api/messages', messageRoutes);
-app.use('/api/conversations', conversationRoutes);
-app.use('/api/uploads', uploadRoutes);
-app.use('/api/emails', emailRoutes);
-app.use('/api/notifications', notificationRoutes);
-app.use('/api/admin', adminRoutes);
-app.use('/api/sessions', sessionRoutes);
+// app.use('/api/profiles', profileRoutes);
+// app.use('/api/photos', photoRoutes);
+// app.use('/api/search', searchRoutes);
+// app.use('/api/properties', propertyRoutes);
+// app.use('/api/properties', propertyPhotoRoutes); // Property photo routes
+// app.use('/api/properties', propertySearchRoutes); // Property search routes
+// app.use('/api/favorites', propertyFavoriteRoutes); // Property favorites routes
+// app.use('/api/matches', matchRoutes);
+// app.use('/api/messages', messageRoutes);
+// app.use('/api/conversations', conversationRoutes);
+// app.use('/api/uploads', uploadRoutes);
+// app.use('/api/emails', emailRoutes);
+// app.use('/api/notifications', notificationRoutes);
+// app.use('/api/admin', adminRoutes);
+// app.use('/api/sessions', sessionRoutes);
 
 // Setup Swagger documentation
 setupSwagger(app);
@@ -197,22 +198,38 @@ app.use(errorHandler);
 // Start server function
 async function startServer() {
   try {
+    logger.info('🚀 Starting LajoSpaces Backend Server...');
+
     // Connect to databases
+    logger.info('📊 Connecting to MongoDB...');
     await connectDatabase();
+    logger.info('✅ MongoDB connection completed');
+
+    logger.info('🔴 Connecting to Redis...');
     await connectRedis();
+    logger.info('✅ Redis connection completed');
 
     // Initialize security and performance services
+    logger.info('⚙️ Initializing services...');
     await initializeServices();
+    logger.info('✅ Services initialization completed');
+
+    // Setup session middleware after services are initialized (temporarily disabled)
+    // logger.info('🔐 Setting up session middleware...');
+    // app.use(sessionService.createSessionMiddleware());
 
     // Apply rate limiting after services are initialized
+    logger.info('🛡️ Setting up rate limiting...');
     app.use(generalRateLimit);
 
     // Initialize Socket.IO service
+    logger.info('💬 Initializing Socket.IO service...');
     const { SocketService } = await import('./services/socketService');
     const socketService = new SocketService(httpServer);
 
     // Make socket service available globally
     (global as any).socketService = socketService;
+    logger.info('✅ Socket.IO service initialized');
 
     // Start HTTP server
     const server = httpServer.listen(config.PORT, () => {
@@ -249,7 +266,11 @@ async function startServer() {
 
 // Start the server if this file is run directly
 if (require.main === module) {
-  startServer();
+  logger.info('🚀 Starting server initialization...');
+  startServer().catch(error => {
+    logger.error('Server startup failed:', error);
+    process.exit(1);
+  });
 }
 
 export { app, httpServer, startServer };
