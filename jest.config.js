@@ -21,7 +21,7 @@ module.exports = {
   },
 
   // Module name mapping for absolute imports
-  moduleNameMapping: {
+  moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@config/(.*)$': '<rootDir>/src/config/$1',
     '^@models/(.*)$': '<rootDir>/src/models/$1',
@@ -84,11 +84,11 @@ module.exports = {
   // Test result processor
   testResultsProcessor: undefined,
 
-  // Watch plugins
-  watchPlugins: [
-    'jest-watch-typeahead/filename',
-    'jest-watch-typeahead/testname'
-  ],
+  // Watch plugins (disabled - packages not installed)
+  // watchPlugins: [
+  //   'jest-watch-typeahead/filename',
+  //   'jest-watch-typeahead/testname'
+  // ],
 
   // Ignore patterns
   testPathIgnorePatterns: [
