@@ -81,7 +81,6 @@ class CacheService {
       url: config.REDIS_URL,
       socket: {
         connectTimeout: 5000,
-        lazyConnect: true,
         reconnectStrategy: (retries) => {
           if (retries > this.maxRetries) {
             logger.error('Redis cache: Max reconnection attempts reached');
@@ -423,7 +422,7 @@ class CacheService {
       };
     } catch (error) {
       logger.error('Cache stats error:', error);
-      return { connected: false, error: error.message };
+      return { connected: false, error: error instanceof Error ? error.message : 'Unknown error' };
     }
   }
 
