@@ -17,7 +17,25 @@ module.exports = {
 
   // Transform files
   transform: {
-    '^.+\\.ts$': 'ts-jest'
+    '^.+\\.ts$': ['ts-jest', {
+      tsconfig: {
+        module: 'commonjs',
+        target: 'es2020',
+        lib: ['es2020'],
+        allowJs: true,
+        skipLibCheck: true,
+        esModuleInterop: true,
+        allowSyntheticDefaultImports: true,
+        strict: true,
+        forceConsistentCasingInFileNames: true,
+        moduleResolution: 'node',
+        resolveJsonModule: true,
+        isolatedModules: true,
+        noEmit: true,
+        experimentalDecorators: true,
+        emitDecoratorMetadata: true
+      }
+    }]
   },
 
   // Module name mapping for absolute imports
@@ -32,14 +50,14 @@ module.exports = {
     '^@controllers/(.*)$': '<rootDir>/src/controllers/$1'
   },
 
-  // Setup files
-  setupFilesAfterEnv: [
-    '<rootDir>/tests/setup/jest.setup.ts'
-  ],
+  // Setup files (temporarily disabled)
+  // setupFilesAfterEnv: [
+  //   '<rootDir>/tests/setup/jest.setup.ts'
+  // ],
 
-  // Global setup and teardown
-  globalSetup: '<rootDir>/tests/setup/globalSetup.ts',
-  globalTeardown: '<rootDir>/tests/setup/globalTeardown.ts',
+  // Global setup and teardown (temporarily disabled)
+  // globalSetup: '<rootDir>/tests/setup/globalSetup.ts',
+  // globalTeardown: '<rootDir>/tests/setup/globalTeardown.ts',
 
   // Coverage configuration
   collectCoverage: false, // Enable with --coverage flag
@@ -112,30 +130,30 @@ module.exports = {
   // Cache directory
   cacheDirectory: '<rootDir>/.jest-cache',
 
-  // Globals for TypeScript
-  globals: {
-    'ts-jest': {
-      tsconfig: {
-        compilerOptions: {
-          module: 'commonjs',
-          target: 'es2020',
-          lib: ['es2020'],
-          allowJs: true,
-          skipLibCheck: true,
-          esModuleInterop: true,
-          allowSyntheticDefaultImports: true,
-          strict: true,
-          forceConsistentCasingInFileNames: true,
-          moduleResolution: 'node',
-          resolveJsonModule: true,
-          isolatedModules: true,
-          noEmit: true,
-          experimentalDecorators: true,
-          emitDecoratorMetadata: true
-        }
-      }
-    }
-  },
+  // Globals for TypeScript (moved to transform configuration above)
+  // globals: {
+  //   'ts-jest': {
+  //     tsconfig: {
+  //       compilerOptions: {
+  //         module: 'commonjs',
+  //         target: 'es2020',
+  //         lib: ['es2020'],
+  //         allowJs: true,
+  //         skipLibCheck: true,
+  //         esModuleInterop: true,
+  //         allowSyntheticDefaultImports: true,
+  //         strict: true,
+  //         forceConsistentCasingInFileNames: true,
+  //         moduleResolution: 'node',
+  //         resolveJsonModule: true,
+  //         isolatedModules: true,
+  //         noEmit: true,
+  //         experimentalDecorators: true,
+  //         emitDecoratorMetadata: true
+  //       }
+  //     }
+  //   }
+  // },
 
   // Test environment options
   testEnvironmentOptions: {
