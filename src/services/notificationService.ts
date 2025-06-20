@@ -2,12 +2,9 @@ import { User } from '../models/User.model';
 import { PresenceService } from './presenceService';
 import { logger } from '../utils/logger';
 import {
-  Notification,
-  NotificationType,
-  NotificationPriority,
-  NotificationChannel
+  Notification
 } from '../models/notification.model';
-import { emailService } from './emailService';
+import emailService from './emailService';
 
 export interface NotificationPayload {
   id: string;
@@ -497,7 +494,7 @@ export class NotificationService {
   /**
    * Get notification statistics
    */
-  public async getNotificationStats(_userId: string): Promise<{
+  public async getNotificationStats(userId: string): Promise<{
     totalSent: number;
     totalRead: number;
     totalUnread: number;
