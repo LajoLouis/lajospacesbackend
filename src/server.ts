@@ -15,27 +15,27 @@ import { logger } from './utils/logger';
 import { errorHandler } from './middleware/errorHandler';
 import { notFoundHandler } from './middleware/notFoundHandler';
 
-// Import routes
-import authRoutes from './routes/auth.routes';
-import userRoutes from './routes/user.routes';
-import profileRoutes from './routes/profile.routes';
-import photoRoutes from './routes/photo.routes';
-import searchRoutes from './routes/search.routes';
-import propertyRoutes from './routes/property.routes';
-import propertyPhotoRoutes from './routes/propertyPhoto.routes';
-import propertyFavoriteRoutes from './routes/propertyFavorite.routes';
-import propertySearchRoutes from './routes/propertySearch.routes';
-import matchRoutes from './routes/match.routes';
-import messageRoutes from './routes/message.routes';
-import conversationRoutes from './routes/conversation.routes';
-import uploadRoutes from './routes/upload.routes';
-import emailRoutes from './routes/email.routes';
-import notificationRoutes from './routes/notification.routes';
-import adminRoutes from './routes/admin.routes';
-import sessionRoutes from './routes/session.routes';
+// Import routes (all disabled to test basic server startup)
+// import authRoutes from './routes/auth.routes';
+// import userRoutes from './routes/user.routes';
+// import profileRoutes from './routes/profile.routes';
+// import photoRoutes from './routes/photo.routes';
+// import uploadRoutes from './routes/upload.routes';
+// import searchRoutes from './routes/search.routes';
+// import propertyRoutes from './routes/property.routes';
+// import propertyPhotoRoutes from './routes/propertyPhoto.routes';
+// import propertyFavoriteRoutes from './routes/propertyFavorite.routes';
+// import propertySearchRoutes from './routes/propertySearch.routes';
+// import matchRoutes from './routes/match.routes';
+// import messageRoutes from './routes/message.routes';
+// import conversationRoutes from './routes/conversation.routes';
+// import emailRoutes from './routes/email.routes';
+// import notificationRoutes from './routes/notification.routes';
+// import adminRoutes from './routes/admin.routes';
+// import sessionRoutes from './routes/session.routes';
 
 // Security & Performance imports
-import { generalRateLimit, authRateLimit } from './middleware/rateLimiting';
+import { generalRateLimit } from './middleware/rateLimiting';
 import { sanitizeRequest } from './middleware/sanitization';
 import { setupSwagger } from './config/swagger';
 import { cacheService } from './services/cacheService';
@@ -62,15 +62,97 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
 
+// Setup routes function (dynamically import routes after database connection)
+async function setupRoutes(app: any) {
+  try {
+    logger.info('🔄 Starting route setup...');
+
+    // Import routes dynamically after database connection
+    logger.info('🔄 Importing auth routes...');
+    const { default: authRoutes } = await import('./routes/auth.routes');
+    logger.info('✅ Auth routes imported successfully');
+    const { default: userRoutes } = await import('./routes/user.routes');
+    const { default: profileRoutes } = await import('./routes/profile.routes');
+    const { default: photoRoutes } = await import('./routes/photo.routes');
+    const { default: uploadRoutes } = await import('./routes/upload.routes');
+    const { default: searchRoutes } = await import('./routes/search.routes');
+    const { default: propertyRoutes } = await import('./routes/property.routes');
+    const { default: propertyPhotoRoutes } = await import('./routes/propertyPhoto.routes');
+    const { default: propertyFavoriteRoutes } = await import('./routes/propertyFavorite.routes');
+    const { default: propertySearchRoutes } = await import('./routes/propertySearch.routes');
+    const { default: matchRoutes } = await import('./routes/match.routes');
+    const { default: messageRoutes } = await import('./routes/message.routes');
+    const { default: conversationRoutes } = await import('./routes/conversation.routes');
+    const { default: emailRoutes } = await import('./routes/email.routes');
+    const { default: notificationRoutes } = await import('./routes/notification.routes');
+    const { default: adminRoutes } = await import('./routes/admin.routes');
+    const { default: sessionRoutes } = await import('./routes/session.routes');
+
+    // Setup API routes (rate limiting will be applied globally)
+
+
+
+    logger.info('🔗 Mounting auth routes...');
+    app.use('/api/auth', authRoutes);
+    logger.info('✅ Auth routes mounted successfully');
+    logger.info('🔗 Mounting user routes...');
+    app.use('/api/users', userRoutes);
+    logger.info('🔗 Mounting profile routes...');
+    app.use('/api/profiles', profileRoutes);
+    logger.info('🔗 Mounting photo routes...');
+    app.use('/api/photos', photoRoutes);
+    logger.info('🔗 Mounting upload routes...');
+    app.use('/api/uploads', uploadRoutes);
+    logger.info('🔗 Mounting search routes...');
+    app.use('/api/search', searchRoutes);
+    logger.info('🔗 Mounting property routes...');
+    app.use('/api/properties', propertyRoutes);
+    app.use('/api/properties', propertyPhotoRoutes);
+    app.use('/api/properties', propertySearchRoutes);
+    app.use('/api/favorites', propertyFavoriteRoutes);
+    app.use('/api/matches', matchRoutes);
+    app.use('/api/messages', messageRoutes);
+    app.use('/api/conversations', conversationRoutes);
+    app.use('/api/emails', emailRoutes);
+    app.use('/api/notifications', notificationRoutes);
+    app.use('/api/admin', adminRoutes);
+    app.use('/api/sessions', sessionRoutes);
+    logger.info('🔗 All routes mounted successfully');
+
+    // Apply error handling middleware after routes are mounted (must be last)
+    app.use(notFoundHandler);
+    app.use(errorHandler);
+    logger.info('🔗 Error handlers applied');
+
+  } catch (error) {
+    logger.error('❌ Failed to setup routes:', error);
+    logger.error('Error details:', {
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : 'No stack trace'
+    });
+    throw error;
+  }
+}
+
 // Initialize services function (will be called during server startup)
 async function initializeServices() {
   try {
+    logger.info('🔄 Connecting cache service...');
     await cacheService.connect();
+    logger.info('✅ Cache service connected');
+
+    logger.info('🔄 Connecting session service...');
     await sessionService.connect();
+    logger.info('✅ Session service connected');
+
+    logger.info('🔄 Connecting token service...');
     await tokenService.connect();
+    logger.info('✅ Token service connected');
+
     logger.info('All services initialized successfully');
   } catch (error) {
     logger.error('Failed to initialize services:', error);
+    throw error; // Re-throw to prevent server from starting with broken services
   }
 }
 
@@ -82,8 +164,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
 
-// Session middleware
-app.use(sessionService.createSessionMiddleware());
+// Session middleware will be added after services are initialized
 
 // Compression middleware
 app.use(compression());
@@ -95,34 +176,34 @@ if (config.NODE_ENV !== 'test') {
   }));
 }
 
-// Audit middleware for all requests
-app.use((req, res, next) => {
-  const startTime = Date.now();
+// Audit middleware for all requests (temporarily disabled)
+// app.use((req, res, next) => {
+//   const startTime = Date.now();
 
-  res.on('finish', () => {
-    const duration = Date.now() - startTime;
+//   res.on('finish', () => {
+//     const duration = Date.now() - startTime;
 
-    // Log audit event for all requests (only for API endpoints)
-    if (req.path.startsWith('/api/')) {
-      auditService.logEvent(
-        AuditEventType.DATA_VIEWED,
-        req,
-        {
-          success: res.statusCode < 400,
-          duration,
-          metadata: {
-            statusCode: res.statusCode,
-            responseTime: duration
-          }
-        }
-      ).catch(error => {
-        logger.error('Failed to log audit event:', error);
-      });
-    }
-  });
+//     // Log audit event for all requests (only for API endpoints)
+//     if (req.path.startsWith('/api/')) {
+//       auditService.logEvent(
+//         AuditEventType.DATA_VIEWED,
+//         req,
+//         {
+//           success: res.statusCode < 400,
+//           duration,
+//           metadata: {
+//             statusCode: res.statusCode,
+//             responseTime: duration
+//           }
+//         }
+//       ).catch(error => {
+//         logger.error('Failed to log audit event:', error);
+//       });
+//     }
+//   });
 
-  next();
-});
+//   next();
+// });
 
 // Health check endpoint
 app.get('/health', (_req, res) => {
@@ -141,24 +222,24 @@ app.get('/health', (_req, res) => {
   });
 });
 
-// API routes with specific rate limiting
-app.use('/api/auth', authRateLimit, authRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/profiles', profileRoutes);
-app.use('/api/photos', photoRoutes);
-app.use('/api/search', searchRoutes);
-app.use('/api/properties', propertyRoutes);
-app.use('/api/properties', propertyPhotoRoutes); // Property photo routes
-app.use('/api/properties', propertySearchRoutes); // Property search routes
-app.use('/api/favorites', propertyFavoriteRoutes); // Property favorites routes
-app.use('/api/matches', matchRoutes);
-app.use('/api/messages', messageRoutes);
-app.use('/api/conversations', conversationRoutes);
-app.use('/api/uploads', uploadRoutes);
-app.use('/api/emails', emailRoutes);
-app.use('/api/notifications', notificationRoutes);
-app.use('/api/admin', adminRoutes);
-app.use('/api/sessions', sessionRoutes);
+// API routes (all disabled for testing)
+// app.use('/api/auth', authRateLimit, authRoutes);
+// app.use('/api/users', generalRateLimit, userRoutes);
+// app.use('/api/profiles', generalRateLimit, profileRoutes);
+// app.use('/api/photos', generalRateLimit, photoRoutes);
+// app.use('/api/uploads', generalRateLimit, uploadRoutes);
+// app.use('/api/search', generalRateLimit, searchRoutes);
+// app.use('/api/properties', generalRateLimit, propertyRoutes);
+// app.use('/api/properties', generalRateLimit, propertyPhotoRoutes); // Property photo routes
+// app.use('/api/properties', generalRateLimit, propertySearchRoutes); // Property search routes
+// app.use('/api/favorites', generalRateLimit, propertyFavoriteRoutes); // Property favorites routes
+// app.use('/api/matches', generalRateLimit, matchRoutes);
+// app.use('/api/messages', generalRateLimit, messageRoutes);
+// app.use('/api/conversations', generalRateLimit, conversationRoutes);
+// app.use('/api/emails', generalRateLimit, emailRoutes);
+// app.use('/api/notifications', generalRateLimit, notificationRoutes);
+// app.use('/api/admin', generalRateLimit, adminRoutes);
+// app.use('/api/sessions', generalRateLimit, sessionRoutes);
 
 // Setup Swagger documentation
 setupSwagger(app);
@@ -190,29 +271,48 @@ app.get('/api', (_req, res) => {
   });
 });
 
-// Error handling middleware (must be last)
-app.use(notFoundHandler);
-app.use(errorHandler);
+// Error handling middleware will be applied after routes are mounted
 
 // Start server function
 async function startServer() {
   try {
+    logger.info('🚀 Starting LajoSpaces Backend Server...');
+
     // Connect to databases
+    logger.info('📊 Connecting to MongoDB...');
     await connectDatabase();
+    logger.info('✅ MongoDB connection completed');
+
+    logger.info('🔴 Connecting to Redis...');
     await connectRedis();
+    logger.info('✅ Redis connection completed');
 
     // Initialize security and performance services
+    logger.info('⚙️ Initializing services...');
     await initializeServices();
+    logger.info('✅ Services initialization completed');
 
-    // Apply rate limiting after services are initialized
+    // Setup session middleware after services are initialized (temporarily disabled)
+    // logger.info('🔐 Setting up session middleware...');
+    // app.use(sessionService.createSessionMiddleware());
+
+    // Apply rate limiting before routes are mounted
+    logger.info('🛡️ Setting up rate limiting...');
     app.use(generalRateLimit);
 
+    // Now that middleware is set up, dynamically import and setup routes
+    logger.info('📋 Setting up API routes...');
+    await setupRoutes(app);
+    logger.info('✅ API routes configured');
+
     // Initialize Socket.IO service
+    logger.info('💬 Initializing Socket.IO service...');
     const { SocketService } = await import('./services/socketService');
     const socketService = new SocketService(httpServer);
 
     // Make socket service available globally
     (global as any).socketService = socketService;
+    logger.info('✅ Socket.IO service initialized');
 
     // Start HTTP server
     const server = httpServer.listen(config.PORT, () => {
@@ -249,7 +349,11 @@ async function startServer() {
 
 // Start the server if this file is run directly
 if (require.main === module) {
-  startServer();
+  logger.info('🚀 Starting server initialization...');
+  startServer().catch(error => {
+    logger.error('Server startup failed:', error);
+    process.exit(1);
+  });
 }
 
 export { app, httpServer, startServer };

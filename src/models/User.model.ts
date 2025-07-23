@@ -231,21 +231,23 @@ const UserSchema = new Schema<IUser>({
     country: {
       type: String,
       trim: true,
-      default: 'United States'
+      default: 'Nigeria'
     },
     coordinates: {
       type: {
         type: String,
         enum: ['Point'],
-        default: 'Point'
+        required: function() {
+          return this.coordinates && this.coordinates.coordinates;
+        }
       },
       coordinates: {
         type: [Number], // [longitude, latitude]
         validate: {
           validator: function(coords: number[]) {
-            return coords.length === 2 &&
+            return !coords || (coords.length === 2 &&
                    coords[0] >= -180 && coords[0] <= 180 && // longitude
-                   coords[1] >= -90 && coords[1] <= 90;     // latitude
+                   coords[1] >= -90 && coords[1] <= 90);     // latitude
           },
           message: 'Coordinates must be [longitude, latitude] with valid ranges'
         }
@@ -269,7 +271,7 @@ const UserSchema = new Schema<IUser>({
 
 // Indexes for performance
 UserSchema.index({ email: 1 }, { unique: true });
-UserSchema.index({ 'location.coordinates.coordinates': '2dsphere' });
+UserSchema.index({ 'location.coordinates': '2dsphere' }, { sparse: true });
 UserSchema.index({ accountType: 1 });
 UserSchema.index({ isActive: 1 });
 UserSchema.index({ createdAt: -1 });

@@ -1,0 +1,239 @@
+ed30cf151507de7a6107b7355f5954e6
+"use strict";
+
+/* istanbul ignore next */
+function cov_6hixwnljr() {
+  var path = "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\search.routes.ts";
+  var hash = "e8851887b1769c35b984a9dd5ffc4a9e11678273";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\search.routes.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 18
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 44
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 28
+        },
+        end: {
+          line: 5,
+          column: 71
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 38
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 3
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 4
+        },
+        end: {
+          line: 17,
+          column: 7
+        }
+      },
+      "7": {
+        start: {
+          line: 20,
+          column: 0
+        },
+        end: {
+          line: 20,
+          column: 75
+        }
+      },
+      "8": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 21,
+          column: 69
+        }
+      },
+      "9": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 22,
+          column: 70
+        }
+      },
+      "10": {
+        start: {
+          line: 23,
+          column: 0
+        },
+        end: {
+          line: 23,
+          column: 25
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 22
+          },
+          end: {
+            line: 8,
+            column: 23
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 37
+          },
+          end: {
+            line: 18,
+            column: 1
+          }
+        },
+        line: 8
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\search.routes.ts",
+      mappings: ";;AAAA,qCAAiC;AACjC,6CAAkD;AAClD,wEAI0C;AAE1C,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAC;AAExB,eAAe;AACf,MAAM,CAAC,GAAG,CAAC,SAAS,EAAE,CAAC,IAAI,EAAE,GAAG,EAAE,EAAE;IAClC,GAAG,CAAC,IAAI,CAAC;QACP,OAAO,EAAE,uBAAuB;QAChC,SAAS,EAAE,IAAI,IAAI,EAAE,CAAC,WAAW,EAAE;QACnC,SAAS,EAAE;YACT,WAAW,EAAE,YAAY;YACzB,cAAc,EAAE,kBAAkB;YAClC,iBAAiB,EAAE,sBAAsB;SAC1C;KACF,CAAC,CAAC;AACL,CAAC,CAAC,CAAC;AAEH,8DAA8D;AAC9D,MAAM,CAAC,GAAG,CAAC,QAAQ,EAAE,mBAAY,EAAE,+BAAW,CAAC,CAAC;AAEhD,MAAM,CAAC,GAAG,CAAC,cAAc,EAAE,wCAAoB,CAAC,CAAC;AAEjD,MAAM,CAAC,GAAG,CAAC,kBAAkB,EAAE,qCAAiB,CAAC,CAAC;AAElD,kBAAe,MAAM,CAAC",
+      names: [],
+      sources: ["C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\search.routes.ts"],
+      sourcesContent: ["import { Router } from 'express';\r\nimport { optionalAuth } from '../middleware/auth';\r\nimport {\r\n  searchUsers,\r\n  getSearchSuggestions,\r\n  getPopularFilters\r\n} from '../controllers/search.controller';\r\n\r\nconst router = Router();\r\n\r\n// Health check\r\nrouter.get('/health', (_req, res) => {\r\n  res.json({ \r\n    message: 'Search routes working', \r\n    timestamp: new Date().toISOString(),\r\n    endpoints: {\r\n      searchUsers: 'GET /users',\r\n      getSuggestions: 'GET /suggestions',\r\n      getPopularFilters: 'GET /popular-filters'\r\n    }\r\n  });\r\n});\r\n\r\n// Public routes (optional authentication for personalization)\r\nrouter.get('/users', optionalAuth, searchUsers);\r\n\r\nrouter.get('/suggestions', getSearchSuggestions);\r\n\r\nrouter.get('/popular-filters', getPopularFilters);\r\n\r\nexport default router;\r\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e8851887b1769c35b984a9dd5ffc4a9e11678273"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_6hixwnljr = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_6hixwnljr();
+cov_6hixwnljr().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const express_1 =
+/* istanbul ignore next */
+(cov_6hixwnljr().s[1]++, require("express"));
+const auth_1 =
+/* istanbul ignore next */
+(cov_6hixwnljr().s[2]++, require("../middleware/auth"));
+const search_controller_1 =
+/* istanbul ignore next */
+(cov_6hixwnljr().s[3]++, require("../controllers/search.controller"));
+const router =
+/* istanbul ignore next */
+(cov_6hixwnljr().s[4]++, (0, express_1.Router)());
+// Health check
+/* istanbul ignore next */
+cov_6hixwnljr().s[5]++;
+router.get('/health', (_req, res) => {
+  /* istanbul ignore next */
+  cov_6hixwnljr().f[0]++;
+  cov_6hixwnljr().s[6]++;
+  res.json({
+    message: 'Search routes working',
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      searchUsers: 'GET /users',
+      getSuggestions: 'GET /suggestions',
+      getPopularFilters: 'GET /popular-filters'
+    }
+  });
+});
+// Public routes (optional authentication for personalization)
+/* istanbul ignore next */
+cov_6hixwnljr().s[7]++;
+router.get('/users', auth_1.optionalAuth, search_controller_1.searchUsers);
+/* istanbul ignore next */
+cov_6hixwnljr().s[8]++;
+router.get('/suggestions', search_controller_1.getSearchSuggestions);
+/* istanbul ignore next */
+cov_6hixwnljr().s[9]++;
+router.get('/popular-filters', search_controller_1.getPopularFilters);
+/* istanbul ignore next */
+cov_6hixwnljr().s[10]++;
+exports.default = router;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfNmhpeHdubGpyIiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiZXhwcmVzc18xIiwicmVxdWlyZSIsImF1dGhfMSIsInNlYXJjaF9jb250cm9sbGVyXzEiLCJyb3V0ZXIiLCJSb3V0ZXIiLCJnZXQiLCJfcmVxIiwicmVzIiwiZiIsImpzb24iLCJtZXNzYWdlIiwidGltZXN0YW1wIiwiRGF0ZSIsInRvSVNPU3RyaW5nIiwiZW5kcG9pbnRzIiwic2VhcmNoVXNlcnMiLCJnZXRTdWdnZXN0aW9ucyIsImdldFBvcHVsYXJGaWx0ZXJzIiwib3B0aW9uYWxBdXRoIiwiZ2V0U2VhcmNoU3VnZ2VzdGlvbnMiLCJleHBvcnRzIiwiZGVmYXVsdCJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTVkgUENcXERlc2t0b3BcXGxham9zcGFjZXNcXGxham9zcGFjZXNiYWNrZW5kXFxzcmNcXHJvdXRlc1xcc2VhcmNoLnJvdXRlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSb3V0ZXIgfSBmcm9tICdleHByZXNzJztcclxuaW1wb3J0IHsgb3B0aW9uYWxBdXRoIH0gZnJvbSAnLi4vbWlkZGxld2FyZS9hdXRoJztcclxuaW1wb3J0IHtcclxuICBzZWFyY2hVc2VycyxcclxuICBnZXRTZWFyY2hTdWdnZXN0aW9ucyxcclxuICBnZXRQb3B1bGFyRmlsdGVyc1xyXG59IGZyb20gJy4uL2NvbnRyb2xsZXJzL3NlYXJjaC5jb250cm9sbGVyJztcclxuXHJcbmNvbnN0IHJvdXRlciA9IFJvdXRlcigpO1xyXG5cclxuLy8gSGVhbHRoIGNoZWNrXHJcbnJvdXRlci5nZXQoJy9oZWFsdGgnLCAoX3JlcSwgcmVzKSA9PiB7XHJcbiAgcmVzLmpzb24oeyBcclxuICAgIG1lc3NhZ2U6ICdTZWFyY2ggcm91dGVzIHdvcmtpbmcnLCBcclxuICAgIHRpbWVzdGFtcDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLFxyXG4gICAgZW5kcG9pbnRzOiB7XHJcbiAgICAgIHNlYXJjaFVzZXJzOiAnR0VUIC91c2VycycsXHJcbiAgICAgIGdldFN1Z2dlc3Rpb25zOiAnR0VUIC9zdWdnZXN0aW9ucycsXHJcbiAgICAgIGdldFBvcHVsYXJGaWx0ZXJzOiAnR0VUIC9wb3B1bGFyLWZpbHRlcnMnXHJcbiAgICB9XHJcbiAgfSk7XHJcbn0pO1xyXG5cclxuLy8gUHVibGljIHJvdXRlcyAob3B0aW9uYWwgYXV0aGVudGljYXRpb24gZm9yIHBlcnNvbmFsaXphdGlvbilcclxucm91dGVyLmdldCgnL3VzZXJzJywgb3B0aW9uYWxBdXRoLCBzZWFyY2hVc2Vycyk7XHJcblxyXG5yb3V0ZXIuZ2V0KCcvc3VnZ2VzdGlvbnMnLCBnZXRTZWFyY2hTdWdnZXN0aW9ucyk7XHJcblxyXG5yb3V0ZXIuZ2V0KCcvcG9wdWxhci1maWx0ZXJzJywgZ2V0UG9wdWxhckZpbHRlcnMpO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgcm91dGVyO1xyXG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQW1CSztJQUFBQSxhQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxhQUFBO0FBQUFBLGFBQUEsR0FBQUUsQ0FBQTs7OztBQW5CTCxNQUFBQyxTQUFBO0FBQUE7QUFBQSxDQUFBSCxhQUFBLEdBQUFFLENBQUEsT0FBQUUsT0FBQTtBQUNBLE1BQUFDLE1BQUE7QUFBQTtBQUFBLENBQUFMLGFBQUEsR0FBQUUsQ0FBQSxPQUFBRSxPQUFBO0FBQ0EsTUFBQUUsbUJBQUE7QUFBQTtBQUFBLENBQUFOLGFBQUEsR0FBQUUsQ0FBQSxPQUFBRSxPQUFBO0FBTUEsTUFBTUcsTUFBTTtBQUFBO0FBQUEsQ0FBQVAsYUFBQSxHQUFBRSxDQUFBLE9BQUcsSUFBQUMsU0FBQSxDQUFBSyxNQUFNLEdBQUU7QUFFdkI7QUFBQTtBQUFBUixhQUFBLEdBQUFFLENBQUE7QUFDQUssTUFBTSxDQUFDRSxHQUFHLENBQUMsU0FBUyxFQUFFLENBQUNDLElBQUksRUFBRUMsR0FBRyxLQUFJO0VBQUE7RUFBQVgsYUFBQSxHQUFBWSxDQUFBO0VBQUFaLGFBQUEsR0FBQUUsQ0FBQTtFQUNsQ1MsR0FBRyxDQUFDRSxJQUFJLENBQUM7SUFDUEMsT0FBTyxFQUFFLHVCQUF1QjtJQUNoQ0MsU0FBUyxFQUFFLElBQUlDLElBQUksRUFBRSxDQUFDQyxXQUFXLEVBQUU7SUFDbkNDLFNBQVMsRUFBRTtNQUNUQyxXQUFXLEVBQUUsWUFBWTtNQUN6QkMsY0FBYyxFQUFFLGtCQUFrQjtNQUNsQ0MsaUJBQWlCLEVBQUU7O0dBRXRCLENBQUM7QUFDSixDQUFDLENBQUM7QUFFRjtBQUFBO0FBQUFyQixhQUFBLEdBQUFFLENBQUE7QUFDQUssTUFBTSxDQUFDRSxHQUFHLENBQUMsUUFBUSxFQUFFSixNQUFBLENBQUFpQixZQUFZLEVBQUVoQixtQkFBQSxDQUFBYSxXQUFXLENBQUM7QUFBQztBQUFBbkIsYUFBQSxHQUFBRSxDQUFBO0FBRWhESyxNQUFNLENBQUNFLEdBQUcsQ0FBQyxjQUFjLEVBQUVILG1CQUFBLENBQUFpQixvQkFBb0IsQ0FBQztBQUFDO0FBQUF2QixhQUFBLEdBQUFFLENBQUE7QUFFakRLLE1BQU0sQ0FBQ0UsR0FBRyxDQUFDLGtCQUFrQixFQUFFSCxtQkFBQSxDQUFBZSxpQkFBaUIsQ0FBQztBQUFDO0FBQUFyQixhQUFBLEdBQUFFLENBQUE7QUFFbERzQixPQUFBLENBQUFDLE9BQUEsR0FBZWxCLE1BQU0iLCJpZ25vcmVMaXN0IjpbXX0=

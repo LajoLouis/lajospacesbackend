@@ -23,26 +23,28 @@ interface EmailOptions {
 const transporter = nodemailer.createTransport({
   host: config.SMTP_HOST,
   port: config.SMTP_PORT,
-  secure: config.SMTP_SECURE, // false for 587, true for 465
+  secure: false, // false for 587 (STARTTLS), true for 465 (SSL)
   auth: {
     user: config.SMTP_USER,
     pass: config.SMTP_PASS
   },
   tls: {
-    rejectUnauthorized: false,
-    ciphers: 'SSLv3'
+    rejectUnauthorized: false
   },
   requireTLS: true
 });
 
-// Verify transporter configuration
-transporter.verify((error: any, _success: any) => {
-  if (error) {
-    logger.error('Email transporter configuration error:', error);
-  } else {
-    logger.info('✅ Email service ready');
-  }
-});
+// Verify transporter configuration (temporarily disabled to isolate startup issues)
+// transporter.verify((error: any, _success: any) => {
+//   if (error) {
+//     logger.error('Email transporter configuration error:', error);
+//   } else {
+//     logger.info('✅ Email service ready');
+//   }
+// });
+
+// Log immediate readiness for startup
+logger.info('📧 Email service initialized (verification disabled for testing)');
 
 /**
  * Email templates

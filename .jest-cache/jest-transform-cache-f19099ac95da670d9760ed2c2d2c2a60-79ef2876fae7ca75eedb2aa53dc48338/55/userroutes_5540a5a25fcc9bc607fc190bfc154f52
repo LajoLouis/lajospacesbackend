@@ -1,0 +1,163 @@
+147874eb3d24c49b44c061e46e565c5c
+"use strict";
+
+/* istanbul ignore next */
+function cov_7xzyjycrc() {
+  var path = "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\user.routes.ts";
+  var hash = "de0ee14e80d1be4ffe2e608c3f99f04c58716362";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\user.routes.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 18
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 38
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 8,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 7,
+          column: 86
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 25
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 6,
+            column: 22
+          },
+          end: {
+            line: 6,
+            column: 23
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 37
+          },
+          end: {
+            line: 8,
+            column: 1
+          }
+        },
+        line: 6
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\user.routes.ts",
+      mappings: ";;AAAA,qCAAiC;AAEjC,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAC;AAExB,sDAAsD;AACtD,MAAM,CAAC,GAAG,CAAC,SAAS,EAAE,CAAC,IAAI,EAAE,GAAG,EAAE,EAAE;IAClC,GAAG,CAAC,IAAI,CAAC,EAAE,OAAO,EAAE,qBAAqB,EAAE,SAAS,EAAE,IAAI,IAAI,EAAE,CAAC,WAAW,EAAE,EAAE,CAAC,CAAC;AACpF,CAAC,CAAC,CAAC;AAEH,kBAAe,MAAM,CAAC",
+      names: [],
+      sources: ["C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\routes\\user.routes.ts"],
+      sourcesContent: ["import { Router } from 'express';\r\n\r\nconst router = Router();\r\n\r\n// Placeholder routes - will be implemented in Phase 2\r\nrouter.get('/health', (_req, res) => {\r\n  res.json({ message: 'User routes working', timestamp: new Date().toISOString() });\r\n});\r\n\r\nexport default router;\r\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "de0ee14e80d1be4ffe2e608c3f99f04c58716362"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_7xzyjycrc = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_7xzyjycrc();
+cov_7xzyjycrc().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const express_1 =
+/* istanbul ignore next */
+(cov_7xzyjycrc().s[1]++, require("express"));
+const router =
+/* istanbul ignore next */
+(cov_7xzyjycrc().s[2]++, (0, express_1.Router)());
+// Placeholder routes - will be implemented in Phase 2
+/* istanbul ignore next */
+cov_7xzyjycrc().s[3]++;
+router.get('/health', (_req, res) => {
+  /* istanbul ignore next */
+  cov_7xzyjycrc().f[0]++;
+  cov_7xzyjycrc().s[4]++;
+  res.json({
+    message: 'User routes working',
+    timestamp: new Date().toISOString()
+  });
+});
+/* istanbul ignore next */
+cov_7xzyjycrc().s[5]++;
+exports.default = router;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJleHByZXNzXzEiLCJjb3ZfN3h6eWp5Y3JjIiwicyIsInJlcXVpcmUiLCJyb3V0ZXIiLCJSb3V0ZXIiLCJnZXQiLCJfcmVxIiwicmVzIiwiZiIsImpzb24iLCJtZXNzYWdlIiwidGltZXN0YW1wIiwiRGF0ZSIsInRvSVNPU3RyaW5nIiwiZXhwb3J0cyIsImRlZmF1bHQiXSwic291cmNlcyI6WyJDOlxcVXNlcnNcXE1ZIFBDXFxEZXNrdG9wXFxsYWpvc3BhY2VzXFxsYWpvc3BhY2VzYmFja2VuZFxcc3JjXFxyb3V0ZXNcXHVzZXIucm91dGVzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJvdXRlciB9IGZyb20gJ2V4cHJlc3MnO1xyXG5cclxuY29uc3Qgcm91dGVyID0gUm91dGVyKCk7XHJcblxyXG4vLyBQbGFjZWhvbGRlciByb3V0ZXMgLSB3aWxsIGJlIGltcGxlbWVudGVkIGluIFBoYXNlIDJcclxucm91dGVyLmdldCgnL2hlYWx0aCcsIChfcmVxLCByZXMpID0+IHtcclxuICByZXMuanNvbih7IG1lc3NhZ2U6ICdVc2VyIHJvdXRlcyB3b3JraW5nJywgdGltZXN0YW1wOiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkgfSk7XHJcbn0pO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgcm91dGVyO1xyXG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsTUFBQUEsU0FBQTtBQUFBO0FBQUEsQ0FBQUMsYUFBQSxHQUFBQyxDQUFBLE9BQUFDLE9BQUE7QUFFQSxNQUFNQyxNQUFNO0FBQUE7QUFBQSxDQUFBSCxhQUFBLEdBQUFDLENBQUEsT0FBRyxJQUFBRixTQUFBLENBQUFLLE1BQU0sR0FBRTtBQUV2QjtBQUFBO0FBQUFKLGFBQUEsR0FBQUMsQ0FBQTtBQUNBRSxNQUFNLENBQUNFLEdBQUcsQ0FBQyxTQUFTLEVBQUUsQ0FBQ0MsSUFBSSxFQUFFQyxHQUFHLEtBQUk7RUFBQTtFQUFBUCxhQUFBLEdBQUFRLENBQUE7RUFBQVIsYUFBQSxHQUFBQyxDQUFBO0VBQ2xDTSxHQUFHLENBQUNFLElBQUksQ0FBQztJQUFFQyxPQUFPLEVBQUUscUJBQXFCO0lBQUVDLFNBQVMsRUFBRSxJQUFJQyxJQUFJLEVBQUUsQ0FBQ0MsV0FBVztFQUFFLENBQUUsQ0FBQztBQUNuRixDQUFDLENBQUM7QUFBQztBQUFBYixhQUFBLEdBQUFDLENBQUE7QUFFSGEsT0FBQSxDQUFBQyxPQUFBLEdBQWVaLE1BQU0iLCJpZ25vcmVMaXN0IjpbXX0=

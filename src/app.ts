@@ -225,6 +225,20 @@ export function createApp(): Express {
     }
   });
 
+  // API health endpoint
+  app.get('/api/health', (_req, res) => {
+    res.json({
+      status: 'OK',
+      message: 'LajoSpaces API is running',
+      timestamp: new Date().toISOString(),
+      environment: config.NODE_ENV,
+      services: {
+        database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
+        redis: cacheService.isConnected() ? 'connected' : 'disconnected'
+      }
+    });
+  });
+
   // API routes with specific rate limiting
   app.use('/api/auth', config.NODE_ENV !== 'test' ? authRateLimit : (req, res, next) => next(), authRoutes);
   app.use('/api/users', config.NODE_ENV !== 'test' ? generalRateLimit : (req, res, next) => next(), userRoutes);

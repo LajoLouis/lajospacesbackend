@@ -1,0 +1,1577 @@
+620674f1b539437a895a1daa3f4b8b04
+"use strict";
+
+/* istanbul ignore next */
+function cov_gesy55vpo() {
+  var path = "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailService.ts";
+  var hash = "4e065465909dd4e0093f47c72320bed642c88cc4";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailService.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 4
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 0
+        },
+        end: {
+          line: 7,
+          column: 44
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 8,
+          column: 54
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 56
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 60
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 21
+        },
+        end: {
+          line: 11,
+          column: 59
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 22
+        },
+        end: {
+          line: 12,
+          column: 54
+        }
+      },
+      "10": {
+        start: {
+          line: 13,
+          column: 17
+        },
+        end: {
+          line: 13,
+          column: 43
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 20
+        },
+        end: {
+          line: 27,
+          column: 2
+        }
+      },
+      "12": {
+        start: {
+          line: 37,
+          column: 0
+        },
+        end: {
+          line: 37,
+          column: 89
+        }
+      },
+      "13": {
+        start: {
+          line: 41,
+          column: 23
+        },
+        end: {
+          line: 313,
+          column: 1
+        }
+      },
+      "14": {
+        start: {
+          line: 42,
+          column: 24
+        },
+        end: {
+          line: 111,
+          column: 5
+        }
+      },
+      "15": {
+        start: {
+          line: 112,
+          column: 29
+        },
+        end: {
+          line: 176,
+          column: 5
+        }
+      },
+      "16": {
+        start: {
+          line: 177,
+          column: 33
+        },
+        end: {
+          line: 248,
+          column: 5
+        }
+      },
+      "17": {
+        start: {
+          line: 249,
+          column: 35
+        },
+        end: {
+          line: 312,
+          column: 5
+        }
+      },
+      "18": {
+        start: {
+          line: 318,
+          column: 4
+        },
+        end: {
+          line: 352,
+          column: 5
+        }
+      },
+      "19": {
+        start: {
+          line: 320,
+          column: 8
+        },
+        end: {
+          line: 335,
+          column: 9
+        }
+      },
+      "20": {
+        start: {
+          line: 322,
+          column: 37
+        },
+        end: {
+          line: 322,
+          column: 69
+        }
+      },
+      "21": {
+        start: {
+          line: 323,
+          column: 12
+        },
+        end: {
+          line: 325,
+          column: 13
+        }
+      },
+      "22": {
+        start: {
+          line: 324,
+          column: 16
+        },
+        end: {
+          line: 324,
+          column: 82
+        }
+      },
+      "23": {
+        start: {
+          line: 326,
+          column: 12
+        },
+        end: {
+          line: 326,
+          column: 58
+        }
+      },
+      "24": {
+        start: {
+          line: 330,
+          column: 12
+        },
+        end: {
+          line: 334,
+          column: 14
+        }
+      },
+      "25": {
+        start: {
+          line: 336,
+          column: 28
+        },
+        end: {
+          line: 342,
+          column: 9
+        }
+      },
+      "26": {
+        start: {
+          line: 343,
+          column: 23
+        },
+        end: {
+          line: 343,
+          column: 62
+        }
+      },
+      "27": {
+        start: {
+          line: 344,
+          column: 8
+        },
+        end: {
+          line: 347,
+          column: 11
+        }
+      },
+      "28": {
+        start: {
+          line: 350,
+          column: 8
+        },
+        end: {
+          line: 350,
+          column: 79
+        }
+      },
+      "29": {
+        start: {
+          line: 351,
+          column: 8
+        },
+        end: {
+          line: 351,
+          column: 48
+        }
+      },
+      "30": {
+        start: {
+          line: 358,
+          column: 4
+        },
+        end: {
+          line: 363,
+          column: 7
+        }
+      },
+      "31": {
+        start: {
+          line: 369,
+          column: 29
+        },
+        end: {
+          line: 369,
+          column: 107
+        }
+      },
+      "32": {
+        start: {
+          line: 370,
+          column: 4
+        },
+        end: {
+          line: 375,
+          column: 7
+        }
+      },
+      "33": {
+        start: {
+          line: 381,
+          column: 22
+        },
+        end: {
+          line: 381,
+          column: 95
+        }
+      },
+      "34": {
+        start: {
+          line: 382,
+          column: 4
+        },
+        end: {
+          line: 387,
+          column: 7
+        }
+      },
+      "35": {
+        start: {
+          line: 393,
+          column: 4
+        },
+        end: {
+          line: 398,
+          column: 7
+        }
+      },
+      "36": {
+        start: {
+          line: 400,
+          column: 0
+        },
+        end: {
+          line: 406,
+          column: 2
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 2,
+            column: 57
+          }
+        },
+        loc: {
+          start: {
+            line: 2,
+            column: 71
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        line: 2
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 42,
+            column: 13
+          },
+          end: {
+            line: 42,
+            column: 14
+          }
+        },
+        loc: {
+          start: {
+            line: 42,
+            column: 24
+          },
+          end: {
+            line: 111,
+            column: 5
+          }
+        },
+        line: 42
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 112,
+            column: 18
+          },
+          end: {
+            line: 112,
+            column: 19
+          }
+        },
+        loc: {
+          start: {
+            line: 112,
+            column: 29
+          },
+          end: {
+            line: 176,
+            column: 5
+          }
+        },
+        line: 112
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 177,
+            column: 22
+          },
+          end: {
+            line: 177,
+            column: 23
+          }
+        },
+        loc: {
+          start: {
+            line: 177,
+            column: 33
+          },
+          end: {
+            line: 248,
+            column: 5
+          }
+        },
+        line: 177
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 249,
+            column: 24
+          },
+          end: {
+            line: 249,
+            column: 25
+          }
+        },
+        loc: {
+          start: {
+            line: 249,
+            column: 35
+          },
+          end: {
+            line: 312,
+            column: 5
+          }
+        },
+        line: 249
+      },
+      "5": {
+        name: "sendEmail",
+        decl: {
+          start: {
+            line: 317,
+            column: 15
+          },
+          end: {
+            line: 317,
+            column: 24
+          }
+        },
+        loc: {
+          start: {
+            line: 317,
+            column: 34
+          },
+          end: {
+            line: 353,
+            column: 1
+          }
+        },
+        line: 317
+      },
+      "6": {
+        name: "sendWelcomeEmail",
+        decl: {
+          start: {
+            line: 357,
+            column: 15
+          },
+          end: {
+            line: 357,
+            column: 31
+          }
+        },
+        loc: {
+          start: {
+            line: 357,
+            column: 57
+          },
+          end: {
+            line: 364,
+            column: 1
+          }
+        },
+        line: 357
+      },
+      "7": {
+        name: "sendVerificationEmail",
+        decl: {
+          start: {
+            line: 368,
+            column: 15
+          },
+          end: {
+            line: 368,
+            column: 36
+          }
+        },
+        loc: {
+          start: {
+            line: 368,
+            column: 71
+          },
+          end: {
+            line: 376,
+            column: 1
+          }
+        },
+        line: 368
+      },
+      "8": {
+        name: "sendPasswordResetEmail",
+        decl: {
+          start: {
+            line: 380,
+            column: 15
+          },
+          end: {
+            line: 380,
+            column: 37
+          }
+        },
+        loc: {
+          start: {
+            line: 380,
+            column: 65
+          },
+          end: {
+            line: 388,
+            column: 1
+          }
+        },
+        line: 380
+      },
+      "9": {
+        name: "sendPasswordChangedEmail",
+        decl: {
+          start: {
+            line: 392,
+            column: 15
+          },
+          end: {
+            line: 392,
+            column: 39
+          }
+        },
+        loc: {
+          start: {
+            line: 392,
+            column: 55
+          },
+          end: {
+            line: 399,
+            column: 1
+          }
+        },
+        line: 392
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 2,
+            column: 22
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 2,
+            column: 23
+          },
+          end: {
+            line: 2,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 31
+          },
+          end: {
+            line: 2,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        }],
+        line: 2
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 3,
+            column: 11
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 37
+          },
+          end: {
+            line: 3,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 43
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        }],
+        line: 3
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 15
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 19
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        }],
+        line: 3
+      },
+      "3": {
+        loc: {
+          start: {
+            line: 320,
+            column: 8
+          },
+          end: {
+            line: 335,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 320,
+            column: 8
+          },
+          end: {
+            line: 335,
+            column: 9
+          }
+        }, {
+          start: {
+            line: 328,
+            column: 13
+          },
+          end: {
+            line: 335,
+            column: 9
+          }
+        }],
+        line: 320
+      },
+      "4": {
+        loc: {
+          start: {
+            line: 320,
+            column: 12
+          },
+          end: {
+            line: 320,
+            column: 44
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 320,
+            column: 12
+          },
+          end: {
+            line: 320,
+            column: 28
+          }
+        }, {
+          start: {
+            line: 320,
+            column: 32
+          },
+          end: {
+            line: 320,
+            column: 44
+          }
+        }],
+        line: 320
+      },
+      "5": {
+        loc: {
+          start: {
+            line: 323,
+            column: 12
+          },
+          end: {
+            line: 325,
+            column: 13
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 323,
+            column: 12
+          },
+          end: {
+            line: 325,
+            column: 13
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 323
+      },
+      "6": {
+        loc: {
+          start: {
+            line: 332,
+            column: 22
+          },
+          end: {
+            line: 332,
+            column: 40
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 332,
+            column: 22
+          },
+          end: {
+            line: 332,
+            column: 34
+          }
+        }, {
+          start: {
+            line: 332,
+            column: 38
+          },
+          end: {
+            line: 332,
+            column: 40
+          }
+        }],
+        line: 332
+      },
+      "7": {
+        loc: {
+          start: {
+            line: 333,
+            column: 22
+          },
+          end: {
+            line: 333,
+            column: 40
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 333,
+            column: 22
+          },
+          end: {
+            line: 333,
+            column: 34
+          }
+        }, {
+          start: {
+            line: 333,
+            column: 38
+          },
+          end: {
+            line: 333,
+            column: 40
+          }
+        }],
+        line: 333
+      },
+      "8": {
+        loc: {
+          start: {
+            line: 346,
+            column: 22
+          },
+          end: {
+            line: 346,
+            column: 50
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 346,
+            column: 22
+          },
+          end: {
+            line: 346,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 346,
+            column: 42
+          },
+          end: {
+            line: 346,
+            column: 50
+          }
+        }],
+        line: 346
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    b: {
+      "0": [0, 0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0]
+    },
+    inputSourceMap: {
+      file: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailService.ts",
+      mappings: "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",
+      names: [],
+      sources: ["C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailService.ts"],
+      sourcesContent: ["import nodemailer from 'nodemailer';\r\nimport { config } from '../config/environment';\r\nimport { logger } from '../utils/logger';\r\n\r\n// Email template interface\r\ninterface EmailTemplate {\r\n  subject: string;\r\n  html: string;\r\n  text: string;\r\n}\r\n\r\n// Email options interface\r\ninterface EmailOptions {\r\n  to: string;\r\n  subject: string;\r\n  html?: string;\r\n  text?: string;\r\n  template?: 'welcome' | 'verification' | 'password-reset' | 'password-changed';\r\n  data?: Record<string, any>;\r\n}\r\n\r\n// Create transporter\r\nconst transporter = nodemailer.createTransport({\r\n  host: config.SMTP_HOST,\r\n  port: config.SMTP_PORT,\r\n  secure: false, // false for 587 (STARTTLS), true for 465 (SSL)\r\n  auth: {\r\n    user: config.SMTP_USER,\r\n    pass: config.SMTP_PASS\r\n  },\r\n  tls: {\r\n    rejectUnauthorized: false\r\n  },\r\n  requireTLS: true\r\n});\r\n\r\n// Verify transporter configuration (temporarily disabled to isolate startup issues)\r\n// transporter.verify((error: any, _success: any) => {\r\n//   if (error) {\r\n//     logger.error('Email transporter configuration error:', error);\r\n//   } else {\r\n//     logger.info('\u2705 Email service ready');\r\n//   }\r\n// });\r\n\r\n// Log immediate readiness for startup\r\nlogger.info('\uD83D\uDCE7 Email service initialized (verification disabled for testing)');\r\n\r\n/**\r\n * Email templates\r\n */\r\nconst emailTemplates = {\r\n  welcome: (data: { firstName: string; lastName: string }): EmailTemplate => ({\r\n    subject: 'Welcome to LajoSpaces! \uD83C\uDFE0',\r\n    html: `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Welcome to LajoSpaces</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <h1>Welcome to LajoSpaces! \uD83C\uDFE0</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello ${data.firstName} ${data.lastName}!</h2>\r\n            <p>Welcome to LajoSpaces, Nigeria's premier roommate matching platform! We're excited to help you find your perfect living situation.</p>\r\n            \r\n            <h3>What's Next?</h3>\r\n            <ul>\r\n              <li>\u2705 Complete your profile to get better matches</li>\r\n              <li>\uD83D\uDD0D Browse available rooms and roommates</li>\r\n              <li>\uD83D\uDCAC Start connecting with potential roommates</li>\r\n              <li>\uD83C\uDFE0 Find your perfect home in Nigeria</li>\r\n            </ul>\r\n            \r\n            <p>Our platform is designed specifically for the Nigerian market, covering all major cities from Lagos to Abuja, Port Harcourt to Kano.</p>\r\n            \r\n            <div style=\"text-align: center;\">\r\n              <a href=\"${config.FRONTEND_URL}/dashboard\" class=\"button\">Complete Your Profile</a>\r\n            </div>\r\n            \r\n            <p>If you have any questions, our support team is here to help!</p>\r\n            \r\n            <p>Best regards,<br>The LajoSpaces Team</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>\r\n            <p>This email was sent to you because you created an account on LajoSpaces.</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `,\r\n    text: `\r\n      Welcome to LajoSpaces, ${data.firstName} ${data.lastName}!\r\n      \r\n      We're excited to help you find your perfect living situation in Nigeria.\r\n      \r\n      What's Next?\r\n      - Complete your profile to get better matches\r\n      - Browse available rooms and roommates\r\n      - Start connecting with potential roommates\r\n      - Find your perfect home in Nigeria\r\n      \r\n      Visit ${config.FRONTEND_URL}/dashboard to get started.\r\n      \r\n      Best regards,\r\n      The LajoSpaces Team\r\n    `\r\n  }),\r\n\r\n  verification: (data: { firstName: string; verificationLink: string }): EmailTemplate => ({\r\n    subject: 'Verify Your LajoSpaces Account \uD83D\uDCE7',\r\n    html: `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Verify Your Account</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }\r\n          .warning { background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px; margin: 20px 0; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <h1>Verify Your Account \uD83D\uDCE7</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello ${data.firstName}!</h2>\r\n            <p>Thank you for joining LajoSpaces! To complete your registration and start finding roommates, please verify your email address.</p>\r\n            \r\n            <div style=\"text-align: center;\">\r\n              <a href=\"${data.verificationLink}\" class=\"button\">Verify Email Address</a>\r\n            </div>\r\n            \r\n            <div class=\"warning\">\r\n              <strong>\u26A0\uFE0F Important:</strong> This verification link will expire in 24 hours for security reasons.\r\n            </div>\r\n            \r\n            <p>If the button doesn't work, copy and paste this link into your browser:</p>\r\n            <p style=\"word-break: break-all; background: #f1f1f1; padding: 10px; border-radius: 5px;\">${data.verificationLink}</p>\r\n            \r\n            <p>If you didn't create an account with LajoSpaces, please ignore this email.</p>\r\n            \r\n            <p>Best regards,<br>The LajoSpaces Team</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `,\r\n    text: `\r\n      Hello ${data.firstName}!\r\n      \r\n      Thank you for joining LajoSpaces! To complete your registration, please verify your email address by clicking the link below:\r\n      \r\n      ${data.verificationLink}\r\n      \r\n      This link will expire in 24 hours for security reasons.\r\n      \r\n      If you didn't create an account with LajoSpaces, please ignore this email.\r\n      \r\n      Best regards,\r\n      The LajoSpaces Team\r\n    `\r\n  }),\r\n\r\n  'password-reset': (data: { firstName: string; resetLink: string }): EmailTemplate => ({\r\n    subject: 'Reset Your LajoSpaces Password \uD83D\uDD10',\r\n    html: `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Reset Your Password</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #dc3545; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }\r\n          .warning { background: #f8d7da; border: 1px solid #f5c6cb; padding: 15px; border-radius: 5px; margin: 20px 0; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <h1>Reset Your Password \uD83D\uDD10</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello ${data.firstName}!</h2>\r\n            <p>We received a request to reset your LajoSpaces account password. Click the button below to create a new password:</p>\r\n            \r\n            <div style=\"text-align: center;\">\r\n              <a href=\"${data.resetLink}\" class=\"button\">Reset Password</a>\r\n            </div>\r\n            \r\n            <div class=\"warning\">\r\n              <strong>\u26A0\uFE0F Security Notice:</strong> This password reset link will expire in 1 hour for your security.\r\n            </div>\r\n            \r\n            <p>If the button doesn't work, copy and paste this link into your browser:</p>\r\n            <p style=\"word-break: break-all; background: #f1f1f1; padding: 10px; border-radius: 5px;\">${data.resetLink}</p>\r\n            \r\n            <p><strong>If you didn't request this password reset, please ignore this email.</strong> Your password will remain unchanged.</p>\r\n            \r\n            <p>For security reasons, we recommend:</p>\r\n            <ul>\r\n              <li>Using a strong, unique password</li>\r\n              <li>Not sharing your password with anyone</li>\r\n              <li>Logging out of shared devices</li>\r\n            </ul>\r\n            \r\n            <p>Best regards,<br>The LajoSpaces Team</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `,\r\n    text: `\r\n      Hello ${data.firstName}!\r\n      \r\n      We received a request to reset your LajoSpaces account password. Click the link below to create a new password:\r\n      \r\n      ${data.resetLink}\r\n      \r\n      This link will expire in 1 hour for your security.\r\n      \r\n      If you didn't request this password reset, please ignore this email.\r\n      \r\n      Best regards,\r\n      The LajoSpaces Team\r\n    `\r\n  }),\r\n\r\n  'password-changed': (data: { firstName: string }): EmailTemplate => ({\r\n    subject: 'Your LajoSpaces Password Has Been Changed \u2705',\r\n    html: `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Password Changed</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }\r\n          .alert { background: #d1ecf1; border: 1px solid #bee5eb; padding: 15px; border-radius: 5px; margin: 20px 0; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <h1>Password Changed Successfully \u2705</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello ${data.firstName}!</h2>\r\n            <p>This email confirms that your LajoSpaces account password has been successfully changed.</p>\r\n            \r\n            <div class=\"alert\">\r\n              <strong>\uD83D\uDD10 Security Confirmation:</strong> Your password was changed on ${new Date().toLocaleString('en-NG', { timeZone: 'Africa/Lagos' })} (WAT).\r\n            </div>\r\n            \r\n            <p><strong>If you made this change:</strong> No further action is required. Your account is secure.</p>\r\n            \r\n            <p><strong>If you didn't make this change:</strong> Please contact our support team immediately at support@lajospaces.com or log into your account to secure it.</p>\r\n            \r\n            <p>For your security, we recommend:</p>\r\n            <ul>\r\n              <li>Using a unique password for your LajoSpaces account</li>\r\n              <li>Enabling two-factor authentication when available</li>\r\n              <li>Regularly reviewing your account activity</li>\r\n            </ul>\r\n            \r\n            <p>Best regards,<br>The LajoSpaces Team</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `,\r\n    text: `\r\n      Hello ${data.firstName}!\r\n      \r\n      This email confirms that your LajoSpaces account password has been successfully changed on ${new Date().toLocaleString('en-NG', { timeZone: 'Africa/Lagos' })} (WAT).\r\n      \r\n      If you made this change: No further action is required.\r\n      \r\n      If you didn't make this change: Please contact our support team immediately.\r\n      \r\n      Best regards,\r\n      The LajoSpaces Team\r\n    `\r\n  })\r\n};\r\n\r\n/**\r\n * Send email\r\n */\r\nexport async function sendEmail(options: EmailOptions): Promise<void> {\r\n  try {\r\n    let emailContent: EmailTemplate;\r\n\r\n    if (options.template && options.data) {\r\n      // Use template\r\n      const templateFunction = emailTemplates[options.template];\r\n      if (!templateFunction) {\r\n        throw new Error(`Email template '${options.template}' not found`);\r\n      }\r\n      emailContent = templateFunction(options.data as any);\r\n    } else {\r\n      // Use custom content\r\n      emailContent = {\r\n        subject: options.subject,\r\n        html: options.html || '',\r\n        text: options.text || ''\r\n      };\r\n    }\r\n\r\n    const mailOptions = {\r\n      from: `${config.FROM_NAME} <${config.FROM_EMAIL}>`,\r\n      to: options.to,\r\n      subject: emailContent.subject,\r\n      html: emailContent.html,\r\n      text: emailContent.text\r\n    };\r\n\r\n    const result = await transporter.sendMail(mailOptions);\r\n    \r\n    logger.info(`Email sent successfully to ${options.to}`, {\r\n      messageId: result.messageId,\r\n      template: options.template || 'custom'\r\n    });\r\n\r\n  } catch (error) {\r\n    logger.error(`Failed to send email to ${options.to}:`, error);\r\n    throw new Error('Failed to send email');\r\n  }\r\n}\r\n\r\n/**\r\n * Send welcome email\r\n */\r\nexport async function sendWelcomeEmail(to: string, firstName: string, lastName: string): Promise<void> {\r\n  await sendEmail({\r\n    to,\r\n    template: 'welcome',\r\n    subject: '', // Will be overridden by template\r\n    data: { firstName, lastName }\r\n  });\r\n}\r\n\r\n/**\r\n * Send email verification\r\n */\r\nexport async function sendVerificationEmail(to: string, firstName: string, verificationToken: string): Promise<void> {\r\n  const verificationLink = `${config.FRONTEND_URL}/verify-email?token=${verificationToken}`;\r\n  \r\n  await sendEmail({\r\n    to,\r\n    template: 'verification',\r\n    subject: '', // Will be overridden by template\r\n    data: { firstName, verificationLink }\r\n  });\r\n}\r\n\r\n/**\r\n * Send password reset email\r\n */\r\nexport async function sendPasswordResetEmail(to: string, firstName: string, resetToken: string): Promise<void> {\r\n  const resetLink = `${config.FRONTEND_URL}/reset-password?token=${resetToken}`;\r\n  \r\n  await sendEmail({\r\n    to,\r\n    template: 'password-reset',\r\n    subject: '', // Will be overridden by template\r\n    data: { firstName, resetLink }\r\n  });\r\n}\r\n\r\n/**\r\n * Send password changed confirmation\r\n */\r\nexport async function sendPasswordChangedEmail(to: string, firstName: string): Promise<void> {\r\n  await sendEmail({\r\n    to,\r\n    template: 'password-changed',\r\n    subject: '', // Will be overridden by template\r\n    data: { firstName }\r\n  });\r\n}\r\n\r\nexport default {\r\n  sendEmail,\r\n  sendWelcomeEmail,\r\n  sendVerificationEmail,\r\n  sendPasswordResetEmail,\r\n  sendPasswordChangedEmail\r\n};\r\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "4e065465909dd4e0093f47c72320bed642c88cc4"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_gesy55vpo = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_gesy55vpo();
+var __importDefault =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[0]++,
+/* istanbul ignore next */
+(cov_gesy55vpo().b[0][0]++, this) &&
+/* istanbul ignore next */
+(cov_gesy55vpo().b[0][1]++, this.__importDefault) ||
+/* istanbul ignore next */
+(cov_gesy55vpo().b[0][2]++, function (mod) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[0]++;
+  cov_gesy55vpo().s[1]++;
+  return /* istanbul ignore next */(cov_gesy55vpo().b[2][0]++, mod) &&
+  /* istanbul ignore next */
+  (cov_gesy55vpo().b[2][1]++, mod.__esModule) ?
+  /* istanbul ignore next */
+  (cov_gesy55vpo().b[1][0]++, mod) :
+  /* istanbul ignore next */
+  (cov_gesy55vpo().b[1][1]++, {
+    "default": mod
+  });
+}));
+/* istanbul ignore next */
+cov_gesy55vpo().s[2]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_gesy55vpo().s[3]++;
+exports.sendEmail = sendEmail;
+/* istanbul ignore next */
+cov_gesy55vpo().s[4]++;
+exports.sendWelcomeEmail = sendWelcomeEmail;
+/* istanbul ignore next */
+cov_gesy55vpo().s[5]++;
+exports.sendVerificationEmail = sendVerificationEmail;
+/* istanbul ignore next */
+cov_gesy55vpo().s[6]++;
+exports.sendPasswordResetEmail = sendPasswordResetEmail;
+/* istanbul ignore next */
+cov_gesy55vpo().s[7]++;
+exports.sendPasswordChangedEmail = sendPasswordChangedEmail;
+const nodemailer_1 =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[8]++, __importDefault(require("nodemailer")));
+const environment_1 =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[9]++, require("../config/environment"));
+const logger_1 =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[10]++, require("../utils/logger"));
+// Create transporter
+const transporter =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[11]++, nodemailer_1.default.createTransport({
+  host: environment_1.config.SMTP_HOST,
+  port: environment_1.config.SMTP_PORT,
+  secure: false,
+  // false for 587 (STARTTLS), true for 465 (SSL)
+  auth: {
+    user: environment_1.config.SMTP_USER,
+    pass: environment_1.config.SMTP_PASS
+  },
+  tls: {
+    rejectUnauthorized: false
+  },
+  requireTLS: true
+}));
+// Verify transporter configuration (temporarily disabled to isolate startup issues)
+// transporter.verify((error: any, _success: any) => {
+//   if (error) {
+//     logger.error('Email transporter configuration error:', error);
+//   } else {
+//     logger.info('✅ Email service ready');
+//   }
+// });
+// Log immediate readiness for startup
+/* istanbul ignore next */
+cov_gesy55vpo().s[12]++;
+logger_1.logger.info('📧 Email service initialized (verification disabled for testing)');
+/**
+ * Email templates
+ */
+const emailTemplates =
+/* istanbul ignore next */
+(cov_gesy55vpo().s[13]++, {
+  welcome: data => {
+    /* istanbul ignore next */
+    cov_gesy55vpo().f[1]++;
+    cov_gesy55vpo().s[14]++;
+    return {
+      subject: 'Welcome to LajoSpaces! 🏠',
+      html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to LajoSpaces</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Welcome to LajoSpaces! 🏠</h1>
+          </div>
+          <div class="content">
+            <h2>Hello ${data.firstName} ${data.lastName}!</h2>
+            <p>Welcome to LajoSpaces, Nigeria's premier roommate matching platform! We're excited to help you find your perfect living situation.</p>
+            
+            <h3>What's Next?</h3>
+            <ul>
+              <li>✅ Complete your profile to get better matches</li>
+              <li>🔍 Browse available rooms and roommates</li>
+              <li>💬 Start connecting with potential roommates</li>
+              <li>🏠 Find your perfect home in Nigeria</li>
+            </ul>
+            
+            <p>Our platform is designed specifically for the Nigerian market, covering all major cities from Lagos to Abuja, Port Harcourt to Kano.</p>
+            
+            <div style="text-align: center;">
+              <a href="${environment_1.config.FRONTEND_URL}/dashboard" class="button">Complete Your Profile</a>
+            </div>
+            
+            <p>If you have any questions, our support team is here to help!</p>
+            
+            <p>Best regards,<br>The LajoSpaces Team</p>
+          </div>
+          <div class="footer">
+            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>
+            <p>This email was sent to you because you created an account on LajoSpaces.</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `,
+      text: `
+      Welcome to LajoSpaces, ${data.firstName} ${data.lastName}!
+      
+      We're excited to help you find your perfect living situation in Nigeria.
+      
+      What's Next?
+      - Complete your profile to get better matches
+      - Browse available rooms and roommates
+      - Start connecting with potential roommates
+      - Find your perfect home in Nigeria
+      
+      Visit ${environment_1.config.FRONTEND_URL}/dashboard to get started.
+      
+      Best regards,
+      The LajoSpaces Team
+    `
+    };
+  },
+  verification: data => {
+    /* istanbul ignore next */
+    cov_gesy55vpo().f[2]++;
+    cov_gesy55vpo().s[15]++;
+    return {
+      subject: 'Verify Your LajoSpaces Account 📧',
+      html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verify Your Account</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }
+          .warning { background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px; margin: 20px 0; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Verify Your Account 📧</h1>
+          </div>
+          <div class="content">
+            <h2>Hello ${data.firstName}!</h2>
+            <p>Thank you for joining LajoSpaces! To complete your registration and start finding roommates, please verify your email address.</p>
+            
+            <div style="text-align: center;">
+              <a href="${data.verificationLink}" class="button">Verify Email Address</a>
+            </div>
+            
+            <div class="warning">
+              <strong>⚠️ Important:</strong> This verification link will expire in 24 hours for security reasons.
+            </div>
+            
+            <p>If the button doesn't work, copy and paste this link into your browser:</p>
+            <p style="word-break: break-all; background: #f1f1f1; padding: 10px; border-radius: 5px;">${data.verificationLink}</p>
+            
+            <p>If you didn't create an account with LajoSpaces, please ignore this email.</p>
+            
+            <p>Best regards,<br>The LajoSpaces Team</p>
+          </div>
+          <div class="footer">
+            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `,
+      text: `
+      Hello ${data.firstName}!
+      
+      Thank you for joining LajoSpaces! To complete your registration, please verify your email address by clicking the link below:
+      
+      ${data.verificationLink}
+      
+      This link will expire in 24 hours for security reasons.
+      
+      If you didn't create an account with LajoSpaces, please ignore this email.
+      
+      Best regards,
+      The LajoSpaces Team
+    `
+    };
+  },
+  'password-reset': data => {
+    /* istanbul ignore next */
+    cov_gesy55vpo().f[3]++;
+    cov_gesy55vpo().s[16]++;
+    return {
+      subject: 'Reset Your LajoSpaces Password 🔐',
+      html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reset Your Password</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #dc3545; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }
+          .warning { background: #f8d7da; border: 1px solid #f5c6cb; padding: 15px; border-radius: 5px; margin: 20px 0; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Reset Your Password 🔐</h1>
+          </div>
+          <div class="content">
+            <h2>Hello ${data.firstName}!</h2>
+            <p>We received a request to reset your LajoSpaces account password. Click the button below to create a new password:</p>
+            
+            <div style="text-align: center;">
+              <a href="${data.resetLink}" class="button">Reset Password</a>
+            </div>
+            
+            <div class="warning">
+              <strong>⚠️ Security Notice:</strong> This password reset link will expire in 1 hour for your security.
+            </div>
+            
+            <p>If the button doesn't work, copy and paste this link into your browser:</p>
+            <p style="word-break: break-all; background: #f1f1f1; padding: 10px; border-radius: 5px;">${data.resetLink}</p>
+            
+            <p><strong>If you didn't request this password reset, please ignore this email.</strong> Your password will remain unchanged.</p>
+            
+            <p>For security reasons, we recommend:</p>
+            <ul>
+              <li>Using a strong, unique password</li>
+              <li>Not sharing your password with anyone</li>
+              <li>Logging out of shared devices</li>
+            </ul>
+            
+            <p>Best regards,<br>The LajoSpaces Team</p>
+          </div>
+          <div class="footer">
+            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `,
+      text: `
+      Hello ${data.firstName}!
+      
+      We received a request to reset your LajoSpaces account password. Click the link below to create a new password:
+      
+      ${data.resetLink}
+      
+      This link will expire in 1 hour for your security.
+      
+      If you didn't request this password reset, please ignore this email.
+      
+      Best regards,
+      The LajoSpaces Team
+    `
+    };
+  },
+  'password-changed': data => {
+    /* istanbul ignore next */
+    cov_gesy55vpo().f[4]++;
+    cov_gesy55vpo().s[17]++;
+    return {
+      subject: 'Your LajoSpaces Password Has Been Changed ✅',
+      html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Changed</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+          .alert { background: #d1ecf1; border: 1px solid #bee5eb; padding: 15px; border-radius: 5px; margin: 20px 0; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Password Changed Successfully ✅</h1>
+          </div>
+          <div class="content">
+            <h2>Hello ${data.firstName}!</h2>
+            <p>This email confirms that your LajoSpaces account password has been successfully changed.</p>
+            
+            <div class="alert">
+              <strong>🔐 Security Confirmation:</strong> Your password was changed on ${new Date().toLocaleString('en-NG', {
+        timeZone: 'Africa/Lagos'
+      })} (WAT).
+            </div>
+            
+            <p><strong>If you made this change:</strong> No further action is required. Your account is secure.</p>
+            
+            <p><strong>If you didn't make this change:</strong> Please contact our support team immediately at support@lajospaces.com or log into your account to secure it.</p>
+            
+            <p>For your security, we recommend:</p>
+            <ul>
+              <li>Using a unique password for your LajoSpaces account</li>
+              <li>Enabling two-factor authentication when available</li>
+              <li>Regularly reviewing your account activity</li>
+            </ul>
+            
+            <p>Best regards,<br>The LajoSpaces Team</p>
+          </div>
+          <div class="footer">
+            <p>LajoSpaces - Connecting Roommates Across Nigeria</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `,
+      text: `
+      Hello ${data.firstName}!
+      
+      This email confirms that your LajoSpaces account password has been successfully changed on ${new Date().toLocaleString('en-NG', {
+        timeZone: 'Africa/Lagos'
+      })} (WAT).
+      
+      If you made this change: No further action is required.
+      
+      If you didn't make this change: Please contact our support team immediately.
+      
+      Best regards,
+      The LajoSpaces Team
+    `
+    };
+  }
+});
+/**
+ * Send email
+ */
+async function sendEmail(options) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[5]++;
+  cov_gesy55vpo().s[18]++;
+  try {
+    let emailContent;
+    /* istanbul ignore next */
+    cov_gesy55vpo().s[19]++;
+    if (
+    /* istanbul ignore next */
+    (cov_gesy55vpo().b[4][0]++, options.template) &&
+    /* istanbul ignore next */
+    (cov_gesy55vpo().b[4][1]++, options.data)) {
+      /* istanbul ignore next */
+      cov_gesy55vpo().b[3][0]++;
+      // Use template
+      const templateFunction =
+      /* istanbul ignore next */
+      (cov_gesy55vpo().s[20]++, emailTemplates[options.template]);
+      /* istanbul ignore next */
+      cov_gesy55vpo().s[21]++;
+      if (!templateFunction) {
+        /* istanbul ignore next */
+        cov_gesy55vpo().b[5][0]++;
+        cov_gesy55vpo().s[22]++;
+        throw new Error(`Email template '${options.template}' not found`);
+      } else
+      /* istanbul ignore next */
+      {
+        cov_gesy55vpo().b[5][1]++;
+      }
+      cov_gesy55vpo().s[23]++;
+      emailContent = templateFunction(options.data);
+    } else {
+      /* istanbul ignore next */
+      cov_gesy55vpo().b[3][1]++;
+      cov_gesy55vpo().s[24]++;
+      // Use custom content
+      emailContent = {
+        subject: options.subject,
+        html:
+        /* istanbul ignore next */
+        (cov_gesy55vpo().b[6][0]++, options.html) ||
+        /* istanbul ignore next */
+        (cov_gesy55vpo().b[6][1]++, ''),
+        text:
+        /* istanbul ignore next */
+        (cov_gesy55vpo().b[7][0]++, options.text) ||
+        /* istanbul ignore next */
+        (cov_gesy55vpo().b[7][1]++, '')
+      };
+    }
+    const mailOptions =
+    /* istanbul ignore next */
+    (cov_gesy55vpo().s[25]++, {
+      from: `${environment_1.config.FROM_NAME} <${environment_1.config.FROM_EMAIL}>`,
+      to: options.to,
+      subject: emailContent.subject,
+      html: emailContent.html,
+      text: emailContent.text
+    });
+    const result =
+    /* istanbul ignore next */
+    (cov_gesy55vpo().s[26]++, await transporter.sendMail(mailOptions));
+    /* istanbul ignore next */
+    cov_gesy55vpo().s[27]++;
+    logger_1.logger.info(`Email sent successfully to ${options.to}`, {
+      messageId: result.messageId,
+      template:
+      /* istanbul ignore next */
+      (cov_gesy55vpo().b[8][0]++, options.template) ||
+      /* istanbul ignore next */
+      (cov_gesy55vpo().b[8][1]++, 'custom')
+    });
+  } catch (error) {
+    /* istanbul ignore next */
+    cov_gesy55vpo().s[28]++;
+    logger_1.logger.error(`Failed to send email to ${options.to}:`, error);
+    /* istanbul ignore next */
+    cov_gesy55vpo().s[29]++;
+    throw new Error('Failed to send email');
+  }
+}
+/**
+ * Send welcome email
+ */
+async function sendWelcomeEmail(to, firstName, lastName) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[6]++;
+  cov_gesy55vpo().s[30]++;
+  await sendEmail({
+    to,
+    template: 'welcome',
+    subject: '',
+    // Will be overridden by template
+    data: {
+      firstName,
+      lastName
+    }
+  });
+}
+/**
+ * Send email verification
+ */
+async function sendVerificationEmail(to, firstName, verificationToken) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[7]++;
+  const verificationLink =
+  /* istanbul ignore next */
+  (cov_gesy55vpo().s[31]++, `${environment_1.config.FRONTEND_URL}/verify-email?token=${verificationToken}`);
+  /* istanbul ignore next */
+  cov_gesy55vpo().s[32]++;
+  await sendEmail({
+    to,
+    template: 'verification',
+    subject: '',
+    // Will be overridden by template
+    data: {
+      firstName,
+      verificationLink
+    }
+  });
+}
+/**
+ * Send password reset email
+ */
+async function sendPasswordResetEmail(to, firstName, resetToken) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[8]++;
+  const resetLink =
+  /* istanbul ignore next */
+  (cov_gesy55vpo().s[33]++, `${environment_1.config.FRONTEND_URL}/reset-password?token=${resetToken}`);
+  /* istanbul ignore next */
+  cov_gesy55vpo().s[34]++;
+  await sendEmail({
+    to,
+    template: 'password-reset',
+    subject: '',
+    // Will be overridden by template
+    data: {
+      firstName,
+      resetLink
+    }
+  });
+}
+/**
+ * Send password changed confirmation
+ */
+async function sendPasswordChangedEmail(to, firstName) {
+  /* istanbul ignore next */
+  cov_gesy55vpo().f[9]++;
+  cov_gesy55vpo().s[35]++;
+  await sendEmail({
+    to,
+    template: 'password-changed',
+    subject: '',
+    // Will be overridden by template
+    data: {
+      firstName
+    }
+  });
+}
+/* istanbul ignore next */
+cov_gesy55vpo().s[36]++;
+exports.default = {
+  sendEmail,
+  sendWelcomeEmail,
+  sendVerificationEmail,
+  sendPasswordResetEmail,
+  sendPasswordChangedEmail
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfZ2VzeTU1dnBvIiwiYWN0dWFsQ292ZXJhZ2UiLCJleHBvcnRzIiwic2VuZEVtYWlsIiwicyIsInNlbmRXZWxjb21lRW1haWwiLCJzZW5kVmVyaWZpY2F0aW9uRW1haWwiLCJzZW5kUGFzc3dvcmRSZXNldEVtYWlsIiwic2VuZFBhc3N3b3JkQ2hhbmdlZEVtYWlsIiwibm9kZW1haWxlcl8xIiwiX19pbXBvcnREZWZhdWx0IiwicmVxdWlyZSIsImVudmlyb25tZW50XzEiLCJsb2dnZXJfMSIsInRyYW5zcG9ydGVyIiwiZGVmYXVsdCIsImNyZWF0ZVRyYW5zcG9ydCIsImhvc3QiLCJjb25maWciLCJTTVRQX0hPU1QiLCJwb3J0IiwiU01UUF9QT1JUIiwic2VjdXJlIiwiYXV0aCIsInVzZXIiLCJTTVRQX1VTRVIiLCJwYXNzIiwiU01UUF9QQVNTIiwidGxzIiwicmVqZWN0VW5hdXRob3JpemVkIiwicmVxdWlyZVRMUyIsImxvZ2dlciIsImluZm8iLCJlbWFpbFRlbXBsYXRlcyIsIndlbGNvbWUiLCJkYXRhIiwiZiIsInN1YmplY3QiLCJodG1sIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJGUk9OVEVORF9VUkwiLCJ0ZXh0IiwidmVyaWZpY2F0aW9uIiwidmVyaWZpY2F0aW9uTGluayIsInJlc2V0TGluayIsIkRhdGUiLCJ0b0xvY2FsZVN0cmluZyIsInRpbWVab25lIiwib3B0aW9ucyIsImVtYWlsQ29udGVudCIsImIiLCJ0ZW1wbGF0ZSIsInRlbXBsYXRlRnVuY3Rpb24iLCJFcnJvciIsIm1haWxPcHRpb25zIiwiZnJvbSIsIkZST01fTkFNRSIsIkZST01fRU1BSUwiLCJ0byIsInJlc3VsdCIsInNlbmRNYWlsIiwibWVzc2FnZUlkIiwiZXJyb3IiLCJ2ZXJpZmljYXRpb25Ub2tlbiIsInJlc2V0VG9rZW4iXSwic291cmNlcyI6WyJDOlxcVXNlcnNcXE1ZIFBDXFxEZXNrdG9wXFxsYWpvc3BhY2VzXFxsYWpvc3BhY2VzYmFja2VuZFxcc3JjXFxzZXJ2aWNlc1xcZW1haWxTZXJ2aWNlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBub2RlbWFpbGVyIGZyb20gJ25vZGVtYWlsZXInO1xyXG5pbXBvcnQgeyBjb25maWcgfSBmcm9tICcuLi9jb25maWcvZW52aXJvbm1lbnQnO1xyXG5pbXBvcnQgeyBsb2dnZXIgfSBmcm9tICcuLi91dGlscy9sb2dnZXInO1xyXG5cclxuLy8gRW1haWwgdGVtcGxhdGUgaW50ZXJmYWNlXHJcbmludGVyZmFjZSBFbWFpbFRlbXBsYXRlIHtcclxuICBzdWJqZWN0OiBzdHJpbmc7XHJcbiAgaHRtbDogc3RyaW5nO1xyXG4gIHRleHQ6IHN0cmluZztcclxufVxyXG5cclxuLy8gRW1haWwgb3B0aW9ucyBpbnRlcmZhY2VcclxuaW50ZXJmYWNlIEVtYWlsT3B0aW9ucyB7XHJcbiAgdG86IHN0cmluZztcclxuICBzdWJqZWN0OiBzdHJpbmc7XHJcbiAgaHRtbD86IHN0cmluZztcclxuICB0ZXh0Pzogc3RyaW5nO1xyXG4gIHRlbXBsYXRlPzogJ3dlbGNvbWUnIHwgJ3ZlcmlmaWNhdGlvbicgfCAncGFzc3dvcmQtcmVzZXQnIHwgJ3Bhc3N3b3JkLWNoYW5nZWQnO1xyXG4gIGRhdGE/OiBSZWNvcmQ8c3RyaW5nLCBhbnk+O1xyXG59XHJcblxyXG4vLyBDcmVhdGUgdHJhbnNwb3J0ZXJcclxuY29uc3QgdHJhbnNwb3J0ZXIgPSBub2RlbWFpbGVyLmNyZWF0ZVRyYW5zcG9ydCh7XHJcbiAgaG9zdDogY29uZmlnLlNNVFBfSE9TVCxcclxuICBwb3J0OiBjb25maWcuU01UUF9QT1JULFxyXG4gIHNlY3VyZTogZmFsc2UsIC8vIGZhbHNlIGZvciA1ODcgKFNUQVJUVExTKSwgdHJ1ZSBmb3IgNDY1IChTU0wpXHJcbiAgYXV0aDoge1xyXG4gICAgdXNlcjogY29uZmlnLlNNVFBfVVNFUixcclxuICAgIHBhc3M6IGNvbmZpZy5TTVRQX1BBU1NcclxuICB9LFxyXG4gIHRsczoge1xyXG4gICAgcmVqZWN0VW5hdXRob3JpemVkOiBmYWxzZVxyXG4gIH0sXHJcbiAgcmVxdWlyZVRMUzogdHJ1ZVxyXG59KTtcclxuXHJcbi8vIFZlcmlmeSB0cmFuc3BvcnRlciBjb25maWd1cmF0aW9uICh0ZW1wb3JhcmlseSBkaXNhYmxlZCB0byBpc29sYXRlIHN0YXJ0dXAgaXNzdWVzKVxyXG4vLyB0cmFuc3BvcnRlci52ZXJpZnkoKGVycm9yOiBhbnksIF9zdWNjZXNzOiBhbnkpID0+IHtcclxuLy8gICBpZiAoZXJyb3IpIHtcclxuLy8gICAgIGxvZ2dlci5lcnJvcignRW1haWwgdHJhbnNwb3J0ZXIgY29uZmlndXJhdGlvbiBlcnJvcjonLCBlcnJvcik7XHJcbi8vICAgfSBlbHNlIHtcclxuLy8gICAgIGxvZ2dlci5pbmZvKCfinIUgRW1haWwgc2VydmljZSByZWFkeScpO1xyXG4vLyAgIH1cclxuLy8gfSk7XHJcblxyXG4vLyBMb2cgaW1tZWRpYXRlIHJlYWRpbmVzcyBmb3Igc3RhcnR1cFxyXG5sb2dnZXIuaW5mbygn8J+TpyBFbWFpbCBzZXJ2aWNlIGluaXRpYWxpemVkICh2ZXJpZmljYXRpb24gZGlzYWJsZWQgZm9yIHRlc3RpbmcpJyk7XHJcblxyXG4vKipcclxuICogRW1haWwgdGVtcGxhdGVzXHJcbiAqL1xyXG5jb25zdCBlbWFpbFRlbXBsYXRlcyA9IHtcclxuICB3ZWxjb21lOiAoZGF0YTogeyBmaXJzdE5hbWU6IHN0cmluZzsgbGFzdE5hbWU6IHN0cmluZyB9KTogRW1haWxUZW1wbGF0ZSA9PiAoe1xyXG4gICAgc3ViamVjdDogJ1dlbGNvbWUgdG8gTGFqb1NwYWNlcyEg8J+PoCcsXHJcbiAgICBodG1sOiBgXHJcbiAgICAgIDwhRE9DVFlQRSBodG1sPlxyXG4gICAgICA8aHRtbD5cclxuICAgICAgPGhlYWQ+XHJcbiAgICAgICAgPG1ldGEgY2hhcnNldD1cInV0Zi04XCI+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIj5cclxuICAgICAgICA8dGl0bGU+V2VsY29tZSB0byBMYWpvU3BhY2VzPC90aXRsZT5cclxuICAgICAgICA8c3R5bGU+XHJcbiAgICAgICAgICBib2R5IHsgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBsaW5lLWhlaWdodDogMS42OyBjb2xvcjogIzMzMzsgfVxyXG4gICAgICAgICAgLmNvbnRhaW5lciB7IG1heC13aWR0aDogNjAwcHg7IG1hcmdpbjogMCBhdXRvOyBwYWRkaW5nOiAyMHB4OyB9XHJcbiAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzY2N2VlYSAwJSwgIzc2NGJhMiAxMDAlKTsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAzMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHggMTBweCAwIDA7IH1cclxuICAgICAgICAgIC5jb250ZW50IHsgYmFja2dyb3VuZDogI2Y5ZjlmOTsgcGFkZGluZzogMzBweDsgYm9yZGVyLXJhZGl1czogMCAwIDEwcHggMTBweDsgfVxyXG4gICAgICAgICAgLmJ1dHRvbiB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgYmFja2dyb3VuZDogIzY2N2VlYTsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAxMnB4IDMwcHg7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgYm9yZGVyLXJhZGl1czogNXB4OyBtYXJnaW46IDIwcHggMDsgfVxyXG4gICAgICAgICAgLmZvb3RlciB7IHRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luLXRvcDogMzBweDsgY29sb3I6ICM2NjY7IGZvbnQtc2l6ZTogMTRweDsgfVxyXG4gICAgICAgIDwvc3R5bGU+XHJcbiAgICAgIDwvaGVhZD5cclxuICAgICAgPGJvZHk+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICA8aDE+V2VsY29tZSB0byBMYWpvU3BhY2VzISDwn4+gPC9oMT5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRlbnRcIj5cclxuICAgICAgICAgICAgPGgyPkhlbGxvICR7ZGF0YS5maXJzdE5hbWV9ICR7ZGF0YS5sYXN0TmFtZX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+V2VsY29tZSB0byBMYWpvU3BhY2VzLCBOaWdlcmlhJ3MgcHJlbWllciByb29tbWF0ZSBtYXRjaGluZyBwbGF0Zm9ybSEgV2UncmUgZXhjaXRlZCB0byBoZWxwIHlvdSBmaW5kIHlvdXIgcGVyZmVjdCBsaXZpbmcgc2l0dWF0aW9uLjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxoMz5XaGF0J3MgTmV4dD88L2gzPlxyXG4gICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgPGxpPuKchSBDb21wbGV0ZSB5b3VyIHByb2ZpbGUgdG8gZ2V0IGJldHRlciBtYXRjaGVzPC9saT5cclxuICAgICAgICAgICAgICA8bGk+8J+UjSBCcm93c2UgYXZhaWxhYmxlIHJvb21zIGFuZCByb29tbWF0ZXM8L2xpPlxyXG4gICAgICAgICAgICAgIDxsaT7wn5KsIFN0YXJ0IGNvbm5lY3Rpbmcgd2l0aCBwb3RlbnRpYWwgcm9vbW1hdGVzPC9saT5cclxuICAgICAgICAgICAgICA8bGk+8J+PoCBGaW5kIHlvdXIgcGVyZmVjdCBob21lIGluIE5pZ2VyaWE8L2xpPlxyXG4gICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+T3VyIHBsYXRmb3JtIGlzIGRlc2lnbmVkIHNwZWNpZmljYWxseSBmb3IgdGhlIE5pZ2VyaWFuIG1hcmtldCwgY292ZXJpbmcgYWxsIG1ham9yIGNpdGllcyBmcm9tIExhZ29zIHRvIEFidWphLCBQb3J0IEhhcmNvdXJ0IHRvIEthbm8uPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj5cclxuICAgICAgICAgICAgICA8YSBocmVmPVwiJHtjb25maWcuRlJPTlRFTkRfVVJMfS9kYXNoYm9hcmRcIiBjbGFzcz1cImJ1dHRvblwiPkNvbXBsZXRlIFlvdXIgUHJvZmlsZTwvYT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5JZiB5b3UgaGF2ZSBhbnkgcXVlc3Rpb25zLCBvdXIgc3VwcG9ydCB0ZWFtIGlzIGhlcmUgdG8gaGVscCE8L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5CZXN0IHJlZ2FyZHMsPGJyPlRoZSBMYWpvU3BhY2VzIFRlYW08L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmb290ZXJcIj5cclxuICAgICAgICAgICAgPHA+TGFqb1NwYWNlcyAtIENvbm5lY3RpbmcgUm9vbW1hdGVzIEFjcm9zcyBOaWdlcmlhPC9wPlxyXG4gICAgICAgICAgICA8cD5UaGlzIGVtYWlsIHdhcyBzZW50IHRvIHlvdSBiZWNhdXNlIHlvdSBjcmVhdGVkIGFuIGFjY291bnQgb24gTGFqb1NwYWNlcy48L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9ib2R5PlxyXG4gICAgICA8L2h0bWw+XHJcbiAgICBgLFxyXG4gICAgdGV4dDogYFxyXG4gICAgICBXZWxjb21lIHRvIExham9TcGFjZXMsICR7ZGF0YS5maXJzdE5hbWV9ICR7ZGF0YS5sYXN0TmFtZX0hXHJcbiAgICAgIFxyXG4gICAgICBXZSdyZSBleGNpdGVkIHRvIGhlbHAgeW91IGZpbmQgeW91ciBwZXJmZWN0IGxpdmluZyBzaXR1YXRpb24gaW4gTmlnZXJpYS5cclxuICAgICAgXHJcbiAgICAgIFdoYXQncyBOZXh0P1xyXG4gICAgICAtIENvbXBsZXRlIHlvdXIgcHJvZmlsZSB0byBnZXQgYmV0dGVyIG1hdGNoZXNcclxuICAgICAgLSBCcm93c2UgYXZhaWxhYmxlIHJvb21zIGFuZCByb29tbWF0ZXNcclxuICAgICAgLSBTdGFydCBjb25uZWN0aW5nIHdpdGggcG90ZW50aWFsIHJvb21tYXRlc1xyXG4gICAgICAtIEZpbmQgeW91ciBwZXJmZWN0IGhvbWUgaW4gTmlnZXJpYVxyXG4gICAgICBcclxuICAgICAgVmlzaXQgJHtjb25maWcuRlJPTlRFTkRfVVJMfS9kYXNoYm9hcmQgdG8gZ2V0IHN0YXJ0ZWQuXHJcbiAgICAgIFxyXG4gICAgICBCZXN0IHJlZ2FyZHMsXHJcbiAgICAgIFRoZSBMYWpvU3BhY2VzIFRlYW1cclxuICAgIGBcclxuICB9KSxcclxuXHJcbiAgdmVyaWZpY2F0aW9uOiAoZGF0YTogeyBmaXJzdE5hbWU6IHN0cmluZzsgdmVyaWZpY2F0aW9uTGluazogc3RyaW5nIH0pOiBFbWFpbFRlbXBsYXRlID0+ICh7XHJcbiAgICBzdWJqZWN0OiAnVmVyaWZ5IFlvdXIgTGFqb1NwYWNlcyBBY2NvdW50IPCfk6cnLFxyXG4gICAgaHRtbDogYFxyXG4gICAgICA8IURPQ1RZUEUgaHRtbD5cclxuICAgICAgPGh0bWw+XHJcbiAgICAgIDxoZWFkPlxyXG4gICAgICAgIDxtZXRhIGNoYXJzZXQ9XCJ1dGYtOFwiPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCI+XHJcbiAgICAgICAgPHRpdGxlPlZlcmlmeSBZb3VyIEFjY291bnQ8L3RpdGxlPlxyXG4gICAgICAgIDxzdHlsZT5cclxuICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IGxpbmUtaGVpZ2h0OiAxLjY7IGNvbG9yOiAjMzMzOyB9XHJcbiAgICAgICAgICAuY29udGFpbmVyIHsgbWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87IHBhZGRpbmc6IDIwcHg7IH1cclxuICAgICAgICAgIC5oZWFkZXIgeyBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjNjY3ZWVhIDAlLCAjNzY0YmEyIDEwMCUpOyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDMwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgYm9yZGVyLXJhZGl1czogMTBweCAxMHB4IDAgMDsgfVxyXG4gICAgICAgICAgLmNvbnRlbnQgeyBiYWNrZ3JvdW5kOiAjZjlmOWY5OyBwYWRkaW5nOiAzMHB4OyBib3JkZXItcmFkaXVzOiAwIDAgMTBweCAxMHB4OyB9XHJcbiAgICAgICAgICAuYnV0dG9uIHsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBiYWNrZ3JvdW5kOiAjMjhhNzQ1OyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDE1cHggMzBweDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBib3JkZXItcmFkaXVzOiA1cHg7IG1hcmdpbjogMjBweCAwOyBmb250LXdlaWdodDogYm9sZDsgfVxyXG4gICAgICAgICAgLndhcm5pbmcgeyBiYWNrZ3JvdW5kOiAjZmZmM2NkOyBib3JkZXI6IDFweCBzb2xpZCAjZmZlYWE3OyBwYWRkaW5nOiAxNXB4OyBib3JkZXItcmFkaXVzOiA1cHg7IG1hcmdpbjogMjBweCAwOyB9XHJcbiAgICAgICAgICAuZm9vdGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiAzMHB4OyBjb2xvcjogIzY2NjsgZm9udC1zaXplOiAxNHB4OyB9XHJcbiAgICAgICAgPC9zdHlsZT5cclxuICAgICAgPC9oZWFkPlxyXG4gICAgICA8Ym9keT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgICAgICAgIDxoMT5WZXJpZnkgWW91ciBBY2NvdW50IPCfk6c8L2gxPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxyXG4gICAgICAgICAgICA8aDI+SGVsbG8gJHtkYXRhLmZpcnN0TmFtZX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+VGhhbmsgeW91IGZvciBqb2luaW5nIExham9TcGFjZXMhIFRvIGNvbXBsZXRlIHlvdXIgcmVnaXN0cmF0aW9uIGFuZCBzdGFydCBmaW5kaW5nIHJvb21tYXRlcywgcGxlYXNlIHZlcmlmeSB5b3VyIGVtYWlsIGFkZHJlc3MuPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjtcIj5cclxuICAgICAgICAgICAgICA8YSBocmVmPVwiJHtkYXRhLnZlcmlmaWNhdGlvbkxpbmt9XCIgY2xhc3M9XCJidXR0b25cIj5WZXJpZnkgRW1haWwgQWRkcmVzczwvYT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwid2FybmluZ1wiPlxyXG4gICAgICAgICAgICAgIDxzdHJvbmc+4pqg77iPIEltcG9ydGFudDo8L3N0cm9uZz4gVGhpcyB2ZXJpZmljYXRpb24gbGluayB3aWxsIGV4cGlyZSBpbiAyNCBob3VycyBmb3Igc2VjdXJpdHkgcmVhc29ucy5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5JZiB0aGUgYnV0dG9uIGRvZXNuJ3Qgd29yaywgY29weSBhbmQgcGFzdGUgdGhpcyBsaW5rIGludG8geW91ciBicm93c2VyOjwvcD5cclxuICAgICAgICAgICAgPHAgc3R5bGU9XCJ3b3JkLWJyZWFrOiBicmVhay1hbGw7IGJhY2tncm91bmQ6ICNmMWYxZjE7IHBhZGRpbmc6IDEwcHg7IGJvcmRlci1yYWRpdXM6IDVweDtcIj4ke2RhdGEudmVyaWZpY2F0aW9uTGlua308L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5JZiB5b3UgZGlkbid0IGNyZWF0ZSBhbiBhY2NvdW50IHdpdGggTGFqb1NwYWNlcywgcGxlYXNlIGlnbm9yZSB0aGlzIGVtYWlsLjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPkJlc3QgcmVnYXJkcyw8YnI+VGhlIExham9TcGFjZXMgVGVhbTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZvb3RlclwiPlxyXG4gICAgICAgICAgICA8cD5MYWpvU3BhY2VzIC0gQ29ubmVjdGluZyBSb29tbWF0ZXMgQWNyb3NzIE5pZ2VyaWE8L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9ib2R5PlxyXG4gICAgICA8L2h0bWw+XHJcbiAgICBgLFxyXG4gICAgdGV4dDogYFxyXG4gICAgICBIZWxsbyAke2RhdGEuZmlyc3ROYW1lfSFcclxuICAgICAgXHJcbiAgICAgIFRoYW5rIHlvdSBmb3Igam9pbmluZyBMYWpvU3BhY2VzISBUbyBjb21wbGV0ZSB5b3VyIHJlZ2lzdHJhdGlvbiwgcGxlYXNlIHZlcmlmeSB5b3VyIGVtYWlsIGFkZHJlc3MgYnkgY2xpY2tpbmcgdGhlIGxpbmsgYmVsb3c6XHJcbiAgICAgIFxyXG4gICAgICAke2RhdGEudmVyaWZpY2F0aW9uTGlua31cclxuICAgICAgXHJcbiAgICAgIFRoaXMgbGluayB3aWxsIGV4cGlyZSBpbiAyNCBob3VycyBmb3Igc2VjdXJpdHkgcmVhc29ucy5cclxuICAgICAgXHJcbiAgICAgIElmIHlvdSBkaWRuJ3QgY3JlYXRlIGFuIGFjY291bnQgd2l0aCBMYWpvU3BhY2VzLCBwbGVhc2UgaWdub3JlIHRoaXMgZW1haWwuXHJcbiAgICAgIFxyXG4gICAgICBCZXN0IHJlZ2FyZHMsXHJcbiAgICAgIFRoZSBMYWpvU3BhY2VzIFRlYW1cclxuICAgIGBcclxuICB9KSxcclxuXHJcbiAgJ3Bhc3N3b3JkLXJlc2V0JzogKGRhdGE6IHsgZmlyc3ROYW1lOiBzdHJpbmc7IHJlc2V0TGluazogc3RyaW5nIH0pOiBFbWFpbFRlbXBsYXRlID0+ICh7XHJcbiAgICBzdWJqZWN0OiAnUmVzZXQgWW91ciBMYWpvU3BhY2VzIFBhc3N3b3JkIPCflJAnLFxyXG4gICAgaHRtbDogYFxyXG4gICAgICA8IURPQ1RZUEUgaHRtbD5cclxuICAgICAgPGh0bWw+XHJcbiAgICAgIDxoZWFkPlxyXG4gICAgICAgIDxtZXRhIGNoYXJzZXQ9XCJ1dGYtOFwiPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCI+XHJcbiAgICAgICAgPHRpdGxlPlJlc2V0IFlvdXIgUGFzc3dvcmQ8L3RpdGxlPlxyXG4gICAgICAgIDxzdHlsZT5cclxuICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IGxpbmUtaGVpZ2h0OiAxLjY7IGNvbG9yOiAjMzMzOyB9XHJcbiAgICAgICAgICAuY29udGFpbmVyIHsgbWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87IHBhZGRpbmc6IDIwcHg7IH1cclxuICAgICAgICAgIC5oZWFkZXIgeyBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjNjY3ZWVhIDAlLCAjNzY0YmEyIDEwMCUpOyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDMwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgYm9yZGVyLXJhZGl1czogMTBweCAxMHB4IDAgMDsgfVxyXG4gICAgICAgICAgLmNvbnRlbnQgeyBiYWNrZ3JvdW5kOiAjZjlmOWY5OyBwYWRkaW5nOiAzMHB4OyBib3JkZXItcmFkaXVzOiAwIDAgMTBweCAxMHB4OyB9XHJcbiAgICAgICAgICAuYnV0dG9uIHsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBiYWNrZ3JvdW5kOiAjZGMzNTQ1OyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDE1cHggMzBweDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBib3JkZXItcmFkaXVzOiA1cHg7IG1hcmdpbjogMjBweCAwOyBmb250LXdlaWdodDogYm9sZDsgfVxyXG4gICAgICAgICAgLndhcm5pbmcgeyBiYWNrZ3JvdW5kOiAjZjhkN2RhOyBib3JkZXI6IDFweCBzb2xpZCAjZjVjNmNiOyBwYWRkaW5nOiAxNXB4OyBib3JkZXItcmFkaXVzOiA1cHg7IG1hcmdpbjogMjBweCAwOyB9XHJcbiAgICAgICAgICAuZm9vdGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiAzMHB4OyBjb2xvcjogIzY2NjsgZm9udC1zaXplOiAxNHB4OyB9XHJcbiAgICAgICAgPC9zdHlsZT5cclxuICAgICAgPC9oZWFkPlxyXG4gICAgICA8Ym9keT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgICAgICAgIDxoMT5SZXNldCBZb3VyIFBhc3N3b3JkIPCflJA8L2gxPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxyXG4gICAgICAgICAgICA8aDI+SGVsbG8gJHtkYXRhLmZpcnN0TmFtZX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+V2UgcmVjZWl2ZWQgYSByZXF1ZXN0IHRvIHJlc2V0IHlvdXIgTGFqb1NwYWNlcyBhY2NvdW50IHBhc3N3b3JkLiBDbGljayB0aGUgYnV0dG9uIGJlbG93IHRvIGNyZWF0ZSBhIG5ldyBwYXNzd29yZDo8L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPlxyXG4gICAgICAgICAgICAgIDxhIGhyZWY9XCIke2RhdGEucmVzZXRMaW5rfVwiIGNsYXNzPVwiYnV0dG9uXCI+UmVzZXQgUGFzc3dvcmQ8L2E+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cIndhcm5pbmdcIj5cclxuICAgICAgICAgICAgICA8c3Ryb25nPuKaoO+4jyBTZWN1cml0eSBOb3RpY2U6PC9zdHJvbmc+IFRoaXMgcGFzc3dvcmQgcmVzZXQgbGluayB3aWxsIGV4cGlyZSBpbiAxIGhvdXIgZm9yIHlvdXIgc2VjdXJpdHkuXHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+SWYgdGhlIGJ1dHRvbiBkb2Vzbid0IHdvcmssIGNvcHkgYW5kIHBhc3RlIHRoaXMgbGluayBpbnRvIHlvdXIgYnJvd3Nlcjo8L3A+XHJcbiAgICAgICAgICAgIDxwIHN0eWxlPVwid29yZC1icmVhazogYnJlYWstYWxsOyBiYWNrZ3JvdW5kOiAjZjFmMWYxOyBwYWRkaW5nOiAxMHB4OyBib3JkZXItcmFkaXVzOiA1cHg7XCI+JHtkYXRhLnJlc2V0TGlua308L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD48c3Ryb25nPklmIHlvdSBkaWRuJ3QgcmVxdWVzdCB0aGlzIHBhc3N3b3JkIHJlc2V0LCBwbGVhc2UgaWdub3JlIHRoaXMgZW1haWwuPC9zdHJvbmc+IFlvdXIgcGFzc3dvcmQgd2lsbCByZW1haW4gdW5jaGFuZ2VkLjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPkZvciBzZWN1cml0eSByZWFzb25zLCB3ZSByZWNvbW1lbmQ6PC9wPlxyXG4gICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgPGxpPlVzaW5nIGEgc3Ryb25nLCB1bmlxdWUgcGFzc3dvcmQ8L2xpPlxyXG4gICAgICAgICAgICAgIDxsaT5Ob3Qgc2hhcmluZyB5b3VyIHBhc3N3b3JkIHdpdGggYW55b25lPC9saT5cclxuICAgICAgICAgICAgICA8bGk+TG9nZ2luZyBvdXQgb2Ygc2hhcmVkIGRldmljZXM8L2xpPlxyXG4gICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+QmVzdCByZWdhcmRzLDxicj5UaGUgTGFqb1NwYWNlcyBUZWFtPC9wPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxwPkxham9TcGFjZXMgLSBDb25uZWN0aW5nIFJvb21tYXRlcyBBY3Jvc3MgTmlnZXJpYTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2JvZHk+XHJcbiAgICAgIDwvaHRtbD5cclxuICAgIGAsXHJcbiAgICB0ZXh0OiBgXHJcbiAgICAgIEhlbGxvICR7ZGF0YS5maXJzdE5hbWV9IVxyXG4gICAgICBcclxuICAgICAgV2UgcmVjZWl2ZWQgYSByZXF1ZXN0IHRvIHJlc2V0IHlvdXIgTGFqb1NwYWNlcyBhY2NvdW50IHBhc3N3b3JkLiBDbGljayB0aGUgbGluayBiZWxvdyB0byBjcmVhdGUgYSBuZXcgcGFzc3dvcmQ6XHJcbiAgICAgIFxyXG4gICAgICAke2RhdGEucmVzZXRMaW5rfVxyXG4gICAgICBcclxuICAgICAgVGhpcyBsaW5rIHdpbGwgZXhwaXJlIGluIDEgaG91ciBmb3IgeW91ciBzZWN1cml0eS5cclxuICAgICAgXHJcbiAgICAgIElmIHlvdSBkaWRuJ3QgcmVxdWVzdCB0aGlzIHBhc3N3b3JkIHJlc2V0LCBwbGVhc2UgaWdub3JlIHRoaXMgZW1haWwuXHJcbiAgICAgIFxyXG4gICAgICBCZXN0IHJlZ2FyZHMsXHJcbiAgICAgIFRoZSBMYWpvU3BhY2VzIFRlYW1cclxuICAgIGBcclxuICB9KSxcclxuXHJcbiAgJ3Bhc3N3b3JkLWNoYW5nZWQnOiAoZGF0YTogeyBmaXJzdE5hbWU6IHN0cmluZyB9KTogRW1haWxUZW1wbGF0ZSA9PiAoe1xyXG4gICAgc3ViamVjdDogJ1lvdXIgTGFqb1NwYWNlcyBQYXNzd29yZCBIYXMgQmVlbiBDaGFuZ2VkIOKchScsXHJcbiAgICBodG1sOiBgXHJcbiAgICAgIDwhRE9DVFlQRSBodG1sPlxyXG4gICAgICA8aHRtbD5cclxuICAgICAgPGhlYWQ+XHJcbiAgICAgICAgPG1ldGEgY2hhcnNldD1cInV0Zi04XCI+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIj5cclxuICAgICAgICA8dGl0bGU+UGFzc3dvcmQgQ2hhbmdlZDwvdGl0bGU+XHJcbiAgICAgICAgPHN0eWxlPlxyXG4gICAgICAgICAgYm9keSB7IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgbGluZS1oZWlnaHQ6IDEuNjsgY29sb3I6ICMzMzM7IH1cclxuICAgICAgICAgIC5jb250YWluZXIgeyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMjBweDsgfVxyXG4gICAgICAgICAgLmhlYWRlciB7IGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICMyOGE3NDUgMCUsICMyMGM5OTcgMTAwJSk7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMzBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBib3JkZXItcmFkaXVzOiAxMHB4IDEwcHggMCAwOyB9XHJcbiAgICAgICAgICAuY29udGVudCB7IGJhY2tncm91bmQ6ICNmOWY5Zjk7IHBhZGRpbmc6IDMwcHg7IGJvcmRlci1yYWRpdXM6IDAgMCAxMHB4IDEwcHg7IH1cclxuICAgICAgICAgIC5hbGVydCB7IGJhY2tncm91bmQ6ICNkMWVjZjE7IGJvcmRlcjogMXB4IHNvbGlkICNiZWU1ZWI7IHBhZGRpbmc6IDE1cHg7IGJvcmRlci1yYWRpdXM6IDVweDsgbWFyZ2luOiAyMHB4IDA7IH1cclxuICAgICAgICAgIC5mb290ZXIgeyB0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbi10b3A6IDMwcHg7IGNvbG9yOiAjNjY2OyBmb250LXNpemU6IDE0cHg7IH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2hlYWQ+XHJcbiAgICAgIDxib2R5PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj5cclxuICAgICAgICAgICAgPGgxPlBhc3N3b3JkIENoYW5nZWQgU3VjY2Vzc2Z1bGx5IOKchTwvaDE+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIDxoMj5IZWxsbyAke2RhdGEuZmlyc3ROYW1lfSE8L2gyPlxyXG4gICAgICAgICAgICA8cD5UaGlzIGVtYWlsIGNvbmZpcm1zIHRoYXQgeW91ciBMYWpvU3BhY2VzIGFjY291bnQgcGFzc3dvcmQgaGFzIGJlZW4gc3VjY2Vzc2Z1bGx5IGNoYW5nZWQuPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImFsZXJ0XCI+XHJcbiAgICAgICAgICAgICAgPHN0cm9uZz7wn5SQIFNlY3VyaXR5IENvbmZpcm1hdGlvbjo8L3N0cm9uZz4gWW91ciBwYXNzd29yZCB3YXMgY2hhbmdlZCBvbiAke25ldyBEYXRlKCkudG9Mb2NhbGVTdHJpbmcoJ2VuLU5HJywgeyB0aW1lWm9uZTogJ0FmcmljYS9MYWdvcycgfSl9IChXQVQpLlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPjxzdHJvbmc+SWYgeW91IG1hZGUgdGhpcyBjaGFuZ2U6PC9zdHJvbmc+IE5vIGZ1cnRoZXIgYWN0aW9uIGlzIHJlcXVpcmVkLiBZb3VyIGFjY291bnQgaXMgc2VjdXJlLjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPjxzdHJvbmc+SWYgeW91IGRpZG4ndCBtYWtlIHRoaXMgY2hhbmdlOjwvc3Ryb25nPiBQbGVhc2UgY29udGFjdCBvdXIgc3VwcG9ydCB0ZWFtIGltbWVkaWF0ZWx5IGF0IHN1cHBvcnRAbGFqb3NwYWNlcy5jb20gb3IgbG9nIGludG8geW91ciBhY2NvdW50IHRvIHNlY3VyZSBpdC48L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5Gb3IgeW91ciBzZWN1cml0eSwgd2UgcmVjb21tZW5kOjwvcD5cclxuICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgIDxsaT5Vc2luZyBhIHVuaXF1ZSBwYXNzd29yZCBmb3IgeW91ciBMYWpvU3BhY2VzIGFjY291bnQ8L2xpPlxyXG4gICAgICAgICAgICAgIDxsaT5FbmFibGluZyB0d28tZmFjdG9yIGF1dGhlbnRpY2F0aW9uIHdoZW4gYXZhaWxhYmxlPC9saT5cclxuICAgICAgICAgICAgICA8bGk+UmVndWxhcmx5IHJldmlld2luZyB5b3VyIGFjY291bnQgYWN0aXZpdHk8L2xpPlxyXG4gICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+QmVzdCByZWdhcmRzLDxicj5UaGUgTGFqb1NwYWNlcyBUZWFtPC9wPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxwPkxham9TcGFjZXMgLSBDb25uZWN0aW5nIFJvb21tYXRlcyBBY3Jvc3MgTmlnZXJpYTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2JvZHk+XHJcbiAgICAgIDwvaHRtbD5cclxuICAgIGAsXHJcbiAgICB0ZXh0OiBgXHJcbiAgICAgIEhlbGxvICR7ZGF0YS5maXJzdE5hbWV9IVxyXG4gICAgICBcclxuICAgICAgVGhpcyBlbWFpbCBjb25maXJtcyB0aGF0IHlvdXIgTGFqb1NwYWNlcyBhY2NvdW50IHBhc3N3b3JkIGhhcyBiZWVuIHN1Y2Nlc3NmdWxseSBjaGFuZ2VkIG9uICR7bmV3IERhdGUoKS50b0xvY2FsZVN0cmluZygnZW4tTkcnLCB7IHRpbWVab25lOiAnQWZyaWNhL0xhZ29zJyB9KX0gKFdBVCkuXHJcbiAgICAgIFxyXG4gICAgICBJZiB5b3UgbWFkZSB0aGlzIGNoYW5nZTogTm8gZnVydGhlciBhY3Rpb24gaXMgcmVxdWlyZWQuXHJcbiAgICAgIFxyXG4gICAgICBJZiB5b3UgZGlkbid0IG1ha2UgdGhpcyBjaGFuZ2U6IFBsZWFzZSBjb250YWN0IG91ciBzdXBwb3J0IHRlYW0gaW1tZWRpYXRlbHkuXHJcbiAgICAgIFxyXG4gICAgICBCZXN0IHJlZ2FyZHMsXHJcbiAgICAgIFRoZSBMYWpvU3BhY2VzIFRlYW1cclxuICAgIGBcclxuICB9KVxyXG59O1xyXG5cclxuLyoqXHJcbiAqIFNlbmQgZW1haWxcclxuICovXHJcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzZW5kRW1haWwob3B0aW9uczogRW1haWxPcHRpb25zKTogUHJvbWlzZTx2b2lkPiB7XHJcbiAgdHJ5IHtcclxuICAgIGxldCBlbWFpbENvbnRlbnQ6IEVtYWlsVGVtcGxhdGU7XHJcblxyXG4gICAgaWYgKG9wdGlvbnMudGVtcGxhdGUgJiYgb3B0aW9ucy5kYXRhKSB7XHJcbiAgICAgIC8vIFVzZSB0ZW1wbGF0ZVxyXG4gICAgICBjb25zdCB0ZW1wbGF0ZUZ1bmN0aW9uID0gZW1haWxUZW1wbGF0ZXNbb3B0aW9ucy50ZW1wbGF0ZV07XHJcbiAgICAgIGlmICghdGVtcGxhdGVGdW5jdGlvbikge1xyXG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgRW1haWwgdGVtcGxhdGUgJyR7b3B0aW9ucy50ZW1wbGF0ZX0nIG5vdCBmb3VuZGApO1xyXG4gICAgICB9XHJcbiAgICAgIGVtYWlsQ29udGVudCA9IHRlbXBsYXRlRnVuY3Rpb24ob3B0aW9ucy5kYXRhIGFzIGFueSk7XHJcbiAgICB9IGVsc2Uge1xyXG4gICAgICAvLyBVc2UgY3VzdG9tIGNvbnRlbnRcclxuICAgICAgZW1haWxDb250ZW50ID0ge1xyXG4gICAgICAgIHN1YmplY3Q6IG9wdGlvbnMuc3ViamVjdCxcclxuICAgICAgICBodG1sOiBvcHRpb25zLmh0bWwgfHwgJycsXHJcbiAgICAgICAgdGV4dDogb3B0aW9ucy50ZXh0IHx8ICcnXHJcbiAgICAgIH07XHJcbiAgICB9XHJcblxyXG4gICAgY29uc3QgbWFpbE9wdGlvbnMgPSB7XHJcbiAgICAgIGZyb206IGAke2NvbmZpZy5GUk9NX05BTUV9IDwke2NvbmZpZy5GUk9NX0VNQUlMfT5gLFxyXG4gICAgICB0bzogb3B0aW9ucy50byxcclxuICAgICAgc3ViamVjdDogZW1haWxDb250ZW50LnN1YmplY3QsXHJcbiAgICAgIGh0bWw6IGVtYWlsQ29udGVudC5odG1sLFxyXG4gICAgICB0ZXh0OiBlbWFpbENvbnRlbnQudGV4dFxyXG4gICAgfTtcclxuXHJcbiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCB0cmFuc3BvcnRlci5zZW5kTWFpbChtYWlsT3B0aW9ucyk7XHJcbiAgICBcclxuICAgIGxvZ2dlci5pbmZvKGBFbWFpbCBzZW50IHN1Y2Nlc3NmdWxseSB0byAke29wdGlvbnMudG99YCwge1xyXG4gICAgICBtZXNzYWdlSWQ6IHJlc3VsdC5tZXNzYWdlSWQsXHJcbiAgICAgIHRlbXBsYXRlOiBvcHRpb25zLnRlbXBsYXRlIHx8ICdjdXN0b20nXHJcbiAgICB9KTtcclxuXHJcbiAgfSBjYXRjaCAoZXJyb3IpIHtcclxuICAgIGxvZ2dlci5lcnJvcihgRmFpbGVkIHRvIHNlbmQgZW1haWwgdG8gJHtvcHRpb25zLnRvfTpgLCBlcnJvcik7XHJcbiAgICB0aHJvdyBuZXcgRXJyb3IoJ0ZhaWxlZCB0byBzZW5kIGVtYWlsJyk7XHJcbiAgfVxyXG59XHJcblxyXG4vKipcclxuICogU2VuZCB3ZWxjb21lIGVtYWlsXHJcbiAqL1xyXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gc2VuZFdlbGNvbWVFbWFpbCh0bzogc3RyaW5nLCBmaXJzdE5hbWU6IHN0cmluZywgbGFzdE5hbWU6IHN0cmluZyk6IFByb21pc2U8dm9pZD4ge1xyXG4gIGF3YWl0IHNlbmRFbWFpbCh7XHJcbiAgICB0byxcclxuICAgIHRlbXBsYXRlOiAnd2VsY29tZScsXHJcbiAgICBzdWJqZWN0OiAnJywgLy8gV2lsbCBiZSBvdmVycmlkZGVuIGJ5IHRlbXBsYXRlXHJcbiAgICBkYXRhOiB7IGZpcnN0TmFtZSwgbGFzdE5hbWUgfVxyXG4gIH0pO1xyXG59XHJcblxyXG4vKipcclxuICogU2VuZCBlbWFpbCB2ZXJpZmljYXRpb25cclxuICovXHJcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzZW5kVmVyaWZpY2F0aW9uRW1haWwodG86IHN0cmluZywgZmlyc3ROYW1lOiBzdHJpbmcsIHZlcmlmaWNhdGlvblRva2VuOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHtcclxuICBjb25zdCB2ZXJpZmljYXRpb25MaW5rID0gYCR7Y29uZmlnLkZST05URU5EX1VSTH0vdmVyaWZ5LWVtYWlsP3Rva2VuPSR7dmVyaWZpY2F0aW9uVG9rZW59YDtcclxuICBcclxuICBhd2FpdCBzZW5kRW1haWwoe1xyXG4gICAgdG8sXHJcbiAgICB0ZW1wbGF0ZTogJ3ZlcmlmaWNhdGlvbicsXHJcbiAgICBzdWJqZWN0OiAnJywgLy8gV2lsbCBiZSBvdmVycmlkZGVuIGJ5IHRlbXBsYXRlXHJcbiAgICBkYXRhOiB7IGZpcnN0TmFtZSwgdmVyaWZpY2F0aW9uTGluayB9XHJcbiAgfSk7XHJcbn1cclxuXHJcbi8qKlxyXG4gKiBTZW5kIHBhc3N3b3JkIHJlc2V0IGVtYWlsXHJcbiAqL1xyXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gc2VuZFBhc3N3b3JkUmVzZXRFbWFpbCh0bzogc3RyaW5nLCBmaXJzdE5hbWU6IHN0cmluZywgcmVzZXRUb2tlbjogc3RyaW5nKTogUHJvbWlzZTx2b2lkPiB7XHJcbiAgY29uc3QgcmVzZXRMaW5rID0gYCR7Y29uZmlnLkZST05URU5EX1VSTH0vcmVzZXQtcGFzc3dvcmQ/dG9rZW49JHtyZXNldFRva2VufWA7XHJcbiAgXHJcbiAgYXdhaXQgc2VuZEVtYWlsKHtcclxuICAgIHRvLFxyXG4gICAgdGVtcGxhdGU6ICdwYXNzd29yZC1yZXNldCcsXHJcbiAgICBzdWJqZWN0OiAnJywgLy8gV2lsbCBiZSBvdmVycmlkZGVuIGJ5IHRlbXBsYXRlXHJcbiAgICBkYXRhOiB7IGZpcnN0TmFtZSwgcmVzZXRMaW5rIH1cclxuICB9KTtcclxufVxyXG5cclxuLyoqXHJcbiAqIFNlbmQgcGFzc3dvcmQgY2hhbmdlZCBjb25maXJtYXRpb25cclxuICovXHJcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzZW5kUGFzc3dvcmRDaGFuZ2VkRW1haWwodG86IHN0cmluZywgZmlyc3ROYW1lOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHtcclxuICBhd2FpdCBzZW5kRW1haWwoe1xyXG4gICAgdG8sXHJcbiAgICB0ZW1wbGF0ZTogJ3Bhc3N3b3JkLWNoYW5nZWQnLFxyXG4gICAgc3ViamVjdDogJycsIC8vIFdpbGwgYmUgb3ZlcnJpZGRlbiBieSB0ZW1wbGF0ZVxyXG4gICAgZGF0YTogeyBmaXJzdE5hbWUgfVxyXG4gIH0pO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCB7XHJcbiAgc2VuZEVtYWlsLFxyXG4gIHNlbmRXZWxjb21lRW1haWwsXHJcbiAgc2VuZFZlcmlmaWNhdGlvbkVtYWlsLFxyXG4gIHNlbmRQYXNzd29yZFJlc2V0RW1haWwsXHJcbiAgc2VuZFBhc3N3b3JkQ2hhbmdlZEVtYWlsXHJcbn07XHJcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBdUJRO0lBQUFBLGFBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUFDLGNBQUE7SUFBQTtFQUFBO0VBQUEsT0FBQUEsY0FBQTtBQUFBO0FBQUFELGFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW9UUkUsT0FBQSxDQUFBQyxTQUFBLEdBQUFBLFNBQUE7QUF1Q0M7QUFBQUgsYUFBQSxHQUFBSSxDQUFBO0FBS0RGLE9BQUEsQ0FBQUcsZ0JBQUEsR0FBQUEsZ0JBQUE7QUFPQztBQUFBTCxhQUFBLEdBQUFJLENBQUE7QUFLREYsT0FBQSxDQUFBSSxxQkFBQSxHQUFBQSxxQkFBQTtBQVNDO0FBQUFOLGFBQUEsR0FBQUksQ0FBQTtBQUtERixPQUFBLENBQUFLLHNCQUFBLEdBQUFBLHNCQUFBO0FBU0M7QUFBQVAsYUFB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LFNBQWlCLEVBQUV5QixpQkFBeUI7RUFBQTtFQUFBaEUsYUFBQSxHQUFBb0MsQ0FBQTtFQUNsRyxNQUFNUSxnQkFBZ0I7RUFBQTtFQUFBLENBQUE1QyxhQUFBLEdBQUFJLENBQUEsUUFBRyxHQUFHUSxhQUFBLENBQUFNLE1BQU0sQ0FBQ3VCLFlBQVksdUJBQXVCdUIsaUJBQWlCLEVBQUU7RUFBQztFQUFBaEUsYUFBQSxHQUFBSSxDQUFBO0VBRTFGLE1BQU1ELFNBQVMsQ0FBQztJQUNkd0QsRUFBRTtJQUNGUCxRQUFRLEVBQUUsY0FBYztJQUN4QmYsT0FBTyxFQUFFLEVBQUU7SUFBRTtJQUNiRixJQUFJLEVBQUU7TUFBRUksU0FBUztNQUFFSztJQUFnQjtHQUNwQyxDQUFDO0FBQ0o7QUFFQTs7O0FBR08sZUFBZXJDLHNCQUFzQkEsQ0FBQ29ELEVBQVUsRUFBRXBCLFNBQWlCLEVBQUUwQixVQUFrQjtFQUFBO0VBQUFqRSxhQUFBLEdBQUFvQyxDQUFBO0VBQzVGLE1BQU1TLFNBQVM7RUFBQTtFQUFBLENBQUE3QyxhQUFBLEdBQUFJLENBQUEsUUFBRyxHQUFHUSxhQUFBLENBQUFNLE1BQU0sQ0FBQ3VCLFlBQVkseUJBQXlCd0IsVUFBVSxFQUFFO0VBQUM7RUFBQWpFLGFBQUEsR0FBQUksQ0FBQTtFQUU5RSxNQUFNRCxTQUFTLENBQUM7SUFDZHdELEVBQUU7SUFDRlAsUUFBUSxFQUFFLGdCQUFnQjtJQUMxQmYsT0FBTyxFQUFFLEVBQUU7SUFBRTtJQUNiRixJQUFJLEVBQUU7TUFBRUksU0FBUztNQUFFTTtJQUFTO0dBQzdCLENBQUM7QUFDSjtBQUVBOzs7QUFHTyxlQUFlckMsd0JBQXdCQSxDQUFDbUQsRUFBVSxFQUFFcEIsU0FBaUI7RUFBQTtFQUFBdkMsYUFBQSxHQUFBb0MsQ0FBQTtFQUFBcEMsYUFBQSxHQUFBSSxDQUFBO0VBQzFFLE1BQU1ELFNBQVMsQ0FBQztJQUNkd0QsRUFBRTtJQUNGUCxRQUFRLEVBQUUsa0JBQWtCO0lBQzVCZixPQUFPLEVBQUUsRUFBRTtJQUFFO0lBQ2JGLElBQUksRUFBRTtNQUFFSTtJQUFTO0dBQ2xCLENBQUM7QUFDSjtBQUFDO0FBQUF2QyxhQUFBLEdBQUFJLENBQUE7QUFFREYsT0FBQSxDQUFBYSxPQUFBLEdBQWU7RUFDYlosU0FBUztFQUNURSxnQkFBZ0I7RUFDaEJDLHFCQUFxQjtFQUNyQkMsc0JBQXNCO0VBQ3RCQztDQUNEIiwiaWdub3JlTGlzdCI6W119

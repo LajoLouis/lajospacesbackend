@@ -1,0 +1,2025 @@
+e5442f26e5c40f7735ec868e9846b7d8
+"use strict";
+
+/* istanbul ignore next */
+function cov_1z8bquhe7f() {
+  var path = "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailTemplateService.ts";
+  var hash = "6a291279d135c64dda06017c441ee237f387df5c";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailTemplateService.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 1
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 4
+        },
+        end: {
+          line: 3,
+          column: 62
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 66
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 21
+        },
+        end: {
+          line: 7,
+          column: 59
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 17
+        },
+        end: {
+          line: 8,
+          column: 43
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 22
+        },
+        end: {
+          line: 9,
+          column: 54
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 78
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 4
+        },
+        end: {
+          line: 13,
+          column: 45
+        }
+      },
+      "9": {
+        start: {
+          line: 14,
+          column: 4
+        },
+        end: {
+          line: 14,
+          column: 67
+        }
+      },
+      "10": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 15,
+          column: 59
+        }
+      },
+      "11": {
+        start: {
+          line: 16,
+          column: 4
+        },
+        end: {
+          line: 16,
+          column: 63
+        }
+      },
+      "12": {
+        start: {
+          line: 17,
+          column: 4
+        },
+        end: {
+          line: 17,
+          column: 53
+        }
+      },
+      "13": {
+        start: {
+          line: 18,
+          column: 4
+        },
+        end: {
+          line: 18,
+          column: 49
+        }
+      },
+      "14": {
+        start: {
+          line: 19,
+          column: 4
+        },
+        end: {
+          line: 19,
+          column: 61
+        }
+      },
+      "15": {
+        start: {
+          line: 20,
+          column: 4
+        },
+        end: {
+          line: 20,
+          column: 65
+        }
+      },
+      "16": {
+        start: {
+          line: 21,
+          column: 4
+        },
+        end: {
+          line: 21,
+          column: 69
+        }
+      },
+      "17": {
+        start: {
+          line: 22,
+          column: 4
+        },
+        end: {
+          line: 22,
+          column: 51
+        }
+      },
+      "18": {
+        start: {
+          line: 23,
+          column: 4
+        },
+        end: {
+          line: 23,
+          column: 59
+        }
+      },
+      "19": {
+        start: {
+          line: 27,
+          column: 8
+        },
+        end: {
+          line: 27,
+          column: 35
+        }
+      },
+      "20": {
+        start: {
+          line: 28,
+          column: 8
+        },
+        end: {
+          line: 28,
+          column: 35
+        }
+      },
+      "21": {
+        start: {
+          line: 35,
+          column: 8
+        },
+        end: {
+          line: 39,
+          column: 11
+        }
+      },
+      "22": {
+        start: {
+          line: 41,
+          column: 8
+        },
+        end: {
+          line: 45,
+          column: 11
+        }
+      },
+      "23": {
+        start: {
+          line: 47,
+          column: 8
+        },
+        end: {
+          line: 51,
+          column: 11
+        }
+      },
+      "24": {
+        start: {
+          line: 53,
+          column: 8
+        },
+        end: {
+          line: 57,
+          column: 11
+        }
+      },
+      "25": {
+        start: {
+          line: 59,
+          column: 8
+        },
+        end: {
+          line: 63,
+          column: 11
+        }
+      },
+      "26": {
+        start: {
+          line: 65,
+          column: 8
+        },
+        end: {
+          line: 69,
+          column: 11
+        }
+      },
+      "27": {
+        start: {
+          line: 70,
+          column: 8
+        },
+        end: {
+          line: 70,
+          column: 73
+        }
+      },
+      "28": {
+        start: {
+          line: 76,
+          column: 25
+        },
+        end: {
+          line: 76,
+          column: 57
+        }
+      },
+      "29": {
+        start: {
+          line: 77,
+          column: 8
+        },
+        end: {
+          line: 79,
+          column: 9
+        }
+      },
+      "30": {
+        start: {
+          line: 78,
+          column: 12
+        },
+        end: {
+          line: 78,
+          column: 67
+        }
+      },
+      "31": {
+        start: {
+          line: 81,
+          column: 29
+        },
+        end: {
+          line: 87,
+          column: 9
+        }
+      },
+      "32": {
+        start: {
+          line: 88,
+          column: 8
+        },
+        end: {
+          line: 99,
+          column: 9
+        }
+      },
+      "33": {
+        start: {
+          line: 89,
+          column: 37
+        },
+        end: {
+          line: 89,
+          column: 83
+        }
+      },
+      "34": {
+        start: {
+          line: 90,
+          column: 36
+        },
+        end: {
+          line: 90,
+          column: 82
+        }
+      },
+      "35": {
+        start: {
+          line: 91,
+          column: 12
+        },
+        end: {
+          line: 94,
+          column: 14
+        }
+      },
+      "36": {
+        start: {
+          line: 97,
+          column: 12
+        },
+        end: {
+          line: 97,
+          column: 86
+        }
+      },
+      "37": {
+        start: {
+          line: 98,
+          column: 12
+        },
+        end: {
+          line: 98,
+          column: 74
+        }
+      },
+      "38": {
+        start: {
+          line: 105,
+          column: 8
+        },
+        end: {
+          line: 177,
+          column: 6
+        }
+      },
+      "39": {
+        start: {
+          line: 183,
+          column: 8
+        },
+        end: {
+          line: 215,
+          column: 6
+        }
+      },
+      "40": {
+        start: {
+          line: 221,
+          column: 8
+        },
+        end: {
+          line: 273,
+          column: 6
+        }
+      },
+      "41": {
+        start: {
+          line: 279,
+          column: 8
+        },
+        end: {
+          line: 296,
+          column: 6
+        }
+      },
+      "42": {
+        start: {
+          line: 302,
+          column: 8
+        },
+        end: {
+          line: 355,
+          column: 6
+        }
+      },
+      "43": {
+        start: {
+          line: 361,
+          column: 8
+        },
+        end: {
+          line: 379,
+          column: 6
+        }
+      },
+      "44": {
+        start: {
+          line: 385,
+          column: 8
+        },
+        end: {
+          line: 430,
+          column: 6
+        }
+      },
+      "45": {
+        start: {
+          line: 436,
+          column: 8
+        },
+        end: {
+          line: 451,
+          column: 6
+        }
+      },
+      "46": {
+        start: {
+          line: 457,
+          column: 8
+        },
+        end: {
+          line: 506,
+          column: 6
+        }
+      },
+      "47": {
+        start: {
+          line: 512,
+          column: 8
+        },
+        end: {
+          line: 530,
+          column: 6
+        }
+      },
+      "48": {
+        start: {
+          line: 536,
+          column: 8
+        },
+        end: {
+          line: 592,
+          column: 6
+        }
+      },
+      "49": {
+        start: {
+          line: 598,
+          column: 8
+        },
+        end: {
+          line: 623,
+          column: 6
+        }
+      },
+      "50": {
+        start: {
+          line: 627,
+          column: 0
+        },
+        end: {
+          line: 627,
+          column: 58
+        }
+      },
+      "51": {
+        start: {
+          line: 628,
+          column: 0
+        },
+        end: {
+          line: 628,
+          column: 47
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 2,
+            column: 57
+          }
+        },
+        loc: {
+          start: {
+            line: 2,
+            column: 71
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        line: 2
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 12,
+            column: 1
+          },
+          end: {
+            line: 12,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 12,
+            column: 30
+          },
+          end: {
+            line: 24,
+            column: 1
+          }
+        },
+        line: 12
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 26,
+            column: 4
+          },
+          end: {
+            line: 26,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 26,
+            column: 18
+          },
+          end: {
+            line: 29,
+            column: 5
+          }
+        },
+        line: 26
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 33,
+            column: 4
+          },
+          end: {
+            line: 33,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 33,
+            column: 26
+          },
+          end: {
+            line: 71,
+            column: 5
+          }
+        },
+        line: 33
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 75,
+            column: 4
+          },
+          end: {
+            line: 75,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 75,
+            column: 56
+          },
+          end: {
+            line: 100,
+            column: 5
+          }
+        },
+        line: 75
+      },
+      "5": {
+        name: "(anonymous_5)",
+        decl: {
+          start: {
+            line: 104,
+            column: 4
+          },
+          end: {
+            line: 104,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 104,
+            column: 29
+          },
+          end: {
+            line: 178,
+            column: 5
+          }
+        },
+        line: 104
+      },
+      "6": {
+        name: "(anonymous_6)",
+        decl: {
+          start: {
+            line: 182,
+            column: 4
+          },
+          end: {
+            line: 182,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 182,
+            column: 29
+          },
+          end: {
+            line: 216,
+            column: 5
+          }
+        },
+        line: 182
+      },
+      "7": {
+        name: "(anonymous_7)",
+        decl: {
+          start: {
+            line: 220,
+            column: 4
+          },
+          end: {
+            line: 220,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 220,
+            column: 39
+          },
+          end: {
+            line: 274,
+            column: 5
+          }
+        },
+        line: 220
+      },
+      "8": {
+        name: "(anonymous_8)",
+        decl: {
+          start: {
+            line: 278,
+            column: 4
+          },
+          end: {
+            line: 278,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 278,
+            column: 39
+          },
+          end: {
+            line: 297,
+            column: 5
+          }
+        },
+        line: 278
+      },
+      "9": {
+        name: "(anonymous_9)",
+        decl: {
+          start: {
+            line: 301,
+            column: 4
+          },
+          end: {
+            line: 301,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 301,
+            column: 35
+          },
+          end: {
+            line: 356,
+            column: 5
+          }
+        },
+        line: 301
+      },
+      "10": {
+        name: "(anonymous_10)",
+        decl: {
+          start: {
+            line: 360,
+            column: 4
+          },
+          end: {
+            line: 360,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 360,
+            column: 35
+          },
+          end: {
+            line: 380,
+            column: 5
+          }
+        },
+        line: 360
+      },
+      "11": {
+        name: "(anonymous_11)",
+        decl: {
+          start: {
+            line: 384,
+            column: 4
+          },
+          end: {
+            line: 384,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 384,
+            column: 32
+          },
+          end: {
+            line: 431,
+            column: 5
+          }
+        },
+        line: 384
+      },
+      "12": {
+        name: "(anonymous_12)",
+        decl: {
+          start: {
+            line: 435,
+            column: 4
+          },
+          end: {
+            line: 435,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 435,
+            column: 32
+          },
+          end: {
+            line: 452,
+            column: 5
+          }
+        },
+        line: 435
+      },
+      "13": {
+        name: "(anonymous_13)",
+        decl: {
+          start: {
+            line: 456,
+            column: 4
+          },
+          end: {
+            line: 456,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 456,
+            column: 30
+          },
+          end: {
+            line: 507,
+            column: 5
+          }
+        },
+        line: 456
+      },
+      "14": {
+        name: "(anonymous_14)",
+        decl: {
+          start: {
+            line: 511,
+            column: 4
+          },
+          end: {
+            line: 511,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 511,
+            column: 30
+          },
+          end: {
+            line: 531,
+            column: 5
+          }
+        },
+        line: 511
+      },
+      "15": {
+        name: "(anonymous_15)",
+        decl: {
+          start: {
+            line: 535,
+            column: 4
+          },
+          end: {
+            line: 535,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 535,
+            column: 36
+          },
+          end: {
+            line: 593,
+            column: 5
+          }
+        },
+        line: 535
+      },
+      "16": {
+        name: "(anonymous_16)",
+        decl: {
+          start: {
+            line: 597,
+            column: 4
+          },
+          end: {
+            line: 597,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 597,
+            column: 36
+          },
+          end: {
+            line: 624,
+            column: 5
+          }
+        },
+        line: 597
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 2,
+            column: 22
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 2,
+            column: 23
+          },
+          end: {
+            line: 2,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 31
+          },
+          end: {
+            line: 2,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 2,
+            column: 56
+          },
+          end: {
+            line: 4,
+            column: 1
+          }
+        }],
+        line: 2
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 3,
+            column: 11
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 37
+          },
+          end: {
+            line: 3,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 43
+          },
+          end: {
+            line: 3,
+            column: 61
+          }
+        }],
+        line: 3
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 3,
+            column: 12
+          },
+          end: {
+            line: 3,
+            column: 15
+          }
+        }, {
+          start: {
+            line: 3,
+            column: 19
+          },
+          end: {
+            line: 3,
+            column: 33
+          }
+        }],
+        line: 3
+      },
+      "3": {
+        loc: {
+          start: {
+            line: 24,
+            column: 3
+          },
+          end: {
+            line: 24,
+            column: 76
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 24,
+            column: 3
+          },
+          end: {
+            line: 24,
+            column: 20
+          }
+        }, {
+          start: {
+            line: 24,
+            column: 25
+          },
+          end: {
+            line: 24,
+            column: 75
+          }
+        }],
+        line: 24
+      },
+      "4": {
+        loc: {
+          start: {
+            line: 75,
+            column: 39
+          },
+          end: {
+            line: 75,
+            column: 54
+          }
+        },
+        type: "default-arg",
+        locations: [{
+          start: {
+            line: 75,
+            column: 48
+          },
+          end: {
+            line: 75,
+            column: 54
+          }
+        }],
+        line: 75
+      },
+      "5": {
+        loc: {
+          start: {
+            line: 77,
+            column: 8
+          },
+          end: {
+            line: 79,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 77,
+            column: 8
+          },
+          end: {
+            line: 79,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 77
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 0,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0,
+      "51": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0
+    },
+    b: {
+      "0": [0, 0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0],
+      "5": [0, 0]
+    },
+    inputSourceMap: {
+      file: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailTemplateService.ts",
+      mappings: ";;;;;;AAAA,4DAAoC;AACpC,4CAAyC;AACzC,uDAA+C;AAc/C,uBAAuB;AACvB,IAAY,iBAYX;AAZD,WAAY,iBAAiB;IAC3B,wCAAmB,CAAA;IACnB,8DAAyC,CAAA;IACzC,sDAAiC,CAAA;IACjC,0DAAqC,CAAA;IACrC,gDAA2B,CAAA;IAC3B,4CAAuB,CAAA;IACvB,wDAAmC,CAAA;IACnC,4DAAuC,CAAA;IACvC,gEAA2C,CAAA;IAC3C,8CAAyB,CAAA;IACzB,sDAAiC,CAAA;AACnC,CAAC,EAZW,iBAAiB,iCAAjB,iBAAiB,QAY5B;AAED,MAAM,oBAAoB;IAGxB;QAFQ,cAAS,GAA4E,IAAI,GAAG,EAAE,CAAC;QAGrG,IAAI,CAAC,mBAAmB,EAAE,CAAC;IAC7B,CAAC;IAED;;OAEG;IACK,mBAAmB;QACzB,yBAAyB;QACzB,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,OAAO,EAAE;YAC5C,OAAO,EAAE,2BAA2B;YACpC,IAAI,EAAE,IAAI,CAAC,sBAAsB,EAAE;YACnC,IAAI,EAAE,IAAI,CAAC,sBAAsB,EAAE;SACpC,CAAC,CAAC;QAEH,8BAA8B;QAC9B,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,kBAAkB,EAAE;YACvD,OAAO,EAAE,gCAAgC;YACzC,IAAI,EAAE,IAAI,CAAC,gCAAgC,EAAE;YAC7C,IAAI,EAAE,IAAI,CAAC,gCAAgC,EAAE;SAC9C,CAAC,CAAC;QAEH,0BAA0B;QAC1B,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,cAAc,EAAE;YACnD,OAAO,EAAE,gCAAgC;YACzC,IAAI,EAAE,IAAI,CAAC,4BAA4B,EAAE;YACzC,IAAI,EAAE,IAAI,CAAC,4BAA4B,EAAE;SAC1C,CAAC,CAAC;QAEH,uBAAuB;QACvB,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,WAAW,EAAE;YAChD,OAAO,EAAE,2BAA2B;YACpC,IAAI,EAAE,IAAI,CAAC,yBAAyB,EAAE;YACtC,IAAI,EAAE,IAAI,CAAC,yBAAyB,EAAE;SACvC,CAAC,CAAC;QAEH,qBAAqB;QACrB,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,SAAS,EAAE;YAC9C,OAAO,EAAE,8BAA8B;YACvC,IAAI,EAAE,IAAI,CAAC,uBAAuB,EAAE;YACpC,IAAI,EAAE,IAAI,CAAC,uBAAuB,EAAE;SACrC,CAAC,CAAC;QAEH,2BAA2B;QAC3B,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,iBAAiB,CAAC,eAAe,EAAE;YACpD,OAAO,EAAE,8BAA8B;YACvC,IAAI,EAAE,IAAI,CAAC,6BAA6B,EAAE;YAC1C,IAAI,EAAE,IAAI,CAAC,6BAA6B,EAAE;SAC3C,CAAC,CAAC;QAEH,eAAM,CAAC,IAAI,CAAC,0CAA0C,CAAC,CAAC;IAC1D,CAAC;IAED;;OAEG;IACI,cAAc,CACnB,YAA+B,EAC/B,IAAkB,EAClB,SAA0B,MAAM;QAEhC,MAAM,QAAQ,GAAG,IAAI,CAAC,SAAS,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;QAElD,IAAI,CAAC,QAAQ,EAAE,CAAC;YACd,MAAM,IAAI,KAAK,CAAC,uBAAuB,YAAY,EAAE,CAAC,CAAC;QACzD,CAAC;QAED,kBAAkB;QAClB,MAAM,YAAY,GAAG;YACnB,GAAG,IAAI;YACP,QAAQ,EAAE,YAAY;YACtB,OAAO,EAAE,oBAAM,CAAC,YAAY;YAC5B,YAAY,EAAE,wBAAwB;YACtC,WAAW,EAAE,IAAI,IAAI,EAAE,CAAC,WAAW,EAAE;SACtC,CAAC;QAEF,IAAI,CAAC;YACH,MAAM,gBAAgB,GAAG,oBAAU,CAAC,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC,CAAC;YAC9D,MAAM,eAAe,GAAG,oBAAU,CAAC,OAAO,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;YAE7D,OAAO;gBACL,OAAO,EAAE,eAAe,CAAC,YAAY,CAAC;gBACtC,OAAO,EAAE,gBAAgB,CAAC,YAAY,CAAC;aACxC,CAAC;QACJ,CAAC;QAAC,OAAO,KAAK,EAAE,CAAC;YACf,eAAM,CAAC,KAAK,CAAC,4BAA4B,YAAY,GAAG,EAAE,KAAK,CAAC,CAAC;YACjE,MAAM,IAAI,KAAK,CAAC,8BAA8B,YAAY,EAAE,CAAC,CAAC;QAChE,CAAC;IACH,CAAC;IAED;;OAEG;IACK,sBAAsB;QAC5B,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAwEN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,sBAAsB;QAC5B,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAgCN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,gCAAgC;QACtC,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAoDN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,gCAAgC;QACtC,OAAO;;;;;;;;;;;;;;;;;KAiBN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,4BAA4B;QAClC,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAqDN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,4BAA4B;QAClC,OAAO;;;;;;;;;;;;;;;;;;KAkBN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,yBAAyB;QAC/B,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KA6CN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,yBAAyB;QAC/B,OAAO;;;;;;;;;;;;;;;KAeN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,uBAAuB;QAC7B,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAiDN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,uBAAuB;QAC7B,OAAO;;;;;;;;;;;;;;;;;;KAkBN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,6BAA6B;QACnC,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;KAwDN,CAAC;IACJ,CAAC;IAED;;OAEG;IACK,6BAA6B;QACnC,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;KAyBN,CAAC;IACJ,CAAC;CACF;AAED,uCAAuC;AAC1B,QAAA,oBAAoB,GAAG,IAAI,oBAAoB,EAAE,CAAC;AAE/D,kBAAe,4BAAoB,CAAC",
+      names: [],
+      sources: ["C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\services\\emailTemplateService.ts"],
+      sourcesContent: ["import handlebars from 'handlebars';\r\nimport { logger } from '../utils/logger';\r\nimport { config } from '../config/environment';\r\n\r\n// Template data interface\r\nexport interface TemplateData {\r\n  [key: string]: any;\r\n  // Common fields\r\n  userName?: string;\r\n  userEmail?: string;\r\n  siteName?: string;\r\n  siteUrl?: string;\r\n  supportEmail?: string;\r\n  currentYear?: number;\r\n}\r\n\r\n// Email template types\r\nexport enum EmailTemplateType {\r\n  WELCOME = 'welcome',\r\n  EMAIL_VERIFICATION = 'email_verification',\r\n  PASSWORD_RESET = 'password_reset',\r\n  PASSWORD_CHANGED = 'password_changed',\r\n  NEW_MESSAGE = 'new_message',\r\n  NEW_MATCH = 'new_match',\r\n  PROPERTY_POSTED = 'property_posted',\r\n  PROPERTY_APPROVED = 'property_approved',\r\n  SYSTEM_NOTIFICATION = 'system_notification',\r\n  NEWSLETTER = 'newsletter',\r\n  SECURITY_ALERT = 'security_alert'\r\n}\r\n\r\nclass EmailTemplateService {\r\n  private templates: Map<EmailTemplateType, { html: string; text: string; subject: string }> = new Map();\r\n\r\n  constructor() {\r\n    this.initializeTemplates();\r\n  }\r\n\r\n  /**\r\n   * Initialize email templates\r\n   */\r\n  private initializeTemplates(): void {\r\n    // Welcome email template\r\n    this.templates.set(EmailTemplateType.WELCOME, {\r\n      subject: 'Welcome to LajoSpaces! \uD83C\uDFE0',\r\n      html: this.getWelcomeHTMLTemplate(),\r\n      text: this.getWelcomeTextTemplate()\r\n    });\r\n\r\n    // Email verification template\r\n    this.templates.set(EmailTemplateType.EMAIL_VERIFICATION, {\r\n      subject: 'Verify Your LajoSpaces Account',\r\n      html: this.getEmailVerificationHTMLTemplate(),\r\n      text: this.getEmailVerificationTextTemplate()\r\n    });\r\n\r\n    // Password reset template\r\n    this.templates.set(EmailTemplateType.PASSWORD_RESET, {\r\n      subject: 'Reset Your LajoSpaces Password',\r\n      html: this.getPasswordResetHTMLTemplate(),\r\n      text: this.getPasswordResetTextTemplate()\r\n    });\r\n\r\n    // New message template\r\n    this.templates.set(EmailTemplateType.NEW_MESSAGE, {\r\n      subject: 'New Message on LajoSpaces',\r\n      html: this.getNewMessageHTMLTemplate(),\r\n      text: this.getNewMessageTextTemplate()\r\n    });\r\n\r\n    // New match template\r\n    this.templates.set(EmailTemplateType.NEW_MATCH, {\r\n      subject: '\uD83C\uDF89 New Roommate Match Found!',\r\n      html: this.getNewMatchHTMLTemplate(),\r\n      text: this.getNewMatchTextTemplate()\r\n    });\r\n\r\n    // Property posted template\r\n    this.templates.set(EmailTemplateType.PROPERTY_POSTED, {\r\n      subject: 'Property Posted Successfully',\r\n      html: this.getPropertyPostedHTMLTemplate(),\r\n      text: this.getPropertyPostedTextTemplate()\r\n    });\r\n\r\n    logger.info('Email templates initialized successfully');\r\n  }\r\n\r\n  /**\r\n   * Render email template\r\n   */\r\n  public renderTemplate(\r\n    templateType: EmailTemplateType,\r\n    data: TemplateData,\r\n    format: 'html' | 'text' = 'html'\r\n  ): { subject: string; content: string } {\r\n    const template = this.templates.get(templateType);\r\n    \r\n    if (!template) {\r\n      throw new Error(`Template not found: ${templateType}`);\r\n    }\r\n\r\n    // Add common data\r\n    const templateData = {\r\n      ...data,\r\n      siteName: 'LajoSpaces',\r\n      siteUrl: config.FRONTEND_URL,\r\n      supportEmail: 'support@lajospaces.com',\r\n      currentYear: new Date().getFullYear()\r\n    };\r\n\r\n    try {\r\n      const compiledTemplate = handlebars.compile(template[format]);\r\n      const compiledSubject = handlebars.compile(template.subject);\r\n\r\n      return {\r\n        subject: compiledSubject(templateData),\r\n        content: compiledTemplate(templateData)\r\n      };\r\n    } catch (error) {\r\n      logger.error(`Error rendering template ${templateType}:`, error);\r\n      throw new Error(`Failed to render template: ${templateType}`);\r\n    }\r\n  }\r\n\r\n  /**\r\n   * Welcome email HTML template\r\n   */\r\n  private getWelcomeHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Welcome to {{siteName}}!</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #2563eb; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .feature { background: white; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #2563eb; }\r\n          .feature-icon { font-size: 24px; margin-right: 10px; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>Welcome to Nigeria's Premier Housing Platform!</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>\uD83C\uDF89 Welcome to {{siteName}}! We're thrilled to have you join our community of housing seekers and providers across Nigeria.</p>\r\n            \r\n            <h3>What you can do now:</h3>\r\n            \r\n            <div class=\"feature\">\r\n              <span class=\"feature-icon\">\uD83D\uDD0D</span>\r\n              <strong>Search Properties</strong><br>\r\n              Browse thousands of verified properties across Nigeria's major cities\r\n            </div>\r\n            \r\n            <div class=\"feature\">\r\n              <span class=\"feature-icon\">\uD83D\uDCAC</span>\r\n              <strong>Find Roommates</strong><br>\r\n              Connect with compatible roommates using our smart matching system\r\n            </div>\r\n            \r\n            <div class=\"feature\">\r\n              <span class=\"feature-icon\">\uD83D\uDCDD</span>\r\n              <strong>List Your Property</strong><br>\r\n              Post your available rooms and properties to reach thousands of potential tenants\r\n            </div>\r\n            \r\n            <div class=\"feature\">\r\n              <span class=\"feature-icon\">\u2B50</span>\r\n              <strong>Save Favorites</strong><br>\r\n              Bookmark properties you love and get notified of price changes\r\n            </div>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{siteUrl}}/dashboard\" class=\"button\">Start Exploring</a>\r\n            </div>\r\n            \r\n            <p>Need help getting started? Check out our <a href=\"{{siteUrl}}/help\">Help Center</a> or reply to this email.</p>\r\n            \r\n            <p>Happy house hunting!</p>\r\n            <p><strong>The {{siteName}} Team</strong></p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p>Nigeria's trusted housing platform</p>\r\n            <p><a href=\"{{siteUrl}}/unsubscribe?email={{userEmail}}\">Unsubscribe</a> | <a href=\"{{siteUrl}}/privacy\">Privacy Policy</a></p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Welcome email text template\r\n   */\r\n  private getWelcomeTextTemplate(): string {\r\n    return `\r\n      Welcome to {{siteName}}!\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      Welcome to {{siteName}}! We're thrilled to have you join our community of housing seekers and providers across Nigeria.\r\n      \r\n      What you can do now:\r\n      \r\n      \uD83D\uDD0D Search Properties\r\n      Browse thousands of verified properties across Nigeria's major cities\r\n      \r\n      \uD83D\uDCAC Find Roommates\r\n      Connect with compatible roommates using our smart matching system\r\n      \r\n      \uD83D\uDCDD List Your Property\r\n      Post your available rooms and properties to reach thousands of potential tenants\r\n      \r\n      \u2B50 Save Favorites\r\n      Bookmark properties you love and get notified of price changes\r\n      \r\n      Start exploring: {{siteUrl}}/dashboard\r\n      \r\n      Need help getting started? Check out our Help Center: {{siteUrl}}/help\r\n      \r\n      Happy house hunting!\r\n      The {{siteName}} Team\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Nigeria's trusted housing platform\r\n      \r\n      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Email verification HTML template\r\n   */\r\n  private getEmailVerificationHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Verify Your {{siteName}} Account</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: #2563eb; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #2563eb; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .warning { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>Verify Your Account</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>Thank you for joining {{siteName}}! To complete your registration and start finding your perfect home, please verify your email address.</p>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{verificationUrl}}\" class=\"button\">Verify My Account</a>\r\n            </div>\r\n            \r\n            <p>Or copy and paste this link into your browser:</p>\r\n            <p style=\"word-break: break-all; color: #2563eb; background: #e5f3ff; padding: 10px; border-radius: 5px;\">{{verificationUrl}}</p>\r\n            \r\n            <div class=\"warning\">\r\n              <strong>\u26A0\uFE0F Important:</strong>\r\n              <ul>\r\n                <li>This verification link will expire in 24 hours</li>\r\n                <li>If you didn't create an account with {{siteName}}, please ignore this email</li>\r\n              </ul>\r\n            </div>\r\n            \r\n            <p>Once verified, you'll have access to all {{siteName}} features including property search, roommate matching, and more!</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p>Nigeria's trusted housing platform</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Email verification text template\r\n   */\r\n  private getEmailVerificationTextTemplate(): string {\r\n    return `\r\n      Verify Your {{siteName}} Account\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      Thank you for joining {{siteName}}! To complete your registration and start finding your perfect home, please verify your email address.\r\n      \r\n      Click here to verify: {{verificationUrl}}\r\n      \r\n      IMPORTANT:\r\n      - This verification link will expire in 24 hours\r\n      - If you didn't create an account with {{siteName}}, please ignore this email\r\n      \r\n      Once verified, you'll have access to all {{siteName}} features including property search, roommate matching, and more!\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Nigeria's trusted housing platform\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Password reset HTML template\r\n   */\r\n  private getPasswordResetHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Reset Your {{siteName}} Password</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: #dc2626; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #dc2626; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .warning { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>Password Reset Request</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>We received a request to reset your {{siteName}} account password. If you made this request, click the button below:</p>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{resetUrl}}\" class=\"button\">Reset My Password</a>\r\n            </div>\r\n            \r\n            <p>Or copy and paste this link into your browser:</p>\r\n            <p style=\"word-break: break-all; color: #dc2626; background: #fee2e2; padding: 10px; border-radius: 5px;\">{{resetUrl}}</p>\r\n            \r\n            <div class=\"warning\">\r\n              <strong>\u26A0\uFE0F Security Information:</strong>\r\n              <ul>\r\n                <li>This password reset link will expire in 1 hour</li>\r\n                <li>If you didn't request this reset, please ignore this email</li>\r\n                <li>Your password will remain unchanged until you create a new one</li>\r\n              </ul>\r\n            </div>\r\n            \r\n            <p>For your security, we recommend choosing a strong password with at least 8 characters, including uppercase and lowercase letters, numbers, and special characters.</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p>Nigeria's trusted housing platform</p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Password reset text template\r\n   */\r\n  private getPasswordResetTextTemplate(): string {\r\n    return `\r\n      Password Reset Request - {{siteName}}\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      We received a request to reset your {{siteName}} account password. If you made this request, use the link below:\r\n      \r\n      {{resetUrl}}\r\n      \r\n      SECURITY INFORMATION:\r\n      - This password reset link will expire in 1 hour\r\n      - If you didn't request this reset, please ignore this email\r\n      - Your password will remain unchanged until you create a new one\r\n      \r\n      For your security, we recommend choosing a strong password with at least 8 characters, including uppercase and lowercase letters, numbers, and special characters.\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Nigeria's trusted housing platform\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * New message HTML template\r\n   */\r\n  private getNewMessageHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>New Message on {{siteName}}</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: #059669; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .message-preview { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #059669; margin: 20px 0; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>\uD83D\uDCAC New Message</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>You have a new message from <strong>{{senderName}}</strong>:</p>\r\n            \r\n            <div class=\"message-preview\">\r\n              <p><strong>{{messagePreview}}</strong></p>\r\n            </div>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{messageUrl}}\" class=\"button\">View Message</a>\r\n            </div>\r\n            \r\n            <p>Don't want to receive message notifications? <a href=\"{{siteUrl}}/settings/notifications\">Update your preferences</a>.</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p><a href=\"{{siteUrl}}/unsubscribe?email={{userEmail}}\">Unsubscribe</a></p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * New message text template\r\n   */\r\n  private getNewMessageTextTemplate(): string {\r\n    return `\r\n      New Message on {{siteName}}\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      You have a new message from {{senderName}}:\r\n      \r\n      \"{{messagePreview}}\"\r\n      \r\n      View message: {{messageUrl}}\r\n      \r\n      Don't want to receive message notifications? Update your preferences: {{siteUrl}}/settings/notifications\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * New match HTML template\r\n   */\r\n  private getNewMatchHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>New Roommate Match - {{siteName}}</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #f59e0b; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .match-info { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; margin: 20px 0; }\r\n          .compatibility { font-size: 24px; font-weight: bold; color: #f59e0b; text-align: center; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>\uD83C\uDF89 New Roommate Match!</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>Great news! We found a potential roommate match for you with high compatibility.</p>\r\n            \r\n            <div class=\"match-info\">\r\n              <div class=\"compatibility\">{{compatibilityScore}}% Compatible</div>\r\n              <p><strong>Match Type:</strong> {{matchType}}</p>\r\n              <p><strong>Location:</strong> {{location}}</p>\r\n              <p><strong>Budget Range:</strong> {{budgetRange}}</p>\r\n            </div>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{matchUrl}}\" class=\"button\">View Match</a>\r\n            </div>\r\n            \r\n            <p>Don't miss out on this opportunity to find your perfect roommate!</p>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p><a href=\"{{siteUrl}}/unsubscribe?email={{userEmail}}\">Unsubscribe</a></p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * New match text template\r\n   */\r\n  private getNewMatchTextTemplate(): string {\r\n    return `\r\n      \uD83C\uDF89 New Roommate Match! - {{siteName}}\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      Great news! We found a potential roommate match for you with {{compatibilityScore}}% compatibility.\r\n      \r\n      Match Details:\r\n      - Type: {{matchType}}\r\n      - Location: {{location}}\r\n      - Budget Range: {{budgetRange}}\r\n      \r\n      View match: {{matchUrl}}\r\n      \r\n      Don't miss out on this opportunity to find your perfect roommate!\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Property posted HTML template\r\n   */\r\n  private getPropertyPostedHTMLTemplate(): string {\r\n    return `\r\n      <!DOCTYPE html>\r\n      <html>\r\n      <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n        <title>Property Posted Successfully - {{siteName}}</title>\r\n        <style>\r\n          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }\r\n          .container { max-width: 600px; margin: 0 auto; padding: 20px; }\r\n          .header { background: #059669; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }\r\n          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }\r\n          .button { display: inline-block; background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }\r\n          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }\r\n          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }\r\n          .property-info { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #059669; margin: 20px 0; }\r\n        </style>\r\n      </head>\r\n      <body>\r\n        <div class=\"container\">\r\n          <div class=\"header\">\r\n            <div class=\"logo\">\uD83C\uDFE0 {{siteName}}</div>\r\n            <h1>\u2705 Property Posted Successfully!</h1>\r\n          </div>\r\n          <div class=\"content\">\r\n            <h2>Hello {{userName}}!</h2>\r\n            <p>Great news! Your property listing has been successfully posted on {{siteName}} and is now visible to thousands of potential tenants.</p>\r\n            \r\n            <div class=\"property-info\">\r\n              <p><strong>Property:</strong> {{propertyTitle}}</p>\r\n              <p><strong>Location:</strong> {{propertyLocation}}</p>\r\n              <p><strong>Price:</strong> {{propertyPrice}}</p>\r\n              <p><strong>Status:</strong> Active</p>\r\n            </div>\r\n            \r\n            <div style=\"text-align: center; margin: 30px 0;\">\r\n              <a href=\"{{propertyUrl}}\" class=\"button\">View Listing</a>\r\n            </div>\r\n            \r\n            <p>Your listing is now being promoted to relevant users. You'll receive notifications when users show interest in your property.</p>\r\n            \r\n            <p><strong>Tips to get more inquiries:</strong></p>\r\n            <ul>\r\n              <li>Add high-quality photos</li>\r\n              <li>Write a detailed description</li>\r\n              <li>Respond quickly to inquiries</li>\r\n              <li>Keep your listing updated</li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer\">\r\n            <p>\xA9 {{currentYear}} {{siteName}}. All rights reserved.</p>\r\n            <p><a href=\"{{siteUrl}}/unsubscribe?email={{userEmail}}\">Unsubscribe</a></p>\r\n          </div>\r\n        </div>\r\n      </body>\r\n      </html>\r\n    `;\r\n  }\r\n\r\n  /**\r\n   * Property posted text template\r\n   */\r\n  private getPropertyPostedTextTemplate(): string {\r\n    return `\r\n      Property Posted Successfully - {{siteName}}\r\n      \r\n      Hello {{userName}}!\r\n      \r\n      Great news! Your property listing has been successfully posted on {{siteName}} and is now visible to thousands of potential tenants.\r\n      \r\n      Property Details:\r\n      - Property: {{propertyTitle}}\r\n      - Location: {{propertyLocation}}\r\n      - Price: {{propertyPrice}}\r\n      - Status: Active\r\n      \r\n      View listing: {{propertyUrl}}\r\n      \r\n      Your listing is now being promoted to relevant users. You'll receive notifications when users show interest in your property.\r\n      \r\n      Tips to get more inquiries:\r\n      - Add high-quality photos\r\n      - Write a detailed description\r\n      - Respond quickly to inquiries\r\n      - Keep your listing updated\r\n      \r\n      \xA9 {{currentYear}} {{siteName}}. All rights reserved.\r\n      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}\r\n    `;\r\n  }\r\n}\r\n\r\n// Create and export singleton instance\r\nexport const emailTemplateService = new EmailTemplateService();\r\n\r\nexport default emailTemplateService;\r\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "6a291279d135c64dda06017c441ee237f387df5c"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1z8bquhe7f = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1z8bquhe7f();
+var __importDefault =
+/* istanbul ignore next */
+(cov_1z8bquhe7f().s[0]++,
+/* istanbul ignore next */
+(cov_1z8bquhe7f().b[0][0]++, this) &&
+/* istanbul ignore next */
+(cov_1z8bquhe7f().b[0][1]++, this.__importDefault) ||
+/* istanbul ignore next */
+(cov_1z8bquhe7f().b[0][2]++, function (mod) {
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().f[0]++;
+  cov_1z8bquhe7f().s[1]++;
+  return /* istanbul ignore next */(cov_1z8bquhe7f().b[2][0]++, mod) &&
+  /* istanbul ignore next */
+  (cov_1z8bquhe7f().b[2][1]++, mod.__esModule) ?
+  /* istanbul ignore next */
+  (cov_1z8bquhe7f().b[1][0]++, mod) :
+  /* istanbul ignore next */
+  (cov_1z8bquhe7f().b[1][1]++, {
+    "default": mod
+  });
+}));
+/* istanbul ignore next */
+cov_1z8bquhe7f().s[2]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_1z8bquhe7f().s[3]++;
+exports.emailTemplateService = exports.EmailTemplateType = void 0;
+const handlebars_1 =
+/* istanbul ignore next */
+(cov_1z8bquhe7f().s[4]++, __importDefault(require("handlebars")));
+const logger_1 =
+/* istanbul ignore next */
+(cov_1z8bquhe7f().s[5]++, require("../utils/logger"));
+const environment_1 =
+/* istanbul ignore next */
+(cov_1z8bquhe7f().s[6]++, require("../config/environment"));
+// Email template types
+var EmailTemplateType;
+/* istanbul ignore next */
+cov_1z8bquhe7f().s[7]++;
+(function (EmailTemplateType) {
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().f[1]++;
+  cov_1z8bquhe7f().s[8]++;
+  EmailTemplateType["WELCOME"] = "welcome";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[9]++;
+  EmailTemplateType["EMAIL_VERIFICATION"] = "email_verification";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[10]++;
+  EmailTemplateType["PASSWORD_RESET"] = "password_reset";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[11]++;
+  EmailTemplateType["PASSWORD_CHANGED"] = "password_changed";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[12]++;
+  EmailTemplateType["NEW_MESSAGE"] = "new_message";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[13]++;
+  EmailTemplateType["NEW_MATCH"] = "new_match";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[14]++;
+  EmailTemplateType["PROPERTY_POSTED"] = "property_posted";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[15]++;
+  EmailTemplateType["PROPERTY_APPROVED"] = "property_approved";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[16]++;
+  EmailTemplateType["SYSTEM_NOTIFICATION"] = "system_notification";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[17]++;
+  EmailTemplateType["NEWSLETTER"] = "newsletter";
+  /* istanbul ignore next */
+  cov_1z8bquhe7f().s[18]++;
+  EmailTemplateType["SECURITY_ALERT"] = "security_alert";
+})(
+/* istanbul ignore next */
+(cov_1z8bquhe7f().b[3][0]++, EmailTemplateType) ||
+/* istanbul ignore next */
+(cov_1z8bquhe7f().b[3][1]++, exports.EmailTemplateType = EmailTemplateType = {}));
+class EmailTemplateService {
+  constructor() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[2]++;
+    cov_1z8bquhe7f().s[19]++;
+    this.templates = new Map();
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[20]++;
+    this.initializeTemplates();
+  }
+  /**
+   * Initialize email templates
+   */
+  initializeTemplates() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[3]++;
+    cov_1z8bquhe7f().s[21]++;
+    // Welcome email template
+    this.templates.set(EmailTemplateType.WELCOME, {
+      subject: 'Welcome to LajoSpaces! 🏠',
+      html: this.getWelcomeHTMLTemplate(),
+      text: this.getWelcomeTextTemplate()
+    });
+    // Email verification template
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[22]++;
+    this.templates.set(EmailTemplateType.EMAIL_VERIFICATION, {
+      subject: 'Verify Your LajoSpaces Account',
+      html: this.getEmailVerificationHTMLTemplate(),
+      text: this.getEmailVerificationTextTemplate()
+    });
+    // Password reset template
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[23]++;
+    this.templates.set(EmailTemplateType.PASSWORD_RESET, {
+      subject: 'Reset Your LajoSpaces Password',
+      html: this.getPasswordResetHTMLTemplate(),
+      text: this.getPasswordResetTextTemplate()
+    });
+    // New message template
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[24]++;
+    this.templates.set(EmailTemplateType.NEW_MESSAGE, {
+      subject: 'New Message on LajoSpaces',
+      html: this.getNewMessageHTMLTemplate(),
+      text: this.getNewMessageTextTemplate()
+    });
+    // New match template
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[25]++;
+    this.templates.set(EmailTemplateType.NEW_MATCH, {
+      subject: '🎉 New Roommate Match Found!',
+      html: this.getNewMatchHTMLTemplate(),
+      text: this.getNewMatchTextTemplate()
+    });
+    // Property posted template
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[26]++;
+    this.templates.set(EmailTemplateType.PROPERTY_POSTED, {
+      subject: 'Property Posted Successfully',
+      html: this.getPropertyPostedHTMLTemplate(),
+      text: this.getPropertyPostedTextTemplate()
+    });
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[27]++;
+    logger_1.logger.info('Email templates initialized successfully');
+  }
+  /**
+   * Render email template
+   */
+  renderTemplate(templateType, data, format =
+  /* istanbul ignore next */
+  (cov_1z8bquhe7f().b[4][0]++, 'html')) {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[4]++;
+    const template =
+    /* istanbul ignore next */
+    (cov_1z8bquhe7f().s[28]++, this.templates.get(templateType));
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[29]++;
+    if (!template) {
+      /* istanbul ignore next */
+      cov_1z8bquhe7f().b[5][0]++;
+      cov_1z8bquhe7f().s[30]++;
+      throw new Error(`Template not found: ${templateType}`);
+    } else
+    /* istanbul ignore next */
+    {
+      cov_1z8bquhe7f().b[5][1]++;
+    }
+    // Add common data
+    const templateData =
+    /* istanbul ignore next */
+    (cov_1z8bquhe7f().s[31]++, {
+      ...data,
+      siteName: 'LajoSpaces',
+      siteUrl: environment_1.config.FRONTEND_URL,
+      supportEmail: 'support@lajospaces.com',
+      currentYear: new Date().getFullYear()
+    });
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().s[32]++;
+    try {
+      const compiledTemplate =
+      /* istanbul ignore next */
+      (cov_1z8bquhe7f().s[33]++, handlebars_1.default.compile(template[format]));
+      const compiledSubject =
+      /* istanbul ignore next */
+      (cov_1z8bquhe7f().s[34]++, handlebars_1.default.compile(template.subject));
+      /* istanbul ignore next */
+      cov_1z8bquhe7f().s[35]++;
+      return {
+        subject: compiledSubject(templateData),
+        content: compiledTemplate(templateData)
+      };
+    } catch (error) {
+      /* istanbul ignore next */
+      cov_1z8bquhe7f().s[36]++;
+      logger_1.logger.error(`Error rendering template ${templateType}:`, error);
+      /* istanbul ignore next */
+      cov_1z8bquhe7f().s[37]++;
+      throw new Error(`Failed to render template: ${templateType}`);
+    }
+  }
+  /**
+   * Welcome email HTML template
+   */
+  getWelcomeHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[5]++;
+    cov_1z8bquhe7f().s[38]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to {{siteName}}!</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #2563eb; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .feature { background: white; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #2563eb; }
+          .feature-icon { font-size: 24px; margin-right: 10px; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>Welcome to Nigeria's Premier Housing Platform!</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>🎉 Welcome to {{siteName}}! We're thrilled to have you join our community of housing seekers and providers across Nigeria.</p>
+            
+            <h3>What you can do now:</h3>
+            
+            <div class="feature">
+              <span class="feature-icon">🔍</span>
+              <strong>Search Properties</strong><br>
+              Browse thousands of verified properties across Nigeria's major cities
+            </div>
+            
+            <div class="feature">
+              <span class="feature-icon">💬</span>
+              <strong>Find Roommates</strong><br>
+              Connect with compatible roommates using our smart matching system
+            </div>
+            
+            <div class="feature">
+              <span class="feature-icon">📝</span>
+              <strong>List Your Property</strong><br>
+              Post your available rooms and properties to reach thousands of potential tenants
+            </div>
+            
+            <div class="feature">
+              <span class="feature-icon">⭐</span>
+              <strong>Save Favorites</strong><br>
+              Bookmark properties you love and get notified of price changes
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{siteUrl}}/dashboard" class="button">Start Exploring</a>
+            </div>
+            
+            <p>Need help getting started? Check out our <a href="{{siteUrl}}/help">Help Center</a> or reply to this email.</p>
+            
+            <p>Happy house hunting!</p>
+            <p><strong>The {{siteName}} Team</strong></p>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p>Nigeria's trusted housing platform</p>
+            <p><a href="{{siteUrl}}/unsubscribe?email={{userEmail}}">Unsubscribe</a> | <a href="{{siteUrl}}/privacy">Privacy Policy</a></p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * Welcome email text template
+   */
+  getWelcomeTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[6]++;
+    cov_1z8bquhe7f().s[39]++;
+    return `
+      Welcome to {{siteName}}!
+      
+      Hello {{userName}}!
+      
+      Welcome to {{siteName}}! We're thrilled to have you join our community of housing seekers and providers across Nigeria.
+      
+      What you can do now:
+      
+      🔍 Search Properties
+      Browse thousands of verified properties across Nigeria's major cities
+      
+      💬 Find Roommates
+      Connect with compatible roommates using our smart matching system
+      
+      📝 List Your Property
+      Post your available rooms and properties to reach thousands of potential tenants
+      
+      ⭐ Save Favorites
+      Bookmark properties you love and get notified of price changes
+      
+      Start exploring: {{siteUrl}}/dashboard
+      
+      Need help getting started? Check out our Help Center: {{siteUrl}}/help
+      
+      Happy house hunting!
+      The {{siteName}} Team
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Nigeria's trusted housing platform
+      
+      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}
+    `;
+  }
+  /**
+   * Email verification HTML template
+   */
+  getEmailVerificationHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[7]++;
+    cov_1z8bquhe7f().s[40]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verify Your {{siteName}} Account</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: #2563eb; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #2563eb; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .warning { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>Verify Your Account</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>Thank you for joining {{siteName}}! To complete your registration and start finding your perfect home, please verify your email address.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{verificationUrl}}" class="button">Verify My Account</a>
+            </div>
+            
+            <p>Or copy and paste this link into your browser:</p>
+            <p style="word-break: break-all; color: #2563eb; background: #e5f3ff; padding: 10px; border-radius: 5px;">{{verificationUrl}}</p>
+            
+            <div class="warning">
+              <strong>⚠️ Important:</strong>
+              <ul>
+                <li>This verification link will expire in 24 hours</li>
+                <li>If you didn't create an account with {{siteName}}, please ignore this email</li>
+              </ul>
+            </div>
+            
+            <p>Once verified, you'll have access to all {{siteName}} features including property search, roommate matching, and more!</p>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p>Nigeria's trusted housing platform</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * Email verification text template
+   */
+  getEmailVerificationTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[8]++;
+    cov_1z8bquhe7f().s[41]++;
+    return `
+      Verify Your {{siteName}} Account
+      
+      Hello {{userName}}!
+      
+      Thank you for joining {{siteName}}! To complete your registration and start finding your perfect home, please verify your email address.
+      
+      Click here to verify: {{verificationUrl}}
+      
+      IMPORTANT:
+      - This verification link will expire in 24 hours
+      - If you didn't create an account with {{siteName}}, please ignore this email
+      
+      Once verified, you'll have access to all {{siteName}} features including property search, roommate matching, and more!
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Nigeria's trusted housing platform
+    `;
+  }
+  /**
+   * Password reset HTML template
+   */
+  getPasswordResetHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[9]++;
+    cov_1z8bquhe7f().s[42]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reset Your {{siteName}} Password</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: #dc2626; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #dc2626; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .warning { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>Password Reset Request</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>We received a request to reset your {{siteName}} account password. If you made this request, click the button below:</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{resetUrl}}" class="button">Reset My Password</a>
+            </div>
+            
+            <p>Or copy and paste this link into your browser:</p>
+            <p style="word-break: break-all; color: #dc2626; background: #fee2e2; padding: 10px; border-radius: 5px;">{{resetUrl}}</p>
+            
+            <div class="warning">
+              <strong>⚠️ Security Information:</strong>
+              <ul>
+                <li>This password reset link will expire in 1 hour</li>
+                <li>If you didn't request this reset, please ignore this email</li>
+                <li>Your password will remain unchanged until you create a new one</li>
+              </ul>
+            </div>
+            
+            <p>For your security, we recommend choosing a strong password with at least 8 characters, including uppercase and lowercase letters, numbers, and special characters.</p>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p>Nigeria's trusted housing platform</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * Password reset text template
+   */
+  getPasswordResetTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[10]++;
+    cov_1z8bquhe7f().s[43]++;
+    return `
+      Password Reset Request - {{siteName}}
+      
+      Hello {{userName}}!
+      
+      We received a request to reset your {{siteName}} account password. If you made this request, use the link below:
+      
+      {{resetUrl}}
+      
+      SECURITY INFORMATION:
+      - This password reset link will expire in 1 hour
+      - If you didn't request this reset, please ignore this email
+      - Your password will remain unchanged until you create a new one
+      
+      For your security, we recommend choosing a strong password with at least 8 characters, including uppercase and lowercase letters, numbers, and special characters.
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Nigeria's trusted housing platform
+    `;
+  }
+  /**
+   * New message HTML template
+   */
+  getNewMessageHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[11]++;
+    cov_1z8bquhe7f().s[44]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Message on {{siteName}}</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: #059669; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .message-preview { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #059669; margin: 20px 0; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>💬 New Message</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>You have a new message from <strong>{{senderName}}</strong>:</p>
+            
+            <div class="message-preview">
+              <p><strong>{{messagePreview}}</strong></p>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{messageUrl}}" class="button">View Message</a>
+            </div>
+            
+            <p>Don't want to receive message notifications? <a href="{{siteUrl}}/settings/notifications">Update your preferences</a>.</p>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p><a href="{{siteUrl}}/unsubscribe?email={{userEmail}}">Unsubscribe</a></p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * New message text template
+   */
+  getNewMessageTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[12]++;
+    cov_1z8bquhe7f().s[45]++;
+    return `
+      New Message on {{siteName}}
+      
+      Hello {{userName}}!
+      
+      You have a new message from {{senderName}}:
+      
+      "{{messagePreview}}"
+      
+      View message: {{messageUrl}}
+      
+      Don't want to receive message notifications? Update your preferences: {{siteUrl}}/settings/notifications
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}
+    `;
+  }
+  /**
+   * New match HTML template
+   */
+  getNewMatchHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[13]++;
+    cov_1z8bquhe7f().s[46]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Roommate Match - {{siteName}}</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #f59e0b; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .match-info { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; margin: 20px 0; }
+          .compatibility { font-size: 24px; font-weight: bold; color: #f59e0b; text-align: center; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>🎉 New Roommate Match!</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>Great news! We found a potential roommate match for you with high compatibility.</p>
+            
+            <div class="match-info">
+              <div class="compatibility">{{compatibilityScore}}% Compatible</div>
+              <p><strong>Match Type:</strong> {{matchType}}</p>
+              <p><strong>Location:</strong> {{location}}</p>
+              <p><strong>Budget Range:</strong> {{budgetRange}}</p>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{matchUrl}}" class="button">View Match</a>
+            </div>
+            
+            <p>Don't miss out on this opportunity to find your perfect roommate!</p>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p><a href="{{siteUrl}}/unsubscribe?email={{userEmail}}">Unsubscribe</a></p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * New match text template
+   */
+  getNewMatchTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[14]++;
+    cov_1z8bquhe7f().s[47]++;
+    return `
+      🎉 New Roommate Match! - {{siteName}}
+      
+      Hello {{userName}}!
+      
+      Great news! We found a potential roommate match for you with {{compatibilityScore}}% compatibility.
+      
+      Match Details:
+      - Type: {{matchType}}
+      - Location: {{location}}
+      - Budget Range: {{budgetRange}}
+      
+      View match: {{matchUrl}}
+      
+      Don't miss out on this opportunity to find your perfect roommate!
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}
+    `;
+  }
+  /**
+   * Property posted HTML template
+   */
+  getPropertyPostedHTMLTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[15]++;
+    cov_1z8bquhe7f().s[48]++;
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property Posted Successfully - {{siteName}}</title>
+        <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+          .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+          .header { background: #059669; color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+          .content { background: #f9fafb; padding: 40px 30px; border-radius: 0 0 10px 10px; }
+          .button { display: inline-block; background: #059669; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+          .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+          .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+          .property-info { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #059669; margin: 20px 0; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏠 {{siteName}}</div>
+            <h1>✅ Property Posted Successfully!</h1>
+          </div>
+          <div class="content">
+            <h2>Hello {{userName}}!</h2>
+            <p>Great news! Your property listing has been successfully posted on {{siteName}} and is now visible to thousands of potential tenants.</p>
+            
+            <div class="property-info">
+              <p><strong>Property:</strong> {{propertyTitle}}</p>
+              <p><strong>Location:</strong> {{propertyLocation}}</p>
+              <p><strong>Price:</strong> {{propertyPrice}}</p>
+              <p><strong>Status:</strong> Active</p>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="{{propertyUrl}}" class="button">View Listing</a>
+            </div>
+            
+            <p>Your listing is now being promoted to relevant users. You'll receive notifications when users show interest in your property.</p>
+            
+            <p><strong>Tips to get more inquiries:</strong></p>
+            <ul>
+              <li>Add high-quality photos</li>
+              <li>Write a detailed description</li>
+              <li>Respond quickly to inquiries</li>
+              <li>Keep your listing updated</li>
+            </ul>
+          </div>
+          <div class="footer">
+            <p>© {{currentYear}} {{siteName}}. All rights reserved.</p>
+            <p><a href="{{siteUrl}}/unsubscribe?email={{userEmail}}">Unsubscribe</a></p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+  }
+  /**
+   * Property posted text template
+   */
+  getPropertyPostedTextTemplate() {
+    /* istanbul ignore next */
+    cov_1z8bquhe7f().f[16]++;
+    cov_1z8bquhe7f().s[49]++;
+    return `
+      Property Posted Successfully - {{siteName}}
+      
+      Hello {{userName}}!
+      
+      Great news! Your property listing has been successfully posted on {{siteName}} and is now visible to thousands of potential tenants.
+      
+      Property Details:
+      - Property: {{propertyTitle}}
+      - Location: {{propertyLocation}}
+      - Price: {{propertyPrice}}
+      - Status: Active
+      
+      View listing: {{propertyUrl}}
+      
+      Your listing is now being promoted to relevant users. You'll receive notifications when users show interest in your property.
+      
+      Tips to get more inquiries:
+      - Add high-quality photos
+      - Write a detailed description
+      - Respond quickly to inquiries
+      - Keep your listing updated
+      
+      © {{currentYear}} {{siteName}}. All rights reserved.
+      Unsubscribe: {{siteUrl}}/unsubscribe?email={{userEmail}}
+    `;
+  }
+}
+// Create and export singleton instance
+/* istanbul ignore next */
+cov_1z8bquhe7f().s[50]++;
+exports.emailTemplateService = new EmailTemplateService();
+/* istanbul ignore next */
+cov_1z8bquhe7f().s[51]++;
+exports.default = exports.emailTemplateService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMXo4YnF1aGU3ZiIsImFjdHVhbENvdmVyYWdlIiwiaGFuZGxlYmFyc18xIiwicyIsIl9faW1wb3J0RGVmYXVsdCIsInJlcXVpcmUiLCJsb2dnZXJfMSIsImVudmlyb25tZW50XzEiLCJFbWFpbFRlbXBsYXRlVHlwZSIsImYiLCJiIiwiZXhwb3J0cyIsIkVtYWlsVGVtcGxhdGVTZXJ2aWNlIiwiY29uc3RydWN0b3IiLCJ0ZW1wbGF0ZXMiLCJNYXAiLCJpbml0aWFsaXplVGVtcGxhdGVzIiwic2V0IiwiV0VMQ09NRSIsInN1YmplY3QiLCJodG1sIiwiZ2V0V2VsY29tZUhUTUxUZW1wbGF0ZSIsInRleHQiLCJnZXRXZWxjb21lVGV4dFRlbXBsYXRlIiwiRU1BSUxfVkVSSUZJQ0FUSU9OIiwiZ2V0RW1haWxWZXJpZmljYXRpb25IVE1MVGVtcGxhdGUiLCJnZXRFbWFpbFZlcmlmaWNhdGlvblRleHRUZW1wbGF0ZSIsIlBBU1NXT1JEX1JFU0VUIiwiZ2V0UGFzc3dvcmRSZXNldEhUTUxUZW1wbGF0ZSIsImdldFBhc3N3b3JkUmVzZXRUZXh0VGVtcGxhdGUiLCJORVdfTUVTU0FHRSIsImdldE5ld01lc3NhZ2VIVE1MVGVtcGxhdGUiLCJnZXROZXdNZXNzYWdlVGV4dFRlbXBsYXRlIiwiTkVXX01BVENIIiwiZ2V0TmV3TWF0Y2hIVE1MVGVtcGxhdGUiLCJnZXROZXdNYXRjaFRleHRUZW1wbGF0ZSIsIlBST1BFUlRZX1BPU1RFRCIsImdldFByb3BlcnR5UG9zdGVkSFRNTFRlbXBsYXRlIiwiZ2V0UHJvcGVydHlQb3N0ZWRUZXh0VGVtcGxhdGUiLCJsb2dnZXIiLCJpbmZvIiwicmVuZGVyVGVtcGxhdGUiLCJ0ZW1wbGF0ZVR5cGUiLCJkYXRhIiwiZm9ybWF0IiwidGVtcGxhdGUiLCJnZXQiLCJFcnJvciIsInRlbXBsYXRlRGF0YSIsInNpdGVOYW1lIiwic2l0ZVVybCIsImNvbmZpZyIsIkZST05URU5EX1VSTCIsInN1cHBvcnRFbWFpbCIsImN1cnJlbnRZZWFyIiwiRGF0ZSIsImdldEZ1bGxZZWFyIiwiY29tcGlsZWRUZW1wbGF0ZSIsImRlZmF1bHQiLCJjb21waWxlIiwiY29tcGlsZWRTdWJqZWN0IiwiY29udGVudCIsImVycm9yIiwiZW1haWxUZW1wbGF0ZVNlcnZpY2UiXSwic291cmNlcyI6WyJDOlxcVXNlcnNcXE1ZIFBDXFxEZXNrdG9wXFxsYWpvc3BhY2VzXFxsYWpvc3BhY2VzYmFja2VuZFxcc3JjXFxzZXJ2aWNlc1xcZW1haWxUZW1wbGF0ZVNlcnZpY2UudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGhhbmRsZWJhcnMgZnJvbSAnaGFuZGxlYmFycyc7XHJcbmltcG9ydCB7IGxvZ2dlciB9IGZyb20gJy4uL3V0aWxzL2xvZ2dlcic7XHJcbmltcG9ydCB7IGNvbmZpZyB9IGZyb20gJy4uL2NvbmZpZy9lbnZpcm9ubWVudCc7XHJcblxyXG4vLyBUZW1wbGF0ZSBkYXRhIGludGVyZmFjZVxyXG5leHBvcnQgaW50ZXJmYWNlIFRlbXBsYXRlRGF0YSB7XHJcbiAgW2tleTogc3RyaW5nXTogYW55O1xyXG4gIC8vIENvbW1vbiBmaWVsZHNcclxuICB1c2VyTmFtZT86IHN0cmluZztcclxuICB1c2VyRW1haWw/OiBzdHJpbmc7XHJcbiAgc2l0ZU5hbWU/OiBzdHJpbmc7XHJcbiAgc2l0ZVVybD86IHN0cmluZztcclxuICBzdXBwb3J0RW1haWw/OiBzdHJpbmc7XHJcbiAgY3VycmVudFllYXI/OiBudW1iZXI7XHJcbn1cclxuXHJcbi8vIEVtYWlsIHRlbXBsYXRlIHR5cGVzXHJcbmV4cG9ydCBlbnVtIEVtYWlsVGVtcGxhdGVUeXBlIHtcclxuICBXRUxDT01FID0gJ3dlbGNvbWUnLFxyXG4gIEVNQUlMX1ZFUklGSUNBVElPTiA9ICdlbWFpbF92ZXJpZmljYXRpb24nLFxyXG4gIFBBU1NXT1JEX1JFU0VUID0gJ3Bhc3N3b3JkX3Jlc2V0JyxcclxuICBQQVNTV09SRF9DSEFOR0VEID0gJ3Bhc3N3b3JkX2NoYW5nZWQnLFxyXG4gIE5FV19NRVNTQUdFID0gJ25ld19tZXNzYWdlJyxcclxuICBORVdfTUFUQ0ggPSAnbmV3X21hdGNoJyxcclxuICBQUk9QRVJUWV9QT1NURUQgPSAncHJvcGVydHlfcG9zdGVkJyxcclxuICBQUk9QRVJUWV9BUFBST1ZFRCA9ICdwcm9wZXJ0eV9hcHByb3ZlZCcsXHJcbiAgU1lTVEVNX05PVElGSUNBVElPTiA9ICdzeXN0ZW1fbm90aWZpY2F0aW9uJyxcclxuICBORVdTTEVUVEVSID0gJ25ld3NsZXR0ZXInLFxyXG4gIFNFQ1VSSVRZX0FMRVJUID0gJ3NlY3VyaXR5X2FsZXJ0J1xyXG59XHJcblxyXG5jbGFzcyBFbWFpbFRlbXBsYXRlU2VydmljZSB7XHJcbiAgcHJpdmF0ZSB0ZW1wbGF0ZXM6IE1hcDxFbWFpbFRlbXBsYXRlVHlwZSwgeyBodG1sOiBzdHJpbmc7IHRleHQ6IHN0cmluZzsgc3ViamVjdDogc3RyaW5nIH0+ID0gbmV3IE1hcCgpO1xyXG5cclxuICBjb25zdHJ1Y3RvcigpIHtcclxuICAgIHRoaXMuaW5pdGlhbGl6ZVRlbXBsYXRlcygpO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogSW5pdGlhbGl6ZSBlbWFpbCB0ZW1wbGF0ZXNcclxuICAgKi9cclxuICBwcml2YXRlIGluaXRpYWxpemVUZW1wbGF0ZXMoKTogdm9pZCB7XHJcbiAgICAvLyBXZWxjb21lIGVtYWlsIHRlbXBsYXRlXHJcbiAgICB0aGlzLnRlbXBsYXRlcy5zZXQoRW1haWxUZW1wbGF0ZVR5cGUuV0VMQ09NRSwge1xyXG4gICAgICBzdWJqZWN0OiAnV2VsY29tZSB0byBMYWpvU3BhY2VzISDwn4+gJyxcclxuICAgICAgaHRtbDogdGhpcy5nZXRXZWxjb21lSFRNTFRlbXBsYXRlKCksXHJcbiAgICAgIHRleHQ6IHRoaXMuZ2V0V2VsY29tZVRleHRUZW1wbGF0ZSgpXHJcbiAgICB9KTtcclxuXHJcbiAgICAvLyBFbWFpbCB2ZXJpZmljYXRpb24gdGVtcGxhdGVcclxuICAgIHRoaXMudGVtcGxhdGVzLnNldChFbWFpbFRlbXBsYXRlVHlwZS5FTUFJTF9WRVJJRklDQVRJT04sIHtcclxuICAgICAgc3ViamVjdDogJ1ZlcmlmeSBZb3VyIExham9TcGFjZXMgQWNjb3VudCcsXHJcbiAgICAgIGh0bWw6IHRoaXMuZ2V0RW1haWxWZXJpZmljYXRpb25IVE1MVGVtcGxhdGUoKSxcclxuICAgICAgdGV4dDogdGhpcy5nZXRFbWFpbFZlcmlmaWNhdGlvblRleHRUZW1wbGF0ZSgpXHJcbiAgICB9KTtcclxuXHJcbiAgICAvLyBQYXNzd29yZCByZXNldCB0ZW1wbGF0ZVxyXG4gICAgdGhpcy50ZW1wbGF0ZXMuc2V0KEVtYWlsVGVtcGxhdGVUeXBlLlBBU1NXT1JEX1JFU0VULCB7XHJcbiAgICAgIHN1YmplY3Q6ICdSZXNldCBZb3VyIExham9TcGFjZXMgUGFzc3dvcmQnLFxyXG4gICAgICBodG1sOiB0aGlzLmdldFBhc3N3b3JkUmVzZXRIVE1MVGVtcGxhdGUoKSxcclxuICAgICAgdGV4dDogdGhpcy5nZXRQYXNzd29yZFJlc2V0VGV4dFRlbXBsYXRlKClcclxuICAgIH0pO1xyXG5cclxuICAgIC8vIE5ldyBtZXNzYWdlIHRlbXBsYXRlXHJcbiAgICB0aGlzLnRlbXBsYXRlcy5zZXQoRW1haWxUZW1wbGF0ZVR5cGUuTkVXX01FU1NBR0UsIHtcclxuICAgICAgc3ViamVjdDogJ05ldyBNZXNzYWdlIG9uIExham9TcGFjZXMnLFxyXG4gICAgICBodG1sOiB0aGlzLmdldE5ld01lc3NhZ2VIVE1MVGVtcGxhdGUoKSxcclxuICAgICAgdGV4dDogdGhpcy5nZXROZXdNZXNzYWdlVGV4dFRlbXBsYXRlKClcclxuICAgIH0pO1xyXG5cclxuICAgIC8vIE5ldyBtYXRjaCB0ZW1wbGF0ZVxyXG4gICAgdGhpcy50ZW1wbGF0ZXMuc2V0KEVtYWlsVGVtcGxhdGVUeXBlLk5FV19NQVRDSCwge1xyXG4gICAgICBzdWJqZWN0OiAn8J+OiSBOZXcgUm9vbW1hdGUgTWF0Y2ggRm91bmQhJyxcclxuICAgICAgaHRtbDogdGhpcy5nZXROZXdNYXRjaEhUTUxUZW1wbGF0ZSgpLFxyXG4gICAgICB0ZXh0OiB0aGlzLmdldE5ld01hdGNoVGV4dFRlbXBsYXRlKClcclxuICAgIH0pO1xyXG5cclxuICAgIC8vIFByb3BlcnR5IHBvc3RlZCB0ZW1wbGF0ZVxyXG4gICAgdGhpcy50ZW1wbGF0ZXMuc2V0KEVtYWlsVGVtcGxhdGVUeXBlLlBST1BFUlRZX1BPU1RFRCwge1xyXG4gICAgICBzdWJqZWN0OiAnUHJvcGVydHkgUG9zdGVkIFN1Y2Nlc3NmdWxseScsXHJcbiAgICAgIGh0bWw6IHRoaXMuZ2V0UHJvcGVydHlQb3N0ZWRIVE1MVGVtcGxhdGUoKSxcclxuICAgICAgdGV4dDogdGhpcy5nZXRQcm9wZXJ0eVBvc3RlZFRleHRUZW1wbGF0ZSgpXHJcbiAgICB9KTtcclxuXHJcbiAgICBsb2dnZXIuaW5mbygnRW1haWwgdGVtcGxhdGVzIGluaXRpYWxpemVkIHN1Y2Nlc3NmdWxseScpO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogUmVuZGVyIGVtYWlsIHRlbXBsYXRlXHJcbiAgICovXHJcbiAgcHVibGljIHJlbmRlclRlbXBsYXRlKFxyXG4gICAgdGVtcGxhdGVUeXBlOiBFbWFpbFRlbXBsYXRlVHlwZSxcclxuICAgIGRhdGE6IFRlbXBsYXRlRGF0YSxcclxuICAgIGZvcm1hdDogJ2h0bWwnIHwgJ3RleHQnID0gJ2h0bWwnXHJcbiAgKTogeyBzdWJqZWN0OiBzdHJpbmc7IGNvbnRlbnQ6IHN0cmluZyB9IHtcclxuICAgIGNvbnN0IHRlbXBsYXRlID0gdGhpcy50ZW1wbGF0ZXMuZ2V0KHRlbXBsYXRlVHlwZSk7XHJcbiAgICBcclxuICAgIGlmICghdGVtcGxhdGUpIHtcclxuICAgICAgdGhyb3cgbmV3IEVycm9yKGBUZW1wbGF0ZSBub3QgZm91bmQ6ICR7dGVtcGxhdGVUeXBlfWApO1xyXG4gICAgfVxyXG5cclxuICAgIC8vIEFkZCBjb21tb24gZGF0YVxyXG4gICAgY29uc3QgdGVtcGxhdGVEYXRhID0ge1xyXG4gICAgICAuLi5kYXRhLFxyXG4gICAgICBzaXRlTmFtZTogJ0xham9TcGFjZXMnLFxyXG4gICAgICBzaXRlVXJsOiBjb25maWcuRlJPTlRFTkRfVVJMLFxyXG4gICAgICBzdXBwb3J0RW1haWw6ICdzdXBwb3J0QGxham9zcGFjZXMuY29tJyxcclxuICAgICAgY3VycmVudFllYXI6IG5ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKVxyXG4gICAgfTtcclxuXHJcbiAgICB0cnkge1xyXG4gICAgICBjb25zdCBjb21waWxlZFRlbXBsYXRlID0gaGFuZGxlYmFycy5jb21waWxlKHRlbXBsYXRlW2Zvcm1hdF0pO1xyXG4gICAgICBjb25zdCBjb21waWxlZFN1YmplY3QgPSBoYW5kbGViYXJzLmNvbXBpbGUodGVtcGxhdGUuc3ViamVjdCk7XHJcblxyXG4gICAgICByZXR1cm4ge1xyXG4gICAgICAgIHN1YmplY3Q6IGNvbXBpbGVkU3ViamVjdCh0ZW1wbGF0ZURhdGEpLFxyXG4gICAgICAgIGNvbnRlbnQ6IGNvbXBpbGVkVGVtcGxhdGUodGVtcGxhdGVEYXRhKVxyXG4gICAgICB9O1xyXG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcclxuICAgICAgbG9nZ2VyLmVycm9yKGBFcnJvciByZW5kZXJpbmcgdGVtcGxhdGUgJHt0ZW1wbGF0ZVR5cGV9OmAsIGVycm9yKTtcclxuICAgICAgdGhyb3cgbmV3IEVycm9yKGBGYWlsZWQgdG8gcmVuZGVyIHRlbXBsYXRlOiAke3RlbXBsYXRlVHlwZX1gKTtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIC8qKlxyXG4gICAqIFdlbGNvbWUgZW1haWwgSFRNTCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0V2VsY29tZUhUTUxUZW1wbGF0ZSgpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGBcclxuICAgICAgPCFET0NUWVBFIGh0bWw+XHJcbiAgICAgIDxodG1sPlxyXG4gICAgICA8aGVhZD5cclxuICAgICAgICA8bWV0YSBjaGFyc2V0PVwidXRmLThcIj5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxyXG4gICAgICAgIDx0aXRsZT5XZWxjb21lIHRvIHt7c2l0ZU5hbWV9fSE8L3RpdGxlPlxyXG4gICAgICAgIDxzdHlsZT5cclxuICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IGxpbmUtaGVpZ2h0OiAxLjY7IGNvbG9yOiAjMzMzOyBtYXJnaW46IDA7IHBhZGRpbmc6IDA7IH1cclxuICAgICAgICAgIC5jb250YWluZXIgeyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMjBweDsgfVxyXG4gICAgICAgICAgLmhlYWRlciB7IGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICMyNTYzZWIsICMxZDRlZDgpOyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDMwcHggMjBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBib3JkZXItcmFkaXVzOiAxMHB4IDEwcHggMCAwOyB9XHJcbiAgICAgICAgICAuY29udGVudCB7IGJhY2tncm91bmQ6ICNmOWZhZmI7IHBhZGRpbmc6IDQwcHggMzBweDsgYm9yZGVyLXJhZGl1czogMCAwIDEwcHggMTBweDsgfVxyXG4gICAgICAgICAgLmJ1dHRvbiB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgYmFja2dyb3VuZDogIzI1NjNlYjsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAxNXB4IDMwcHg7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgYm9yZGVyLXJhZGl1czogOHB4OyBtYXJnaW46IDIwcHggMDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH1cclxuICAgICAgICAgIC5mb290ZXIgeyB0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbi10b3A6IDMwcHg7IGNvbG9yOiAjNjY2OyBmb250LXNpemU6IDE0cHg7IH1cclxuICAgICAgICAgIC5sb2dvIHsgZm9udC1zaXplOiAyOHB4OyBmb250LXdlaWdodDogYm9sZDsgbWFyZ2luLWJvdHRvbTogMTBweDsgfVxyXG4gICAgICAgICAgLmZlYXR1cmUgeyBiYWNrZ3JvdW5kOiB3aGl0ZTsgcGFkZGluZzogMjBweDsgbWFyZ2luOiAxNXB4IDA7IGJvcmRlci1yYWRpdXM6IDhweDsgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjMjU2M2ViOyB9XHJcbiAgICAgICAgICAuZmVhdHVyZS1pY29uIHsgZm9udC1zaXplOiAyNHB4OyBtYXJnaW4tcmlnaHQ6IDEwcHg7IH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2hlYWQ+XHJcbiAgICAgIDxib2R5PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImxvZ29cIj7wn4+gIHt7c2l0ZU5hbWV9fTwvZGl2PlxyXG4gICAgICAgICAgICA8aDE+V2VsY29tZSB0byBOaWdlcmlhJ3MgUHJlbWllciBIb3VzaW5nIFBsYXRmb3JtITwvaDE+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIDxoMj5IZWxsbyB7e3VzZXJOYW1lfX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+8J+OiSBXZWxjb21lIHRvIHt7c2l0ZU5hbWV9fSEgV2UncmUgdGhyaWxsZWQgdG8gaGF2ZSB5b3Ugam9pbiBvdXIgY29tbXVuaXR5IG9mIGhvdXNpbmcgc2Vla2VycyBhbmQgcHJvdmlkZXJzIGFjcm9zcyBOaWdlcmlhLjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxoMz5XaGF0IHlvdSBjYW4gZG8gbm93OjwvaDM+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmVhdHVyZS1pY29uXCI+8J+UjTwvc3Bhbj5cclxuICAgICAgICAgICAgICA8c3Ryb25nPlNlYXJjaCBQcm9wZXJ0aWVzPC9zdHJvbmc+PGJyPlxyXG4gICAgICAgICAgICAgIEJyb3dzZSB0aG91c2FuZHMgb2YgdmVyaWZpZWQgcHJvcGVydGllcyBhY3Jvc3MgTmlnZXJpYSdzIG1ham9yIGNpdGllc1xyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmZWF0dXJlXCI+XHJcbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmZWF0dXJlLWljb25cIj7wn5KsPC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxzdHJvbmc+RmluZCBSb29tbWF0ZXM8L3N0cm9uZz48YnI+XHJcbiAgICAgICAgICAgICAgQ29ubmVjdCB3aXRoIGNvbXBhdGlibGUgcm9vbW1hdGVzIHVzaW5nIG91ciBzbWFydCBtYXRjaGluZyBzeXN0ZW1cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmVhdHVyZS1pY29uXCI+8J+TnTwvc3Bhbj5cclxuICAgICAgICAgICAgICA8c3Ryb25nPkxpc3QgWW91ciBQcm9wZXJ0eTwvc3Ryb25nPjxicj5cclxuICAgICAgICAgICAgICBQb3N0IHlvdXIgYXZhaWxhYmxlIHJvb21zIGFuZCBwcm9wZXJ0aWVzIHRvIHJlYWNoIHRob3VzYW5kcyBvZiBwb3RlbnRpYWwgdGVuYW50c1xyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmZWF0dXJlXCI+XHJcbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmZWF0dXJlLWljb25cIj7irZA8L3NwYW4+XHJcbiAgICAgICAgICAgICAgPHN0cm9uZz5TYXZlIEZhdm9yaXRlczwvc3Ryb25nPjxicj5cclxuICAgICAgICAgICAgICBCb29rbWFyayBwcm9wZXJ0aWVzIHlvdSBsb3ZlIGFuZCBnZXQgbm90aWZpZWQgb2YgcHJpY2UgY2hhbmdlc1xyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbjogMzBweCAwO1wiPlxyXG4gICAgICAgICAgICAgIDxhIGhyZWY9XCJ7e3NpdGVVcmx9fS9kYXNoYm9hcmRcIiBjbGFzcz1cImJ1dHRvblwiPlN0YXJ0IEV4cGxvcmluZzwvYT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8cD5OZWVkIGhlbHAgZ2V0dGluZyBzdGFydGVkPyBDaGVjayBvdXQgb3VyIDxhIGhyZWY9XCJ7e3NpdGVVcmx9fS9oZWxwXCI+SGVscCBDZW50ZXI8L2E+IG9yIHJlcGx5IHRvIHRoaXMgZW1haWwuPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+SGFwcHkgaG91c2UgaHVudGluZyE8L3A+XHJcbiAgICAgICAgICAgIDxwPjxzdHJvbmc+VGhlIHt7c2l0ZU5hbWV9fSBUZWFtPC9zdHJvbmc+PC9wPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxwPsKpIHt7Y3VycmVudFllYXJ9fSB7e3NpdGVOYW1lfX0uIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9wPlxyXG4gICAgICAgICAgICA8cD5OaWdlcmlhJ3MgdHJ1c3RlZCBob3VzaW5nIHBsYXRmb3JtPC9wPlxyXG4gICAgICAgICAgICA8cD48YSBocmVmPVwie3tzaXRlVXJsfX0vdW5zdWJzY3JpYmU/ZW1haWw9e3t1c2VyRW1haWx9fVwiPlVuc3Vic2NyaWJlPC9hPiB8IDxhIGhyZWY9XCJ7e3NpdGVVcmx9fS9wcml2YWN5XCI+UHJpdmFjeSBQb2xpY3k8L2E+PC9wPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvYm9keT5cclxuICAgICAgPC9odG1sPlxyXG4gICAgYDtcclxuICB9XHJcblxyXG4gIC8qKlxyXG4gICAqIFdlbGNvbWUgZW1haWwgdGV4dCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0V2VsY29tZVRleHRUZW1wbGF0ZSgpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGBcclxuICAgICAgV2VsY29tZSB0byB7e3NpdGVOYW1lfX0hXHJcbiAgICAgIFxyXG4gICAgICBIZWxsbyB7e3VzZXJOYW1lfX0hXHJcbiAgICAgIFxyXG4gICAgICBXZWxjb21lIHRvIHt7c2l0ZU5hbWV9fSEgV2UncmUgdGhyaWxsZWQgdG8gaGF2ZSB5b3Ugam9pbiBvdXIgY29tbXVuaXR5IG9mIGhvdXNpbmcgc2Vla2VycyBhbmQgcHJvdmlkZXJzIGFjcm9zcyBOaWdlcmlhLlxyXG4gICAgICBcclxuICAgICAgV2hhdCB5b3UgY2FuIGRvIG5vdzpcclxuICAgICAgXHJcbiAgICAgIPCflI0gU2VhcmNoIFByb3BlcnRpZXNcclxuICAgICAgQnJvd3NlIHRob3VzYW5kcyBvZiB2ZXJpZmllZCBwcm9wZXJ0aWVzIGFjcm9zcyBOaWdlcmlhJ3MgbWFqb3IgY2l0aWVzXHJcbiAgICAgIFxyXG4gICAgICDwn5KsIEZpbmQgUm9vbW1hdGVzXHJcbiAgICAgIENvbm5lY3Qgd2l0aCBjb21wYXRpYmxlIHJvb21tYXRlcyB1c2luZyBvdXIgc21hcnQgbWF0Y2hpbmcgc3lzdGVtXHJcbiAgICAgIFxyXG4gICAgICDwn5OdIExpc3QgWW91ciBQcm9wZXJ0eVxyXG4gICAgICBQb3N0IHlvdXIgYXZhaWxhYmxlIHJvb21zIGFuZCBwcm9wZXJ0aWVzIHRvIHJlYWNoIHRob3VzYW5kcyBvZiBwb3RlbnRpYWwgdGVuYW50c1xyXG4gICAgICBcclxuICAgICAg4q2QIFNhdmUgRmF2b3JpdGVzXHJcbiAgICAgIEJvb2ttYXJrIHByb3BlcnRpZXMgeW91IGxvdmUgYW5kIGdldCBub3RpZmllZCBvZiBwcmljZSBjaGFuZ2VzXHJcbiAgICAgIFxyXG4gICAgICBTdGFydCBleHBsb3Jpbmc6IHt7c2l0ZVVybH19L2Rhc2hib2FyZFxyXG4gICAgICBcclxuICAgICAgTmVlZCBoZWxwIGdldHRpbmcgc3RhcnRlZD8gQ2hlY2sgb3V0IG91ciBIZWxwIENlbnRlcjoge3tzaXRlVXJsfX0vaGVscFxyXG4gICAgICBcclxuICAgICAgSGFwcHkgaG91c2UgaHVudGluZyFcclxuICAgICAgVGhlIHt7c2l0ZU5hbWV9fSBUZWFtXHJcbiAgICAgIFxyXG4gICAgICDCqSB7e2N1cnJlbnRZZWFyfX0ge3tzaXRlTmFtZX19LiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4gICAgICBOaWdlcmlhJ3MgdHJ1c3RlZCBob3VzaW5nIHBsYXRmb3JtXHJcbiAgICAgIFxyXG4gICAgICBVbnN1YnNjcmliZToge3tzaXRlVXJsfX0vdW5zdWJzY3JpYmU/ZW1haWw9e3t1c2VyRW1haWx9fVxyXG4gICAgYDtcclxuICB9XHJcblxyXG4gIC8qKlxyXG4gICAqIEVtYWlsIHZlcmlmaWNhdGlvbiBIVE1MIHRlbXBsYXRlXHJcbiAgICovXHJcbiAgcHJpdmF0ZSBnZXRFbWFpbFZlcmlmaWNhdGlvbkhUTUxUZW1wbGF0ZSgpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGBcclxuICAgICAgPCFET0NUWVBFIGh0bWw+XHJcbiAgICAgIDxodG1sPlxyXG4gICAgICA8aGVhZD5cclxuICAgICAgICA8bWV0YSBjaGFyc2V0PVwidXRmLThcIj5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxyXG4gICAgICAgIDx0aXRsZT5WZXJpZnkgWW91ciB7e3NpdGVOYW1lfX0gQWNjb3VudDwvdGl0bGU+XHJcbiAgICAgICAgPHN0eWxlPlxyXG4gICAgICAgICAgYm9keSB7IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgbGluZS1oZWlnaHQ6IDEuNjsgY29sb3I6ICMzMzM7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgfVxyXG4gICAgICAgICAgLmNvbnRhaW5lciB7IG1heC13aWR0aDogNjAwcHg7IG1hcmdpbjogMCBhdXRvOyBwYWRkaW5nOiAyMHB4OyB9XHJcbiAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogIzI1NjNlYjsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAzMHB4IDIwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgYm9yZGVyLXJhZGl1czogMTBweCAxMHB4IDAgMDsgfVxyXG4gICAgICAgICAgLmNvbnRlbnQgeyBiYWNrZ3JvdW5kOiAjZjlmYWZiOyBwYWRkaW5nOiA0MHB4IDMwcHg7IGJvcmRlci1yYWRpdXM6IDAgMCAxMHB4IDEwcHg7IH1cclxuICAgICAgICAgIC5idXR0b24geyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGJhY2tncm91bmQ6ICMyNTYzZWI7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMTVweCAzMHB4OyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGJvcmRlci1yYWRpdXM6IDhweDsgbWFyZ2luOiAyMHB4IDA7IGZvbnQtd2VpZ2h0OiBib2xkOyB9XHJcbiAgICAgICAgICAuZm9vdGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiAzMHB4OyBjb2xvcjogIzY2NjsgZm9udC1zaXplOiAxNHB4OyB9XHJcbiAgICAgICAgICAubG9nbyB7IGZvbnQtc2l6ZTogMjhweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IG1hcmdpbi1ib3R0b206IDEwcHg7IH1cclxuICAgICAgICAgIC53YXJuaW5nIHsgYmFja2dyb3VuZDogI2ZlZjNjNzsgYm9yZGVyOiAxcHggc29saWQgI2Y1OWUwYjsgcGFkZGluZzogMTVweDsgYm9yZGVyLXJhZGl1czogOHB4OyBtYXJnaW46IDIwcHggMDsgfVxyXG4gICAgICAgIDwvc3R5bGU+XHJcbiAgICAgIDwvaGVhZD5cclxuICAgICAgPGJvZHk+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwibG9nb1wiPvCfj6Age3tzaXRlTmFtZX19PC9kaXY+XHJcbiAgICAgICAgICAgIDxoMT5WZXJpZnkgWW91ciBBY2NvdW50PC9oMT5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRlbnRcIj5cclxuICAgICAgICAgICAgPGgyPkhlbGxvIHt7dXNlck5hbWV9fSE8L2gyPlxyXG4gICAgICAgICAgICA8cD5UaGFuayB5b3UgZm9yIGpvaW5pbmcge3tzaXRlTmFtZX19ISBUbyBjb21wbGV0ZSB5b3VyIHJlZ2lzdHJhdGlvbiBhbmQgc3RhcnQgZmluZGluZyB5b3VyIHBlcmZlY3QgaG9tZSwgcGxlYXNlIHZlcmlmeSB5b3VyIGVtYWlsIGFkZHJlc3MuPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luOiAzMHB4IDA7XCI+XHJcbiAgICAgICAgICAgICAgPGEgaHJlZj1cInt7dmVyaWZpY2F0aW9uVXJsfX1cIiBjbGFzcz1cImJ1dHRvblwiPlZlcmlmeSBNeSBBY2NvdW50PC9hPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPk9yIGNvcHkgYW5kIHBhc3RlIHRoaXMgbGluayBpbnRvIHlvdXIgYnJvd3Nlcjo8L3A+XHJcbiAgICAgICAgICAgIDxwIHN0eWxlPVwid29yZC1icmVhazogYnJlYWstYWxsOyBjb2xvcjogIzI1NjNlYjsgYmFja2dyb3VuZDogI2U1ZjNmZjsgcGFkZGluZzogMTBweDsgYm9yZGVyLXJhZGl1czogNXB4O1wiPnt7dmVyaWZpY2F0aW9uVXJsfX08L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwid2FybmluZ1wiPlxyXG4gICAgICAgICAgICAgIDxzdHJvbmc+4pqg77iPIEltcG9ydGFudDo8L3N0cm9uZz5cclxuICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICA8bGk+VGhpcyB2ZXJpZmljYXRpb24gbGluayB3aWxsIGV4cGlyZSBpbiAyNCBob3VyczwvbGk+XHJcbiAgICAgICAgICAgICAgICA8bGk+SWYgeW91IGRpZG4ndCBjcmVhdGUgYW4gYWNjb3VudCB3aXRoIHt7c2l0ZU5hbWV9fSwgcGxlYXNlIGlnbm9yZSB0aGlzIGVtYWlsPC9saT5cclxuICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPk9uY2UgdmVyaWZpZWQsIHlvdSdsbCBoYXZlIGFjY2VzcyB0byBhbGwge3tzaXRlTmFtZX19IGZlYXR1cmVzIGluY2x1ZGluZyBwcm9wZXJ0eSBzZWFyY2gsIHJvb21tYXRlIG1hdGNoaW5nLCBhbmQgbW9yZSE8L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmb290ZXJcIj5cclxuICAgICAgICAgICAgPHA+wqkge3tjdXJyZW50WWVhcn19IHt7c2l0ZU5hbWV9fS4gQWxsIHJpZ2h0cyByZXNlcnZlZC48L3A+XHJcbiAgICAgICAgICAgIDxwPk5pZ2VyaWEncyB0cnVzdGVkIGhvdXNpbmcgcGxhdGZvcm08L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9ib2R5PlxyXG4gICAgICA8L2h0bWw+XHJcbiAgICBgO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogRW1haWwgdmVyaWZpY2F0aW9uIHRleHQgdGVtcGxhdGVcclxuICAgKi9cclxuICBwcml2YXRlIGdldEVtYWlsVmVyaWZpY2F0aW9uVGV4dFRlbXBsYXRlKCk6IHN0cmluZyB7XHJcbiAgICByZXR1cm4gYFxyXG4gICAgICBWZXJpZnkgWW91ciB7e3NpdGVOYW1lfX0gQWNjb3VudFxyXG4gICAgICBcclxuICAgICAgSGVsbG8ge3t1c2VyTmFtZX19IVxyXG4gICAgICBcclxuICAgICAgVGhhbmsgeW91IGZvciBqb2luaW5nIHt7c2l0ZU5hbWV9fSEgVG8gY29tcGxldGUgeW91ciByZWdpc3RyYXRpb24gYW5kIHN0YXJ0IGZpbmRpbmcgeW91ciBwZXJmZWN0IGhvbWUsIHBsZWFzZSB2ZXJpZnkgeW91ciBlbWFpbCBhZGRyZXNzLlxyXG4gICAgICBcclxuICAgICAgQ2xpY2sgaGVyZSB0byB2ZXJpZnk6IHt7dmVyaWZpY2F0aW9uVXJsfX1cclxuICAgICAgXHJcbiAgICAgIElNUE9SVEFOVDpcclxuICAgICAgLSBUaGlzIHZlcmlmaWNhdGlvbiBsaW5rIHdpbGwgZXhwaXJlIGluIDI0IGhvdXJzXHJcbiAgICAgIC0gSWYgeW91IGRpZG4ndCBjcmVhdGUgYW4gYWNjb3VudCB3aXRoIHt7c2l0ZU5hbWV9fSwgcGxlYXNlIGlnbm9yZSB0aGlzIGVtYWlsXHJcbiAgICAgIFxyXG4gICAgICBPbmNlIHZlcmlmaWVkLCB5b3UnbGwgaGF2ZSBhY2Nlc3MgdG8gYWxsIHt7c2l0ZU5hbWV9fSBmZWF0dXJlcyBpbmNsdWRpbmcgcHJvcGVydHkgc2VhcmNoLCByb29tbWF0ZSBtYXRjaGluZywgYW5kIG1vcmUhXHJcbiAgICAgIFxyXG4gICAgICDCqSB7e2N1cnJlbnRZZWFyfX0ge3tzaXRlTmFtZX19LiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4gICAgICBOaWdlcmlhJ3MgdHJ1c3RlZCBob3VzaW5nIHBsYXRmb3JtXHJcbiAgICBgO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogUGFzc3dvcmQgcmVzZXQgSFRNTCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0UGFzc3dvcmRSZXNldEhUTUxUZW1wbGF0ZSgpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGBcclxuICAgICAgPCFET0NUWVBFIGh0bWw+XHJcbiAgICAgIDxodG1sPlxyXG4gICAgICA8aGVhZD5cclxuICAgICAgICA8bWV0YSBjaGFyc2V0PVwidXRmLThcIj5cclxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxyXG4gICAgICAgIDx0aXRsZT5SZXNldCBZb3VyIHt7c2l0ZU5hbWV9fSBQYXNzd29yZDwvdGl0bGU+XHJcbiAgICAgICAgPHN0eWxlPlxyXG4gICAgICAgICAgYm9keSB7IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgbGluZS1oZWlnaHQ6IDEuNjsgY29sb3I6ICMzMzM7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgfVxyXG4gICAgICAgICAgLmNvbnRhaW5lciB7IG1heC13aWR0aDogNjAwcHg7IG1hcmdpbjogMCBhdXRvOyBwYWRkaW5nOiAyMHB4OyB9XHJcbiAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogI2RjMjYyNjsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAzMHB4IDIwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgYm9yZGVyLXJhZGl1czogMTBweCAxMHB4IDAgMDsgfVxyXG4gICAgICAgICAgLmNvbnRlbnQgeyBiYWNrZ3JvdW5kOiAjZjlmYWZiOyBwYWRkaW5nOiA0MHB4IDMwcHg7IGJvcmRlci1yYWRpdXM6IDAgMCAxMHB4IDEwcHg7IH1cclxuICAgICAgICAgIC5idXR0b24geyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGJhY2tncm91bmQ6ICNkYzI2MjY7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMTVweCAzMHB4OyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGJvcmRlci1yYWRpdXM6IDhweDsgbWFyZ2luOiAyMHB4IDA7IGZvbnQtd2VpZ2h0OiBib2xkOyB9XHJcbiAgICAgICAgICAuZm9vdGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiAzMHB4OyBjb2xvcjogIzY2NjsgZm9udC1zaXplOiAxNHB4OyB9XHJcbiAgICAgICAgICAubG9nbyB7IGZvbnQtc2l6ZTogMjhweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IG1hcmdpbi1ib3R0b206IDEwcHg7IH1cclxuICAgICAgICAgIC53YXJuaW5nIHsgYmFja2dyb3VuZDogI2ZlZjNjNzsgYm9yZGVyOiAxcHggc29saWQgI2Y1OWUwYjsgcGFkZGluZzogMTVweDsgYm9yZGVyLXJhZGl1czogOHB4OyBtYXJnaW46IDIwcHggMDsgfVxyXG4gICAgICAgIDwvc3R5bGU+XHJcbiAgICAgIDwvaGVhZD5cclxuICAgICAgPGJvZHk+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwibG9nb1wiPvCfj6Age3tzaXRlTmFtZX19PC9kaXY+XHJcbiAgICAgICAgICAgIDxoMT5QYXNzd29yZCBSZXNldCBSZXF1ZXN0PC9oMT5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRlbnRcIj5cclxuICAgICAgICAgICAgPGgyPkhlbGxvIHt7dXNlck5hbWV9fSE8L2gyPlxyXG4gICAgICAgICAgICA8cD5XZSByZWNlaXZlZCBhIHJlcXVlc3QgdG8gcmVzZXQgeW91ciB7e3NpdGVOYW1lfX0gYWNjb3VudCBwYXNzd29yZC4gSWYgeW91IG1hZGUgdGhpcyByZXF1ZXN0LCBjbGljayB0aGUgYnV0dG9uIGJlbG93OjwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbjogMzBweCAwO1wiPlxyXG4gICAgICAgICAgICAgIDxhIGhyZWY9XCJ7e3Jlc2V0VXJsfX1cIiBjbGFzcz1cImJ1dHRvblwiPlJlc2V0IE15IFBhc3N3b3JkPC9hPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPk9yIGNvcHkgYW5kIHBhc3RlIHRoaXMgbGluayBpbnRvIHlvdXIgYnJvd3Nlcjo8L3A+XHJcbiAgICAgICAgICAgIDxwIHN0eWxlPVwid29yZC1icmVhazogYnJlYWstYWxsOyBjb2xvcjogI2RjMjYyNjsgYmFja2dyb3VuZDogI2ZlZTJlMjsgcGFkZGluZzogMTBweDsgYm9yZGVyLXJhZGl1czogNXB4O1wiPnt7cmVzZXRVcmx9fTwvcD5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJ3YXJuaW5nXCI+XHJcbiAgICAgICAgICAgICAgPHN0cm9uZz7imqDvuI8gU2VjdXJpdHkgSW5mb3JtYXRpb246PC9zdHJvbmc+XHJcbiAgICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgICAgPGxpPlRoaXMgcGFzc3dvcmQgcmVzZXQgbGluayB3aWxsIGV4cGlyZSBpbiAxIGhvdXI8L2xpPlxyXG4gICAgICAgICAgICAgICAgPGxpPklmIHlvdSBkaWRuJ3QgcmVxdWVzdCB0aGlzIHJlc2V0LCBwbGVhc2UgaWdub3JlIHRoaXMgZW1haWw8L2xpPlxyXG4gICAgICAgICAgICAgICAgPGxpPllvdXIgcGFzc3dvcmQgd2lsbCByZW1haW4gdW5jaGFuZ2VkIHVudGlsIHlvdSBjcmVhdGUgYSBuZXcgb25lPC9saT5cclxuICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPkZvciB5b3VyIHNlY3VyaXR5LCB3ZSByZWNvbW1lbmQgY2hvb3NpbmcgYSBzdHJvbmcgcGFzc3dvcmQgd2l0aCBhdCBsZWFzdCA4IGNoYXJhY3RlcnMsIGluY2x1ZGluZyB1cHBlcmNhc2UgYW5kIGxvd2VyY2FzZSBsZXR0ZXJzLCBudW1iZXJzLCBhbmQgc3BlY2lhbCBjaGFyYWN0ZXJzLjwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZvb3RlclwiPlxyXG4gICAgICAgICAgICA8cD7CqSB7e2N1cnJlbnRZZWFyfX0ge3tzaXRlTmFtZX19LiBBbGwgcmlnaHRzIHJlc2VydmVkLjwvcD5cclxuICAgICAgICAgICAgPHA+TmlnZXJpYSdzIHRydXN0ZWQgaG91c2luZyBwbGF0Zm9ybTwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2JvZHk+XHJcbiAgICAgIDwvaHRtbD5cclxuICAgIGA7XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBQYXNzd29yZCByZXNldCB0ZXh0IHRlbXBsYXRlXHJcbiAgICovXHJcbiAgcHJpdmF0ZSBnZXRQYXNzd29yZFJlc2V0VGV4dFRlbXBsYXRlKCk6IHN0cmluZyB7XHJcbiAgICByZXR1cm4gYFxyXG4gICAgICBQYXNzd29yZCBSZXNldCBSZXF1ZXN0IC0ge3tzaXRlTmFtZX19XHJcbiAgICAgIFxyXG4gICAgICBIZWxsbyB7e3VzZXJOYW1lfX0hXHJcbiAgICAgIFxyXG4gICAgICBXZSByZWNlaXZlZCBhIHJlcXVlc3QgdG8gcmVzZXQgeW91ciB7e3NpdGVOYW1lfX0gYWNjb3VudCBwYXNzd29yZC4gSWYgeW91IG1hZGUgdGhpcyByZXF1ZXN0LCB1c2UgdGhlIGxpbmsgYmVsb3c6XHJcbiAgICAgIFxyXG4gICAgICB7e3Jlc2V0VXJsfX1cclxuICAgICAgXHJcbiAgICAgIFNFQ1VSSVRZIElORk9STUFUSU9OOlxyXG4gICAgICAtIFRoaXMgcGFzc3dvcmQgcmVzZXQgbGluayB3aWxsIGV4cGlyZSBpbiAxIGhvdXJcclxuICAgICAgLSBJZiB5b3UgZGlkbid0IHJlcXVlc3QgdGhpcyByZXNldCwgcGxlYXNlIGlnbm9yZSB0aGlzIGVtYWlsXHJcbiAgICAgIC0gWW91ciBwYXNzd29yZCB3aWxsIHJlbWFpbiB1bmNoYW5nZWQgdW50aWwgeW91IGNyZWF0ZSBhIG5ldyBvbmVcclxuICAgICAgXHJcbiAgICAgIEZvciB5b3VyIHNlY3VyaXR5LCB3ZSByZWNvbW1lbmQgY2hvb3NpbmcgYSBzdHJvbmcgcGFzc3dvcmQgd2l0aCBhdCBsZWFzdCA4IGNoYXJhY3RlcnMsIGluY2x1ZGluZyB1cHBlcmNhc2UgYW5kIGxvd2VyY2FzZSBsZXR0ZXJzLCBudW1iZXJzLCBhbmQgc3BlY2lhbCBjaGFyYWN0ZXJzLlxyXG4gICAgICBcclxuICAgICAgwqkge3tjdXJyZW50WWVhcn19IHt7c2l0ZU5hbWV9fS4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cclxuICAgICAgTmlnZXJpYSdzIHRydXN0ZWQgaG91c2luZyBwbGF0Zm9ybVxyXG4gICAgYDtcclxuICB9XHJcblxyXG4gIC8qKlxyXG4gICAqIE5ldyBtZXNzYWdlIEhUTUwgdGVtcGxhdGVcclxuICAgKi9cclxuICBwcml2YXRlIGdldE5ld01lc3NhZ2VIVE1MVGVtcGxhdGUoKTogc3RyaW5nIHtcclxuICAgIHJldHVybiBgXHJcbiAgICAgIDwhRE9DVFlQRSBodG1sPlxyXG4gICAgICA8aHRtbD5cclxuICAgICAgPGhlYWQ+XHJcbiAgICAgICAgPG1ldGEgY2hhcnNldD1cInV0Zi04XCI+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIj5cclxuICAgICAgICA8dGl0bGU+TmV3IE1lc3NhZ2Ugb24ge3tzaXRlTmFtZX19PC90aXRsZT5cclxuICAgICAgICA8c3R5bGU+XHJcbiAgICAgICAgICBib2R5IHsgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBsaW5lLWhlaWdodDogMS42OyBjb2xvcjogIzMzMzsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyB9XHJcbiAgICAgICAgICAuY29udGFpbmVyIHsgbWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87IHBhZGRpbmc6IDIwcHg7IH1cclxuICAgICAgICAgIC5oZWFkZXIgeyBiYWNrZ3JvdW5kOiAjMDU5NjY5OyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDMwcHggMjBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBib3JkZXItcmFkaXVzOiAxMHB4IDEwcHggMCAwOyB9XHJcbiAgICAgICAgICAuY29udGVudCB7IGJhY2tncm91bmQ6ICNmOWZhZmI7IHBhZGRpbmc6IDQwcHggMzBweDsgYm9yZGVyLXJhZGl1czogMCAwIDEwcHggMTBweDsgfVxyXG4gICAgICAgICAgLmJ1dHRvbiB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgYmFja2dyb3VuZDogIzA1OTY2OTsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAxNXB4IDMwcHg7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgYm9yZGVyLXJhZGl1czogOHB4OyBtYXJnaW46IDIwcHggMDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH1cclxuICAgICAgICAgIC5mb290ZXIgeyB0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbi10b3A6IDMwcHg7IGNvbG9yOiAjNjY2OyBmb250LXNpemU6IDE0cHg7IH1cclxuICAgICAgICAgIC5sb2dvIHsgZm9udC1zaXplOiAyOHB4OyBmb250LXdlaWdodDogYm9sZDsgbWFyZ2luLWJvdHRvbTogMTBweDsgfVxyXG4gICAgICAgICAgLm1lc3NhZ2UtcHJldmlldyB7IGJhY2tncm91bmQ6IHdoaXRlOyBwYWRkaW5nOiAyMHB4OyBib3JkZXItcmFkaXVzOiA4cHg7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgIzA1OTY2OTsgbWFyZ2luOiAyMHB4IDA7IH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2hlYWQ+XHJcbiAgICAgIDxib2R5PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImxvZ29cIj7wn4+gIHt7c2l0ZU5hbWV9fTwvZGl2PlxyXG4gICAgICAgICAgICA8aDE+8J+SrCBOZXcgTWVzc2FnZTwvaDE+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIDxoMj5IZWxsbyB7e3VzZXJOYW1lfX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+WW91IGhhdmUgYSBuZXcgbWVzc2FnZSBmcm9tIDxzdHJvbmc+e3tzZW5kZXJOYW1lfX08L3N0cm9uZz46PC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cIm1lc3NhZ2UtcHJldmlld1wiPlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+e3ttZXNzYWdlUHJldmlld319PC9zdHJvbmc+PC9wPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgc3R5bGU9XCJ0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbjogMzBweCAwO1wiPlxyXG4gICAgICAgICAgICAgIDxhIGhyZWY9XCJ7e21lc3NhZ2VVcmx9fVwiIGNsYXNzPVwiYnV0dG9uXCI+VmlldyBNZXNzYWdlPC9hPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPkRvbid0IHdhbnQgdG8gcmVjZWl2ZSBtZXNzYWdlIG5vdGlmaWNhdGlvbnM/IDxhIGhyZWY9XCJ7e3NpdGVVcmx9fS9zZXR0aW5ncy9ub3RpZmljYXRpb25zXCI+VXBkYXRlIHlvdXIgcHJlZmVyZW5jZXM8L2E+LjwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZvb3RlclwiPlxyXG4gICAgICAgICAgICA8cD7CqSB7e2N1cnJlbnRZZWFyfX0ge3tzaXRlTmFtZX19LiBBbGwgcmlnaHRzIHJlc2VydmVkLjwvcD5cclxuICAgICAgICAgICAgPHA+PGEgaHJlZj1cInt7c2l0ZVVybH19L3Vuc3Vic2NyaWJlP2VtYWlsPXt7dXNlckVtYWlsfX1cIj5VbnN1YnNjcmliZTwvYT48L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9ib2R5PlxyXG4gICAgICA8L2h0bWw+XHJcbiAgICBgO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogTmV3IG1lc3NhZ2UgdGV4dCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0TmV3TWVzc2FnZVRleHRUZW1wbGF0ZSgpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGBcclxuICAgICAgTmV3IE1lc3NhZ2Ugb24ge3tzaXRlTmFtZX19XHJcbiAgICAgIFxyXG4gICAgICBIZWxsbyB7e3VzZXJOYW1lfX0hXHJcbiAgICAgIFxyXG4gICAgICBZb3UgaGF2ZSBhIG5ldyBtZXNzYWdlIGZyb20ge3tzZW5kZXJOYW1lfX06XHJcbiAgICAgIFxyXG4gICAgICBcInt7bWVzc2FnZVByZXZpZXd9fVwiXHJcbiAgICAgIFxyXG4gICAgICBWaWV3IG1lc3NhZ2U6IHt7bWVzc2FnZVVybH19XHJcbiAgICAgIFxyXG4gICAgICBEb24ndCB3YW50IHRvIHJlY2VpdmUgbWVzc2FnZSBub3RpZmljYXRpb25zPyBVcGRhdGUgeW91ciBwcmVmZXJlbmNlczoge3tzaXRlVXJsfX0vc2V0dGluZ3Mvbm90aWZpY2F0aW9uc1xyXG4gICAgICBcclxuICAgICAgwqkge3tjdXJyZW50WWVhcn19IHt7c2l0ZU5hbWV9fS4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cclxuICAgICAgVW5zdWJzY3JpYmU6IHt7c2l0ZVVybH19L3Vuc3Vic2NyaWJlP2VtYWlsPXt7dXNlckVtYWlsfX1cclxuICAgIGA7XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBOZXcgbWF0Y2ggSFRNTCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0TmV3TWF0Y2hIVE1MVGVtcGxhdGUoKTogc3RyaW5nIHtcclxuICAgIHJldHVybiBgXHJcbiAgICAgIDwhRE9DVFlQRSBodG1sPlxyXG4gICAgICA8aHRtbD5cclxuICAgICAgPGhlYWQ+XHJcbiAgICAgICAgPG1ldGEgY2hhcnNldD1cInV0Zi04XCI+XHJcbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjBcIj5cclxuICAgICAgICA8dGl0bGU+TmV3IFJvb21tYXRlIE1hdGNoIC0ge3tzaXRlTmFtZX19PC90aXRsZT5cclxuICAgICAgICA8c3R5bGU+XHJcbiAgICAgICAgICBib2R5IHsgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBsaW5lLWhlaWdodDogMS42OyBjb2xvcjogIzMzMzsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyB9XHJcbiAgICAgICAgICAuY29udGFpbmVyIHsgbWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87IHBhZGRpbmc6IDIwcHg7IH1cclxuICAgICAgICAgIC5oZWFkZXIgeyBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZjU5ZTBiLCAjZDk3NzA2KTsgY29sb3I6IHdoaXRlOyBwYWRkaW5nOiAzMHB4IDIwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgYm9yZGVyLXJhZGl1czogMTBweCAxMHB4IDAgMDsgfVxyXG4gICAgICAgICAgLmNvbnRlbnQgeyBiYWNrZ3JvdW5kOiAjZjlmYWZiOyBwYWRkaW5nOiA0MHB4IDMwcHg7IGJvcmRlci1yYWRpdXM6IDAgMCAxMHB4IDEwcHg7IH1cclxuICAgICAgICAgIC5idXR0b24geyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGJhY2tncm91bmQ6ICNmNTllMGI7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMTVweCAzMHB4OyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGJvcmRlci1yYWRpdXM6IDhweDsgbWFyZ2luOiAyMHB4IDA7IGZvbnQtd2VpZ2h0OiBib2xkOyB9XHJcbiAgICAgICAgICAuZm9vdGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiAzMHB4OyBjb2xvcjogIzY2NjsgZm9udC1zaXplOiAxNHB4OyB9XHJcbiAgICAgICAgICAubG9nbyB7IGZvbnQtc2l6ZTogMjhweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IG1hcmdpbi1ib3R0b206IDEwcHg7IH1cclxuICAgICAgICAgIC5tYXRjaC1pbmZvIHsgYmFja2dyb3VuZDogd2hpdGU7IHBhZGRpbmc6IDIwcHg7IGJvcmRlci1yYWRpdXM6IDhweDsgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjZjU5ZTBiOyBtYXJnaW46IDIwcHggMDsgfVxyXG4gICAgICAgICAgLmNvbXBhdGliaWxpdHkgeyBmb250LXNpemU6IDI0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogI2Y1OWUwYjsgdGV4dC1hbGlnbjogY2VudGVyOyB9XHJcbiAgICAgICAgPC9zdHlsZT5cclxuICAgICAgPC9oZWFkPlxyXG4gICAgICA8Ym9keT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJsb2dvXCI+8J+PoCB7e3NpdGVOYW1lfX08L2Rpdj5cclxuICAgICAgICAgICAgPGgxPvCfjokgTmV3IFJvb21tYXRlIE1hdGNoITwvaDE+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIDxoMj5IZWxsbyB7e3VzZXJOYW1lfX0hPC9oMj5cclxuICAgICAgICAgICAgPHA+R3JlYXQgbmV3cyEgV2UgZm91bmQgYSBwb3RlbnRpYWwgcm9vbW1hdGUgbWF0Y2ggZm9yIHlvdSB3aXRoIGhpZ2ggY29tcGF0aWJpbGl0eS48L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwibWF0Y2gtaW5mb1wiPlxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb21wYXRpYmlsaXR5XCI+e3tjb21wYXRpYmlsaXR5U2NvcmV9fSUgQ29tcGF0aWJsZTwvZGl2PlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+TWF0Y2ggVHlwZTo8L3N0cm9uZz4ge3ttYXRjaFR5cGV9fTwvcD5cclxuICAgICAgICAgICAgICA8cD48c3Ryb25nPkxvY2F0aW9uOjwvc3Ryb25nPiB7e2xvY2F0aW9ufX08L3A+XHJcbiAgICAgICAgICAgICAgPHA+PHN0cm9uZz5CdWRnZXQgUmFuZ2U6PC9zdHJvbmc+IHt7YnVkZ2V0UmFuZ2V9fTwvcD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW46IDMwcHggMDtcIj5cclxuICAgICAgICAgICAgICA8YSBocmVmPVwie3ttYXRjaFVybH19XCIgY2xhc3M9XCJidXR0b25cIj5WaWV3IE1hdGNoPC9hPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPkRvbid0IG1pc3Mgb3V0IG9uIHRoaXMgb3Bwb3J0dW5pdHkgdG8gZmluZCB5b3VyIHBlcmZlY3Qgcm9vbW1hdGUhPC9wPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxwPsKpIHt7Y3VycmVudFllYXJ9fSB7e3NpdGVOYW1lfX0uIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9wPlxyXG4gICAgICAgICAgICA8cD48YSBocmVmPVwie3tzaXRlVXJsfX0vdW5zdWJzY3JpYmU/ZW1haWw9e3t1c2VyRW1haWx9fVwiPlVuc3Vic2NyaWJlPC9hPjwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2JvZHk+XHJcbiAgICAgIDwvaHRtbD5cclxuICAgIGA7XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBOZXcgbWF0Y2ggdGV4dCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0TmV3TWF0Y2hUZXh0VGVtcGxhdGUoKTogc3RyaW5nIHtcclxuICAgIHJldHVybiBgXHJcbiAgICAgIPCfjokgTmV3IFJvb21tYXRlIE1hdGNoISAtIHt7c2l0ZU5hbWV9fVxyXG4gICAgICBcclxuICAgICAgSGVsbG8ge3t1c2VyTmFtZX19IVxyXG4gICAgICBcclxuICAgICAgR3JlYXQgbmV3cyEgV2UgZm91bmQgYSBwb3RlbnRpYWwgcm9vbW1hdGUgbWF0Y2ggZm9yIHlvdSB3aXRoIHt7Y29tcGF0aWJpbGl0eVNjb3JlfX0lIGNvbXBhdGliaWxpdHkuXHJcbiAgICAgIFxyXG4gICAgICBNYXRjaCBEZXRhaWxzOlxyXG4gICAgICAtIFR5cGU6IHt7bWF0Y2hUeXBlfX1cclxuICAgICAgLSBMb2NhdGlvbjoge3tsb2NhdGlvbn19XHJcbiAgICAgIC0gQnVkZ2V0IFJhbmdlOiB7e2J1ZGdldFJhbmdlfX1cclxuICAgICAgXHJcbiAgICAgIFZpZXcgbWF0Y2g6IHt7bWF0Y2hVcmx9fVxyXG4gICAgICBcclxuICAgICAgRG9uJ3QgbWlzcyBvdXQgb24gdGhpcyBvcHBvcnR1bml0eSB0byBmaW5kIHlvdXIgcGVyZmVjdCByb29tbWF0ZSFcclxuICAgICAgXHJcbiAgICAgIMKpIHt7Y3VycmVudFllYXJ9fSB7e3NpdGVOYW1lfX0uIEFsbCByaWdodHMgcmVzZXJ2ZWQuXHJcbiAgICAgIFVuc3Vic2NyaWJlOiB7e3NpdGVVcmx9fS91bnN1YnNjcmliZT9lbWFpbD17e3VzZXJFbWFpbH19XHJcbiAgICBgO1xyXG4gIH1cclxuXHJcbiAgLyoqXHJcbiAgICogUHJvcGVydHkgcG9zdGVkIEhUTUwgdGVtcGxhdGVcclxuICAgKi9cclxuICBwcml2YXRlIGdldFByb3BlcnR5UG9zdGVkSFRNTFRlbXBsYXRlKCk6IHN0cmluZyB7XHJcbiAgICByZXR1cm4gYFxyXG4gICAgICA8IURPQ1RZUEUgaHRtbD5cclxuICAgICAgPGh0bWw+XHJcbiAgICAgIDxoZWFkPlxyXG4gICAgICAgIDxtZXRhIGNoYXJzZXQ9XCJ1dGYtOFwiPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCI+XHJcbiAgICAgICAgPHRpdGxlPlByb3BlcnR5IFBvc3RlZCBTdWNjZXNzZnVsbHkgLSB7e3NpdGVOYW1lfX08L3RpdGxlPlxyXG4gICAgICAgIDxzdHlsZT5cclxuICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IGxpbmUtaGVpZ2h0OiAxLjY7IGNvbG9yOiAjMzMzOyBtYXJnaW46IDA7IHBhZGRpbmc6IDA7IH1cclxuICAgICAgICAgIC5jb250YWluZXIgeyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMjBweDsgfVxyXG4gICAgICAgICAgLmhlYWRlciB7IGJhY2tncm91bmQ6ICMwNTk2Njk7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMzBweCAyMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IGJvcmRlci1yYWRpdXM6IDEwcHggMTBweCAwIDA7IH1cclxuICAgICAgICAgIC5jb250ZW50IHsgYmFja2dyb3VuZDogI2Y5ZmFmYjsgcGFkZGluZzogNDBweCAzMHB4OyBib3JkZXItcmFkaXVzOiAwIDAgMTBweCAxMHB4OyB9XHJcbiAgICAgICAgICAuYnV0dG9uIHsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBiYWNrZ3JvdW5kOiAjMDU5NjY5OyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6IDE1cHggMzBweDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBib3JkZXItcmFkaXVzOiA4cHg7IG1hcmdpbjogMjBweCAwOyBmb250LXdlaWdodDogYm9sZDsgfVxyXG4gICAgICAgICAgLmZvb3RlciB7IHRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luLXRvcDogMzBweDsgY29sb3I6ICM2NjY7IGZvbnQtc2l6ZTogMTRweDsgfVxyXG4gICAgICAgICAgLmxvZ28geyBmb250LXNpemU6IDI4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBtYXJnaW4tYm90dG9tOiAxMHB4OyB9XHJcbiAgICAgICAgICAucHJvcGVydHktaW5mbyB7IGJhY2tncm91bmQ6IHdoaXRlOyBwYWRkaW5nOiAyMHB4OyBib3JkZXItcmFkaXVzOiA4cHg7IGJvcmRlci1sZWZ0OiA0cHggc29saWQgIzA1OTY2OTsgbWFyZ2luOiAyMHB4IDA7IH1cclxuICAgICAgICA8L3N0eWxlPlxyXG4gICAgICA8L2hlYWQ+XHJcbiAgICAgIDxib2R5PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImxvZ29cIj7wn4+gIHt7c2l0ZU5hbWV9fTwvZGl2PlxyXG4gICAgICAgICAgICA8aDE+4pyFIFByb3BlcnR5IFBvc3RlZCBTdWNjZXNzZnVsbHkhPC9oMT5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRlbnRcIj5cclxuICAgICAgICAgICAgPGgyPkhlbGxvIHt7dXNlck5hbWV9fSE8L2gyPlxyXG4gICAgICAgICAgICA8cD5HcmVhdCBuZXdzISBZb3VyIHByb3BlcnR5IGxpc3RpbmcgaGFzIGJlZW4gc3VjY2Vzc2Z1bGx5IHBvc3RlZCBvbiB7e3NpdGVOYW1lfX0gYW5kIGlzIG5vdyB2aXNpYmxlIHRvIHRob3VzYW5kcyBvZiBwb3RlbnRpYWwgdGVuYW50cy48L3A+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvcGVydHktaW5mb1wiPlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+UHJvcGVydHk6PC9zdHJvbmc+IHt7cHJvcGVydHlUaXRsZX19PC9wPlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+TG9jYXRpb246PC9zdHJvbmc+IHt7cHJvcGVydHlMb2NhdGlvbn19PC9wPlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+UHJpY2U6PC9zdHJvbmc+IHt7cHJvcGVydHlQcmljZX19PC9wPlxyXG4gICAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBBY3RpdmU8L3A+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPGRpdiBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luOiAzMHB4IDA7XCI+XHJcbiAgICAgICAgICAgICAgPGEgaHJlZj1cInt7cHJvcGVydHlVcmx9fVwiIGNsYXNzPVwiYnV0dG9uXCI+VmlldyBMaXN0aW5nPC9hPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIDxwPllvdXIgbGlzdGluZyBpcyBub3cgYmVpbmcgcHJvbW90ZWQgdG8gcmVsZXZhbnQgdXNlcnMuIFlvdSdsbCByZWNlaXZlIG5vdGlmaWNhdGlvbnMgd2hlbiB1c2VycyBzaG93IGludGVyZXN0IGluIHlvdXIgcHJvcGVydHkuPC9wPlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgPHA+PHN0cm9uZz5UaXBzIHRvIGdldCBtb3JlIGlucXVpcmllczo8L3N0cm9uZz48L3A+XHJcbiAgICAgICAgICAgIDx1bD5cclxuICAgICAgICAgICAgICA8bGk+QWRkIGhpZ2gtcXVhbGl0eSBwaG90b3M8L2xpPlxyXG4gICAgICAgICAgICAgIDxsaT5Xcml0ZSBhIGRldGFpbGVkIGRlc2NyaXB0aW9uPC9saT5cclxuICAgICAgICAgICAgICA8bGk+UmVzcG9uZCBxdWlja2x5IHRvIGlucXVpcmllczwvbGk+XHJcbiAgICAgICAgICAgICAgPGxpPktlZXAgeW91ciBsaXN0aW5nIHVwZGF0ZWQ8L2xpPlxyXG4gICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxwPsKpIHt7Y3VycmVudFllYXJ9fSB7e3NpdGVOYW1lfX0uIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9wPlxyXG4gICAgICAgICAgICA8cD48YSBocmVmPVwie3tzaXRlVXJsfX0vdW5zdWJzY3JpYmU/ZW1haWw9e3t1c2VyRW1haWx9fVwiPlVuc3Vic2NyaWJlPC9hPjwvcD5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2JvZHk+XHJcbiAgICAgIDwvaHRtbD5cclxuICAgIGA7XHJcbiAgfVxyXG5cclxuICAvKipcclxuICAgKiBQcm9wZXJ0eSBwb3N0ZWQgdGV4dCB0ZW1wbGF0ZVxyXG4gICAqL1xyXG4gIHByaXZhdGUgZ2V0UHJvcGVydHlQb3N0ZWRUZXh0VGVtcGxhdGUoKTogc3RyaW5nIHtcclxuICAgIHJldHVybiBgXHJcbiAgICAgIFByb3BlcnR5IFBvc3RlZCBTdWNjZXNzZnVsbHkgLSB7e3NpdGVOYW1lfX1cclxuICAgICAgXHJcbiAgICAgIEhlbGxvIHt7dXNlck5hbWV9fSFcclxuICAgICAgXHJcbiAgICAgIEdyZWF0IG5ld3MhIFlvdXIgcHJvcGVydHkgbGlzdGluZyBoYXMgYmVlbiBzdWNjZXNzZnVsbHkgcG9zdGVkIG9uIHt7c2l0ZU5hbWV9fSBhbmQgaXMgbm93IHZpc2libGUgdG8gdGhvdXNhbmRzIG9mIHBvdGVudGlhbCB0ZW5hbnRzLlxyXG4gICAgICBcclxuICAgICAgUHJvcGVydHkgRGV0YWlsczpcclxuICAgICAgLSBQcm9wZXJ0eToge3twcm9wZXJ0eVRpdGxlfX1cclxuICAgICAgLSBMb2NhdGlvbjoge3twcm9wZXJ0eUxvY2F0aW9ufX1cclxuICAgICAgLSBQcmljZToge3twcm9wZXJ0eVByaWNlfX1cclxuICAgICAgLSBTdGF0dXM6IEFjdGl2ZVxyXG4gICAgICBcclxuICAgICAgVmlldyBsaXN0aW5nOiB7e3Byb3BlcnR5VXJsfX1cclxuICAgICAgXHJcbiAgICAgIFlvdXIgbGlzdGluZyBpcyBub3cgYmVpbmcgcHJvbW90ZWQgdG8gcmVsZXZhbnQgdXNlcnMuIFlvdSdsbCByZWNlaXZlIG5vdGlmaWNhdGlvbnMgd2hlbiB1c2VycyBzaG93IGludGVyZXN0IGluIHlvdXIgcHJvcGVydHkuXHJcbiAgICAgIFxyXG4gICAgICBUaXBzIHRvIGdldCBtb3JlIGlucXVpcmllczpcclxuICAgICAgLSBBZGQgaGlnaC1xdWFsaXR5IHBob3Rvc1xyXG4gICAgICAtIFdyaXRlIGEgZGV0YWlsZWQgZGVzY3JpcHRpb25cclxuICAgICAgLSBSZXNwb25kIHF1aWNrbHkgdG8gaW5xdWlyaWVzXHJcbiAgICAgIC0gS2VlcCB5b3VyIGxpc3RpbmcgdXBkYXRlZFxyXG4gICAgICBcclxuICAgICAgwqkge3tjdXJyZW50WWVhcn19IHt7c2l0ZU5hbWV9fS4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cclxuICAgICAgVW5zdWJzY3JpYmU6IHt7c2l0ZVVybH19L3Vuc3Vic2NyaWJlP2VtYWlsPXt7dXNlckVtYWlsfX1cclxuICAgIGA7XHJcbiAgfVxyXG59XHJcblxyXG4vLyBDcmVhdGUgYW5kIGV4cG9ydCBzaW5nbGV0b24gaW5zdGFuY2VcclxuZXhwb3J0IGNvbnN0IGVtYWlsVGVtcGxhdGVTZXJ2aWNlID0gbmV3IEVtYWlsVGVtcGxhdGVTZXJ2aWNlKCk7XHJcblxyXG5leHBvcnQgZGVmYXVsdCBlbWFpbFRlbXBsYXRlU2VydmljZTtcclxuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBcUJFO0lBQUFBLGNBQUEsWUFBQUEs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Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0tBcUROO0VBQ0g7RUFFQTs7O0VBR1EwQiw0QkFBNEJBLENBQUE7SUFBQTtJQUFBN0IsY0FBQSxHQUFBUyxDQUFBO0lBQUFULGNBQUEsR0FBQUcsQ0FBQTtJQUNsQyxPQUFPOzs7Ozs7Ozs7Ozs7Ozs7Ozs7S0FrQk47RUFDSDtFQUVBOzs7RUFHUTRCLHlCQUF5QkEsQ0FBQTtJQUFBO0lBQUEvQixjQUFBLEdBQUFTLENBQUE7SUFBQVQsY0FBQSxHQUFBRyxDQUFBO0lBQy9CLE9BQU87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztLQTZDTjtFQUNIO0VBRUE7OztFQUdRNkIseUJBQXlCQSxDQUFBO0lBQUE7SUFBQWhDLGNBQUEsR0FBQVMsQ0FBQTtJQUFBVCxjQUFBLEdBQUFHLENBQUE7SUFDL0IsT0FBTzs7Ozs7Ozs7Ozs7Ozs7O0tBZU47RUFDSDtFQUVBOzs7RUFHUStCLHVCQUF1QkEsQ0FBQTtJQUFBO0lBQUFsQyxjQUFBLEdBQUFTLENBQUE7SUFBQVQsY0FBQSxHQUFBRyxDQUFBO0lBQzdCLE9BQU87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7S0FpRE47RUFDSDtFQUVBOzs7RUFHUWdDLHVCQUF1QkEsQ0FBQTtJQUFBO0lBQUFuQyxjQUFBLEdBQUFTLENBQUE7SUFBQVQsY0FBQSxHQUFBRyxDQUFBO0lBQzdCLE9BQU87Ozs7Ozs7Ozs7Ozs7Ozs7OztLQWtCTjtFQUNIO0VBRUE7OztFQUdRa0MsNkJBQTZCQSxDQUFBO0lBQUE7SUFBQXJDLGNBQUEsR0FBQVMsQ0FBQTtJQUFBVCxjQUFBLEdBQUFHLENBQUE7SUFDbkMsT0FBTzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7S0F3RE47RUFDSDtFQUVBOzs7RUFHUW1DLDZCQUE2QkEsQ0FBQTtJQUFBO0lBQUF0QyxjQUFBLEdBQUFTLENBQUE7SUFBQVQsY0FBQSxHQUFBRyxDQUFBO0lBQ25DLE9BQU87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7S0F5Qk47RUFDSDs7QUFHRjtBQUFBO0FBQUFILGNBQUEsR0FBQUcsQ0FBQTtBQUNhUSxPQUFBLENBQUFvRCxvQkFBb0IsR0FBRyxJQUFJbkQsb0JBQW9CLEVBQUU7QUFBQztBQUFBWixjQUFBLEdBQUFHLENBQUE7QUFFL0RRLE9BQUEsQ0FBQStDLE9BQUEsR0FBZS9DLE9BQUEsQ0FBQW9ELG9CQUFvQiIsImlnbm9yZUxpc3QiOltdfQ==

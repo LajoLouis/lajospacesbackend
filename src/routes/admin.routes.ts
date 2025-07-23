@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { authMiddleware } from '../middleware/authMiddleware';
+import { authenticate as authMiddleware } from '../middleware/auth';
 import { adminMiddleware } from '../middleware/adminMiddleware';
 import { auditService, AuditEventType, RiskLevel } from '../services/auditService';
 import { cacheService } from '../services/cacheService';

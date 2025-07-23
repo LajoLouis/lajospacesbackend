@@ -1,0 +1,178 @@
+b1c7fb3ef5b1b927308c44f04464bd5a
+"use strict";
+
+/* istanbul ignore next */
+function cov_ygxuajumr() {
+  var path = "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\middleware\\notFoundHandler.ts";
+  var hash = "080e3db4166724d4254d4282438a0cbb9e376297";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\middleware\\notFoundHandler.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 42
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 23
+        },
+        end: {
+          line: 4,
+          column: 48
+        }
+      },
+      "3": {
+        start: {
+          line: 9,
+          column: 20
+        },
+        end: {
+          line: 9,
+          column: 71
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 18
+        },
+        end: {
+          line: 10,
+          column: 84
+        }
+      },
+      "5": {
+        start: {
+          line: 11,
+          column: 4
+        },
+        end: {
+          line: 11,
+          column: 16
+        }
+      },
+      "6": {
+        start: {
+          line: 13,
+          column: 0
+        },
+        end: {
+          line: 13,
+          column: 34
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "notFoundHandler",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 24
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 42
+          },
+          end: {
+            line: 12,
+            column: 1
+          }
+        },
+        line: 8
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\middleware\\notFoundHandler.ts",
+      mappings: ";;AAMA,0CAIC;AATD,iDAA0C;AAE1C;;GAEG;AACH,SAAgB,eAAe,CAAC,GAAY,EAAE,IAAc,EAAE,IAAkB;IAC9E,MAAM,OAAO,GAAG,SAAS,GAAG,CAAC,WAAW,2BAA2B,CAAC;IACpE,MAAM,KAAK,GAAG,IAAI,uBAAQ,CAAC,OAAO,EAAE,GAAG,EAAE,IAAI,EAAE,iBAAiB,CAAC,CAAC;IAClE,IAAI,CAAC,KAAK,CAAC,CAAC;AACd,CAAC;AAED,kBAAe,eAAe,CAAC",
+      names: [],
+      sources: ["C:\\Users\\MY PC\\Desktop\\lajospaces\\lajospacesbackend\\src\\middleware\\notFoundHandler.ts"],
+      sourcesContent: ["import { Request, Response, NextFunction } from 'express';\r\nimport { AppError } from './errorHandler';\r\n\r\n/**\r\n * Handle 404 Not Found errors\r\n */\r\nexport function notFoundHandler(req: Request, _res: Response, next: NextFunction): void {\r\n  const message = `Route ${req.originalUrl} not found on this server`;\r\n  const error = new AppError(message, 404, true, 'ROUTE_NOT_FOUND');\r\n  next(error);\r\n}\r\n\r\nexport default notFoundHandler;\r\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "080e3db4166724d4254d4282438a0cbb9e376297"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ygxuajumr = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_ygxuajumr();
+cov_ygxuajumr().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_ygxuajumr().s[1]++;
+exports.notFoundHandler = notFoundHandler;
+const errorHandler_1 =
+/* istanbul ignore next */
+(cov_ygxuajumr().s[2]++, require("./errorHandler"));
+/**
+ * Handle 404 Not Found errors
+ */
+function notFoundHandler(req, _res, next) {
+  /* istanbul ignore next */
+  cov_ygxuajumr().f[0]++;
+  const message =
+  /* istanbul ignore next */
+  (cov_ygxuajumr().s[3]++, `Route ${req.originalUrl} not found on this server`);
+  const error =
+  /* istanbul ignore next */
+  (cov_ygxuajumr().s[4]++, new errorHandler_1.AppError(message, 404, true, 'ROUTE_NOT_FOUND'));
+  /* istanbul ignore next */
+  cov_ygxuajumr().s[5]++;
+  next(error);
+}
+/* istanbul ignore next */
+cov_ygxuajumr().s[6]++;
+exports.default = notFoundHandler;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJleHBvcnRzIiwibm90Rm91bmRIYW5kbGVyIiwiZXJyb3JIYW5kbGVyXzEiLCJjb3ZfeWd4dWFqdW1yIiwicyIsInJlcXVpcmUiLCJyZXEiLCJfcmVzIiwibmV4dCIsImYiLCJtZXNzYWdlIiwib3JpZ2luYWxVcmwiLCJlcnJvciIsIkFwcEVycm9yIiwiZGVmYXVsdCJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcTVkgUENcXERlc2t0b3BcXGxham9zcGFjZXNcXGxham9zcGFjZXNiYWNrZW5kXFxzcmNcXG1pZGRsZXdhcmVcXG5vdEZvdW5kSGFuZGxlci50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSZXF1ZXN0LCBSZXNwb25zZSwgTmV4dEZ1bmN0aW9uIH0gZnJvbSAnZXhwcmVzcyc7XHJcbmltcG9ydCB7IEFwcEVycm9yIH0gZnJvbSAnLi9lcnJvckhhbmRsZXInO1xyXG5cclxuLyoqXHJcbiAqIEhhbmRsZSA0MDQgTm90IEZvdW5kIGVycm9yc1xyXG4gKi9cclxuZXhwb3J0IGZ1bmN0aW9uIG5vdEZvdW5kSGFuZGxlcihyZXE6IFJlcXVlc3QsIF9yZXM6IFJlc3BvbnNlLCBuZXh0OiBOZXh0RnVuY3Rpb24pOiB2b2lkIHtcclxuICBjb25zdCBtZXNzYWdlID0gYFJvdXRlICR7cmVxLm9yaWdpbmFsVXJsfSBub3QgZm91bmQgb24gdGhpcyBzZXJ2ZXJgO1xyXG4gIGNvbnN0IGVycm9yID0gbmV3IEFwcEVycm9yKG1lc3NhZ2UsIDQwNCwgdHJ1ZSwgJ1JPVVRFX05PVF9GT1VORCcpO1xyXG4gIG5leHQoZXJyb3IpO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBub3RGb3VuZEhhbmRsZXI7XHJcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBTUFBLE9BQUEsQ0FBQUMsZUFBQSxHQUFBQSxlQUFBO0FBTEEsTUFBQUMsY0FBQTtBQUFBO0FBQUEsQ0FBQUMsYUFBQSxHQUFBQyxDQUFBLE9BQUFDLE9BQUE7QUFFQTs7O0FBR0EsU0FBZ0JKLGVBQWVBLENBQUNLLEdBQVksRUFBRUMsSUFBYyxFQUFFQyxJQUFrQjtFQUFBO0VBQUFMLGFBQUEsR0FBQU0sQ0FBQTtFQUM5RSxNQUFNQyxPQUFPO0VBQUE7RUFBQSxDQUFBUCxhQUFBLEdBQUFDLENBQUEsT0FBRyxTQUFTRSxHQUFHLENBQUNLLFdBQVcsMkJBQTJCO0VBQ25FLE1BQU1DLEtBQUs7RUFBQTtFQUFBLENBQUFULGFBQUEsR0FBQUMsQ0FBQSxPQUFHLElBQUlGLGNBQUEsQ0FBQVcsUUFBUSxDQUFDSCxPQUFPLEVBQUUsR0FBRyxFQUFFLElBQUksRUFBRSxpQkFBaUIsQ0FBQztFQUFDO0VBQUFQLGFBQUEsR0FBQUMsQ0FBQTtFQUNsRUksSUFBSSxDQUFDSSxLQUFLLENBQUM7QUFDYjtBQUFDO0FBQUFULGFBQUEsR0FBQUMsQ0FBQTtBQUVESixPQUFBLENBQUFjLE9BQUEsR0FBZWIsZUFBZSIsImlnbm9yZUxpc3QiOltdfQ==
